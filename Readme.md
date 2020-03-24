@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Кузнецов](https://up.htmlacademy.ru/adaptive/19/user/1146763).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 
 ---
 
