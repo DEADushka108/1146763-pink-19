@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк-фотографии</title>
+  </head>
+  <body>
+    <header class="page-header"><!--Header-->
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/pink-mobile.svg" width="75" height="22" alt="Логотип Pink">
+      </a>
+      <nav class="main-nav"><!--Navigation-->
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav><!--End navigation-->
+    </header><!--End header-->
+    <main clas="page-main">
+      <h1 class="page-main__title">Фотографии пользователей</h1>
+      <section class="gallery">
+        <div class="gallery__wrapper">
+          <h2 class="visually-hidden">Галерея</h2>
+          <p class="gallery__text">
+            Взгляните на фотографии, которые выкладывают пользователи!
+            Видите, как не хватает ваших?
+          </p>
+          <ul class="gallery__list photo-list">
+            <li class="photo-list__item">
+              <figure class="photo-list__image">
+                <a class="photo-list__link" href="#">
+                  <img class="photo-list__image--panorama" src="img/user-photo1.png" width="320" height="137" alt="">
+                </a>
+                <figcaption class="photo-list__description">
+                  <p class="photo-list__text">
+                    <span class="photo-list__author">Анна (5 минут назад)</span>
+                    Прыгать или нет? Напишите в комментарии свой совет и смотрите
+                    прямую трансляцию в перископе, задавайте свои вопросы!
+                  </p>
+                  <button class="photo-list__button" type="button">Лайк</button>
+                  <p class="photo-list__counter">Нравится: 215</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="photo-list__item">
+              <figure class="photo-list__image">
+                <a class="photo-list__link" href="#">
+                  <img src="img/user-photo2.png" width="280" height="180" alt="">
+                </a>
+                <figcaption class="photo-list__description">
+                  <p class="photo-list__text">
+                    <span class="photo-list__author">Левон (5 часов назад)</span>
+                    Вчера он на луну летал, сегодня в руки к нам попал.
+                  </p>
+                  <button class="photo-list__button" type="button">Лайк</button>
+                  <p class="photo-list__counter">Нравится: 356</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="photo-list__item">
+              <figure class="photo-list__image">
+                <a class="photo-list__link" href="#">
+                  <img src="img/user-photo3.png" width="280" height="180" alt="">
+                </a>
+                <figcaption class="photo-list__description">
+                  <p class="photo-list__text">
+                    <span class="photo-list__author">Антон (12 часов назад)</span>
+                    Соседи будут рады!
+                  </p>
+                  <button class="photo-list__button" type="button">Лайк</button>
+                  <p class="photo-list__counter">Нравится: 666</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="photo-list__item">
+              <figure class="photo-list__image">
+                <a class="photo-list__link" href="#">
+                  <img src="img/user-photo4.png" width="280" height="180" alt="">
+                </a>
+                <figcaption class="photo-list__description">
+                  <p class="photo-list__text">
+                    <span class="photo-list__author">Борис (20 часов назад)</span>
+                    Здесь могла быть ваша цитата о высоком и вечном.
+                  </p>
+                  <button class="photo-list__button" type="button">Лайк</button>
+                  <p class="photo-list__counter">Нравится: 215</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="photo-list__item">
+              <figure class="photo-list__image">
+                <a class="photo-list__link" href="#">
+                  <img src="img/user-photo5.png" width="280" height="180" alt="">
+                </a>
+                <figcaption class="photo-list__description">
+                  <p class="photo-list__text">
+                    <span class="photo-list__author">Сергей (25 часов назад)</span>
+                      Самая кубанская в мире!
+                  </p>
+                  <button class="photo-list__button" type="button">Лайк</button>
+                  <p class="photo-list__counter">Нравится: 4</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="photo-list__item">
+              <figure class="photo-list__image">
+                <a class="photo-list__link" href="#">
+                  <img src="img/user-photo6.png" width="280" height="180" alt="">
+                </a>
+                <figcaption class="photo-list__description">
+                  <p class="photo-list__text">
+                    <span class="photo-list__author">Максим (40 часов назад)</span>
+                    Где снег-то?
+                  </p>
+                  <button class="photo-list__button" type="button">Лайк</button>
+                  <p class="photo-list__counter">Нравится: 150</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="photo-list__item">
+              <figure class="photo-list__image">
+                <a class="photo-list__link" href="#">
+                  <img src="img/user-photo7.png" width="280" height="180" alt="">
+                </a>
+                <figcaption class="photo-list__description">
+                  <p class="photo-list__text">
+                    <span class="photo-list__author">Надежда (45 часов назад)</span>
+                    Всем GM и взаимные лайки!
+                  </p>
+                  <button class="photo-list__button" type="button">Лайк</button>
+                  <p class="photo-list__counter">Нравится: 2560</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+          <p class="gallery__text">
+            Затмите их всех!Выкладывайте все,
+            что накопилось в телефоне!
+          </p>
+        </div>  
+      </section>
+      <section class="upload">
+        <h2 class="visually-hidden">Загрузить фотографию</h2>
+
+      </section>
+    </main>  
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="img/pink.svg" width="147" height="40" alt="Логотип Pink">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="">Мы в YouTube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>     
