@@ -29,7 +29,7 @@
         </div>
       </nav><!--End navigation-->
     </header><!--End header-->
-    <main clas="page-main">
+    <main class="page-main">
       <h1 class="page-main__title">Фотографии пользователей</h1>
       <section class="gallery">
         <div class="gallery__wrapper">
@@ -154,7 +154,21 @@
       </section>
       <section class="upload">
         <h2 class="visually-hidden">Загрузить фотографию</h2>
-
+        <form class="upload__form" action="https://echo.htmlacademy.ru" method="GET">
+          <img class="upload__image" src="img/upload-photo.jpg" width="280" height="374" alt="Загруженное изображение">
+          <div class="upload__item">
+            <label class="upload__icon upload__icon--crop" for="crop">Обрезать</label>
+            <label class="upload__icon upload__icon--fill" for="fill">Заполнить</label>
+            <label class="upload__icon upload__icon--contrast" for="contrast">Контраст</label>
+          </div>
+          <div class="upload__item">  
+            <input class="upload__range" type="range" id="crop" name="crop" min="0" max="100">
+            <input class="upload__range" type="range" id="fill" name="fill" min="0" max="100">
+            <input class="upload__range" type="range" id="contrast" name="contrast" min="0" max="100">
+          </div>
+          <button class="upload-form__button button" type="submit">Запостить</button>
+          <button class="upload-form__button button" type="button">Отмена</button>
+        </form>  
       </section>
     </main>  
     <footer class="page-footer">

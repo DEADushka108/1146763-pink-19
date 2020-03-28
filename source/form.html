@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк-фотографии</title>
+    <title>HTML Academy: Пинк-конкурс</title>
   </head>
   <body>
     <header class="page-header"><!--Header-->
@@ -32,90 +32,91 @@
     <main class="page-main">
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <section class="contest-form">
-        <p class="contest-form__text">Поделитесь своей историей и получите шанс выиграть 
-          ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
-        </p>  
-        <fieldset class="contest-form__item user-info">
-          <legend class="visually-hidden">Расскажите о себе</legend>
-          <p class="user-info__item">
-            <label for="user-surname">Фамилия:</label>
-            <input id="user-surname" type="text" name="surname" placeholder="Укажите фамилию" required>
-          </p>
-          <p class="user-info__item">
-            <label for="user-name">Имя:</label>
-            <input id="user-name" type="text" name="name" placeholder="Введите ваше имя" required>
-          </p>
-          <p class="user-info__item">  
-            <label for="user-patronym">Отчество:</label>
-            <input id="user-patronym" type="text" name="patronym" placeholder="Ну и отчество тоже">
-          </p>
-        </fieldset>
-        <fieldset class="contest-form__item filter-input">
-          <legend>Ваши безбашенные достижения в путешествии</legend>
-            <ul>
-              <li class="filter-input__option">
-                <input class="filter-input__checkbox" type="checkbox" id="shark" name="shark" value="shark" checked>
-                <label for="shark">Сделал селфи с акулой</label>
-              </li>
-              <li class="filter-input__option">
-                <input  class="filter-input__checkbox" type="checkbox" id="burnt" name="burnt" value="burnt" checked>
-                <label for="burnt">Обгорел на пляже</label>
-              </li>
-              <li class="filter-input__option">
-                <input  class="filter-input__checkbox" type="checkbox" id="chuck" name="chuck" value="chuck">
-                <label for="chuck">Видел Чака Норриса</label>
-              </li>
-              <li class="filter-input__option">
-                <input  class="filter-input__checkbox" type="checkbox" id="gift" name="gift" value="gift">
-                <label for="gift">Накупил сувениров</label>
-              </li>
-              <li class="filter-input__option">
-                <input  class="filter-input__checkbox" type="checkbox" id="tower" name="tower" value="tower">
-                <label for="tower">Удержал башню</label>
-              </li>
-              <li class="filter-input__option">
-                <input  class="filter-input__checkbox" type="checkbox" id="hotel" name="hotel" value="hotel">
-                <label for="cart">Разгромил отель</label>
-              </li>
+        <h2 class="visually-hidden">Анкета участника конкурса</h2>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <p class="contest-form__text">Поделитесь своей историей и получите шанс выиграть 
+            ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+          </p>  
+          <fieldset class="contest-form__item user-info">
+            <legend class="visually-hidden">Расскажите о себе</legend>
+            <p class="user-info__item">
+              <label for="user-surname">Фамилия:</label>
+              <input id="user-surname" type="text" name="surname" placeholder="Укажите фамилию" required>
+            </p>
+            <p class="user-info__item">
+              <label for="user-name">Имя:</label>
+              <input id="user-name" type="text" name="name" placeholder="Введите ваше имя" required>
+            </p>
+            <p class="user-info__item">  
+              <label for="user-patronym">Отчество:</label>
+              <input id="user-patronym" type="text" name="patronym" placeholder="Ну и отчество тоже">
+            </p>
+          </fieldset>
+          <fieldset class="contest-form__item filter-input">
+            <legend>Ваши безбашенные достижения в путешествии</legend>
+              <ul>
+                <li class="filter-input__option">
+                  <input class="filter-input__checkbox" type="checkbox" id="shark" name="shark" value="shark" checked>
+                  <label for="shark">Сделал селфи с акулой</label>
+                </li>
+                <li class="filter-input__option">
+                  <input  class="filter-input__checkbox" type="checkbox" id="burnt" name="burnt" value="burnt" checked>
+                  <label for="burnt">Обгорел на пляже</label>
+                </li>
+                <li class="filter-input__option">
+                  <input  class="filter-input__checkbox" type="checkbox" id="chuck" name="chuck" value="chuck">
+                  <label for="chuck">Видел Чака Норриса</label>
+                </li>
+                <li class="filter-input__option">
+                  <input  class="filter-input__checkbox" type="checkbox" id="gift" name="gift" value="gift">
+                  <label for="gift">Накупил сувениров</label>
+                </li>
+                <li class="filter-input__option">
+                  <input  class="filter-input__checkbox" type="checkbox" id="tower" name="tower" value="tower">
+                  <label for="tower">Удержал башню</label>
+                </li>
+                <li class="filter-input__option">
+                  <input  class="filter-input__checkbox" type="checkbox" id="hotel" name="hotel" value="hotel">
+                  <label for="hotel">Разгромил отель</label>
+                </li>
+              </ul>
+          </fieldset>
+          <fieldset class="contest-form__item user-contacts">
+            <legend class="visually-hidden">Расскажите о себе</legend>
+            <p class="user-contacts__item">
+              <label for="user-phone">Номер телефона</label>
+              <input id="user-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+            </p>
+            <p class="user-contacts__item">
+              <label for="user-email">Имя:</label>
+              <input id="user-email" type="email" name="email" placeholder="Введите почту" required>
+            </p>
+          </fieldset>
+          <fieldset class="contest-form__item filter-input">
+            <legend>С каким приложением путешествовали?</legend>
+              <ul>
+                <li class="filter-input__option">
+                  <input class="filter-input__radio" type="radio" name="app-version" id="ios" value="ios" checked>
+                  <label for="ios">Pink для iOs</label>
+                </li>
+                <li class="filter-input__option">
+                  <input class="filter-input__radio" type="radio" name="app-version" id="android" value="android">
+                  <label for="android">Pink на Android</label>
+                </li>
+                <li class="filter-input__option">
+                  <input class="filter-input__radio" type="radio" name="app-version" id="windowsphone" value="windowsphone">
+                  <label for="windowsphone">Windows Phone</label>
+                </li>
             </ul>
-        </fieldset>
-        <fieldset class="contest-form__item user-contacts">
-          <legend class="visually-hidden">Расскажите о себе</legend>
-          <p class="user-contacts__item">
-            <label for="user-phone">Номер телефона</label>
-            <input id="user-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
-          </p>
-          <p class="user-contacts__item">
-            <label for="user-email">Имя:</label>
-            <input id="user-email" type="email" name="email" placeholder="Введите почту" required>
-          </p>
-        </fieldset>
-        <fieldset class="contest-form__item filter-input">
-          <legend>С каким приложением путешествовали?</legend>
-            <ul>
-              <li class="filter-input__option">
-                <input class="filter-input__radio" type="radio" name="app-version" id="ios" value="ios" checked>
-                <label for="ios">Pink для iOs</label>
-              </li>
-              <li class="filter-input__option">
-                <input class="filter-input__radio" type="radio" name="app-version" id="android" value="android">
-                <label for="android">Pink на Android</label>
-              </li>
-              <li class="filter-input__option">
-                <input class="filter-input__radio" type="radio" name="app-version" id="windowsphone" value="windowsphone">
-                <label for="windowsphone">Windows Phone</label>
-              </li>
-          </ul>
-        </fieldset>
-        <fieldset class="contest-form__item">
-          <p>
-            <label for="comment-field">Опишите свои эмоции</label>
-            <textarea name="comment" id="comment-field" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </p>
-        </fieldset>
-        <button class="contest-form__button button" type="submit">Показать</button>
-      </form>
-    </section><!--End sidebar-->
+          </fieldset>
+          <fieldset class="contest-form__item">
+            <p>
+              <label for="comment-field">Опишите свои эмоции</label>
+              <textarea name="comment" id="comment-field" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </p>
+          </fieldset>
+          <button class="contest-form__button button" type="submit">Показать</button>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
