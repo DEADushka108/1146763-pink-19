@@ -1,0 +1,21 @@
+.contacts {
+  text-align: center;
+  padding-left: 44px;
+  padding-right: 39px;
+  &__title {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  &__text {
+    font-weight: 700;
+  }
+  &__phone,
+  &__email,
+  &__adress {
+    display: block;
+    color: #d22856;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 28px;
+  }
+}
