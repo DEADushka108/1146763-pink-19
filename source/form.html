@@ -3,27 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк-конкурс</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header"><!--Header-->
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/pink-mobile.svg" width="75" height="22" alt="Логотип Pink">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
       </a>
       <nav class="main-nav"><!--Navigation-->
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link site-list__link--active">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
             </li>
           </ul>
         </div>
@@ -34,9 +35,9 @@
       <section class="contest-form">
         <h2 class="visually-hidden">Анкета участника конкурса</h2>
         <form action="https://echo.htmlacademy.ru" method="GET">
-          <p class="contest-form__text">Поделитесь своей историей и получите шанс выиграть 
+          <p class="contest-form__text">Поделитесь своей историей и получите шанс выиграть
             ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
-          </p>  
+          </p>
           <fieldset class="contest-form__item user-info">
             <legend class="visually-hidden">Расскажите о себе</legend>
             <p class="user-info__item">
@@ -47,7 +48,7 @@
               <label for="user-name">Имя:</label>
               <input id="user-name" type="text" name="name" placeholder="Введите ваше имя" required>
             </p>
-            <p class="user-info__item">  
+            <p class="user-info__item">
               <label for="user-patronym">Отчество:</label>
               <input id="user-patronym" type="text" name="patronym" placeholder="Ну и отчество тоже">
             </p>
@@ -121,7 +122,7 @@
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="img/pink.svg" width="147" height="40" alt="Логотип Pink">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">

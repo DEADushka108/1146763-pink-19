@@ -3,32 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header"><!--Header-->
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/pink-mobile.svg" width="75" height="22"  alt="Логотип Pink">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"  alt="Логотип Pink">
       </a>
       <nav class="main-nav"><!--Navigation-->
         <button class="main-nav__toggle" type="button">Открыть меню</button><!--Hamburger-->
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>Главная</a>
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a  class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a  class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
             </li>
           </ul>
         </div>
       </nav><!--End navigation-->
-    </header><!--End header--> 
+    </header><!--End header-->
     <main class="page-main"><!--Main-->
       <h1 class="visually-hidden">Главная страница приложения Pink</h1>
       <section class="intro"><!--Intro-->
@@ -50,13 +51,16 @@
             </li>
           </ul>
           <p class="intro__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div>  
+        </div>
       </section><!--End Intro-->
       <section class="advantages"><!--Advantages-->
         <div class="advantages__wrapper">
           <h2 class="visually-hidden">Приемущества приложения Pink</h2>
           <p class="advantages__text-promo">
-            Устали от серости мегаполиса? Нам есть, что вам предложить!
+            Устали от серости мегаполиса?
+          </p>
+          <p class="advantages__text-promo">
+            Нам есть, что вам предложить!
           </p>
           <ul class="advantages__list">
             <li class="advantages__item">
@@ -64,8 +68,7 @@
                 Поднимает настроение
               </h3>
               <p class="advantages__description">
-                Приложение позволит вам победить осеннюю хандру 
-                и депрессию буквально в несколько кликов!
+                Приложение позволит вам победить осеннюю хандрут и депрессию буквально в несколько кликов!
               </p>
             </li>
             <li class="advantages__item">
@@ -73,8 +76,7 @@
                 Меняет мир вокруг
               </h3>
               <p class="advantages__description">
-                Сделайте снимок и украсьте его смайликом или текстовой 
-                подписью, чтобы усилить эффект
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
               </p>
             </li>
             <li class="advantages__item">
@@ -82,12 +84,11 @@
                 Заводит новых друзей
               </h3>
               <p class="advantages__description">
-                Ставьте лайки, комментируйте, делитесь фотографиями 
-                с друзьями и заводите новых
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
               </p>
             </li>
           </ul>
-        </div>   
+        </div>
       </section><!--End Advantages-->
       <section class="reviews"><!--Reviews-->
         <div class="reviews__wrapper slider">
@@ -97,7 +98,7 @@
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">
                 Это приложение перевернуло мой мир и позволило по-новому
-                взглянуть на привычные серые вещи! А еще я познакомился 
+                взглянуть на привычные серые вещи! А еще я познакомился
                 со своей будущей женой в комментариях к выложенной фотографии!
               </p>
             </blockquote>
@@ -107,7 +108,7 @@
               <cite class="reviews__author-name">Николай Петров</cite><!--Пока не видно другие отзывы на макетах-->
               <p class="reviews__text">
                 Это приложение перевернуло мой мир и позволило по-новому
-                взглянуть на привычные серые вещи! А еще я познакомился 
+                взглянуть на привычные серые вещи! А еще я познакомился
                 со своей будущей женой в комментариях к выложенной фотографии!
               </p>
             </blockquote>
@@ -117,26 +118,26 @@
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">
                 Это приложение перевернуло мой мир и позволило по-новому
-                взглянуть на привычные серые вещи! А еще я познакомился 
+                взглянуть на привычные серые вещи! А еще я познакомился
                 со своей будущей женой в комментариях к выложенной фотографии!
               </p>
             </blockquote>
-          </div> 
+          </div>
           <div class="reviews__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
-          </div>  
+          </div>
         </div>
       </section><!--End reviews-->
       <section class="prices">
         <div class="prices__wrapper slider">
           <h2 class="visually-hidden">Прайс для приложения Pink</h2>
           <table class="prices__rate rate-list">
-            <tr class="rate-list__title">
-              <th>База 1,99 USD</th>
-              <th class="rate-list__title--hit">Стандарт 3,99 USD</th>
-              <th>Анлим 9,99 USD</th>
+            <tr class="rate-list__item">
+              <th class="rate-list__name">База 1,99 USD</th>
+              <th class="rate-list__name rate-list__name--hit">Стандарт 3,99 USD</th>
+              <th class="rate-list__name">Анлим 9,99 USD</th>
             </tr>
             <tr class="rate-list__item">
               <td class="rate-list__ability rate-list__ability--no">Розовый фильтр</td>
@@ -167,22 +168,22 @@
         <div class="page-footer__contacts contacts">
           <b class="contacts__title">Остались вопросы? Свяжитесь с нами!</b>
           <p class="contacts__text">
-            Звоните:
+            Звоните:<br>
             <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-            Пишите:
+            Пишите:<br>
             <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            Приезжайте в гости:
+            Приезжайте в гости:<br>
             <span class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</span>
           </p>
         </div>
         <div class="page-footer__map">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716385143!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1582307010902!5m2!1sru!2sru" 
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716385143!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1582307010902!5m2!1sru!2sru"
             height="100" allowfullscreen=""
             title="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </iframe>
         </div>
       </div>
-    </footer>  
+    </footer>
   </body>
 </html>

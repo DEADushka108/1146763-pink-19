@@ -3,27 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк-фотографии</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header"><!--Header-->
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/pink-mobile.svg" width="75" height="22" alt="Логотип Pink">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
       </a>
       <nav class="main-nav"><!--Navigation-->
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link site-list__link--active">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">html academy</a>
             </li>
           </ul>
         </div>
@@ -42,11 +43,12 @@
             <li class="photo-list__item">
               <figure class="photo-list__image">
                 <a class="photo-list__link" href="#">
-                  <img class="photo-list__image--panorama" src="img/user-photo1.png" width="320" height="137" alt="">
+                  <img class="photo-list__image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="">
                 </a>
                 <figcaption class="photo-list__description">
                   <p class="photo-list__text">
-                    <span class="photo-list__author">Анна (5 минут назад)</span>
+                    <span class="photo-list__author">Анна</span>
+                    <span class="photo-list__time">(5 минут назад)</span>
                     Прыгать или нет? Напишите в комментарии свой совет и смотрите
                     прямую трансляцию в перископе, задавайте свои вопросы!
                   </p>
@@ -58,11 +60,12 @@
             <li class="photo-list__item">
               <figure class="photo-list__image">
                 <a class="photo-list__link" href="#">
-                  <img src="img/user-photo2.png" width="280" height="180" alt="">
+                  <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="">
                 </a>
                 <figcaption class="photo-list__description">
                   <p class="photo-list__text">
-                    <span class="photo-list__author">Левон (5 часов назад)</span>
+                    <span class="photo-list__author">Левон</span>
+                    <span class="photo-list__time">(5 часов назад)</span>
                     Вчера он на луну летал, сегодня в руки к нам попал.
                   </p>
                   <button class="photo-list__button" type="button">Лайк</button>
@@ -73,11 +76,12 @@
             <li class="photo-list__item">
               <figure class="photo-list__image">
                 <a class="photo-list__link" href="#">
-                  <img src="img/user-photo3.png" width="280" height="180" alt="">
+                  <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="">
                 </a>
                 <figcaption class="photo-list__description">
                   <p class="photo-list__text">
-                    <span class="photo-list__author">Антон (12 часов назад)</span>
+                    <span class="photo-list__author">Антон</span>
+                    <span class="photo-list__time">(12 часов назад)</span>
                     Соседи будут рады!
                   </p>
                   <button class="photo-list__button" type="button">Лайк</button>
@@ -88,11 +92,12 @@
             <li class="photo-list__item">
               <figure class="photo-list__image">
                 <a class="photo-list__link" href="#">
-                  <img src="img/user-photo4.png" width="280" height="180" alt="">
+                  <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="">
                 </a>
                 <figcaption class="photo-list__description">
                   <p class="photo-list__text">
-                    <span class="photo-list__author">Борис (20 часов назад)</span>
+                    <span class="photo-list__author">Борис</span>
+                    <span class="photo-list__time">(20 часов назад)</span>
                     Здесь могла быть ваша цитата о высоком и вечном.
                   </p>
                   <button class="photo-list__button" type="button">Лайк</button>
@@ -103,11 +108,12 @@
             <li class="photo-list__item">
               <figure class="photo-list__image">
                 <a class="photo-list__link" href="#">
-                  <img src="img/user-photo5.png" width="280" height="180" alt="">
+                  <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="">
                 </a>
                 <figcaption class="photo-list__description">
                   <p class="photo-list__text">
-                    <span class="photo-list__author">Сергей (25 часов назад)</span>
+                    <span class="photo-list__author">Сергей</span>
+                    <span class="photo-list__time">(25 часов назад)</span>
                       Самая кубанская в мире!
                   </p>
                   <button class="photo-list__button" type="button">Лайк</button>
@@ -118,11 +124,12 @@
             <li class="photo-list__item">
               <figure class="photo-list__image">
                 <a class="photo-list__link" href="#">
-                  <img src="img/user-photo6.png" width="280" height="180" alt="">
+                  <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="">
                 </a>
                 <figcaption class="photo-list__description">
                   <p class="photo-list__text">
-                    <span class="photo-list__author">Максим (40 часов назад)</span>
+                    <span class="photo-list__author">Максим</span>
+                    <span class="photo-list__time">(40 часов назад)</span>
                     Где снег-то?
                   </p>
                   <button class="photo-list__button" type="button">Лайк</button>
@@ -133,11 +140,12 @@
             <li class="photo-list__item">
               <figure class="photo-list__image">
                 <a class="photo-list__link" href="#">
-                  <img src="img/user-photo7.png" width="280" height="180" alt="">
+                  <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="">
                 </a>
                 <figcaption class="photo-list__description">
                   <p class="photo-list__text">
-                    <span class="photo-list__author">Надежда (45 часов назад)</span>
+                    <span class="photo-list__author">Надежда</span>
+                    <span class="photo-list__time">(45 часов назад)</span>
                     Всем GM и взаимные лайки!
                   </p>
                   <button class="photo-list__button" type="button">Лайк</button>
@@ -150,30 +158,30 @@
             Затмите их всех!Выкладывайте все,
             что накопилось в телефоне!
           </p>
-        </div>  
+        </div>
       </section>
       <section class="upload">
         <h2 class="visually-hidden">Загрузить фотографию</h2>
         <form class="upload__form" action="https://echo.htmlacademy.ru" method="GET">
-          <img class="upload__image" src="img/upload-photo.jpg" width="280" height="374" alt="Загруженное изображение">
+          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Загруженное изображение">
           <div class="upload__item">
             <label class="upload__icon upload__icon--crop" for="crop">Обрезать</label>
             <label class="upload__icon upload__icon--fill" for="fill">Заполнить</label>
             <label class="upload__icon upload__icon--contrast" for="contrast">Контраст</label>
           </div>
-          <div class="upload__item">  
+          <div class="upload__item">
             <input class="upload__range" type="range" id="crop" name="crop" min="0" max="100">
             <input class="upload__range" type="range" id="fill" name="fill" min="0" max="100">
             <input class="upload__range" type="range" id="contrast" name="contrast" min="0" max="100">
           </div>
           <button class="upload__button button" type="submit">Запостить</button>
           <button class="upload__button button" type="button">Отмена</button>
-        </form>  
+        </form>
       </section>
-    </main>  
+    </main>
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="img/pink.svg" width="147" height="40" alt="Логотип Pink">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -194,4 +202,4 @@
       </div>
     </footer>
   </body>
-</html>     
+</html>
