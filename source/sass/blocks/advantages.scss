@@ -2,7 +2,7 @@
   width: 320px;
   margin: 0 auto;
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: $bg-grey;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@
   padding-top: 46px;
   font-weight: 300;
   font-size: 24px;
-  background-color: #ffffff;
+  background-color: $bg-white;
 }
 
 .advantages__list {
@@ -25,12 +25,13 @@
   padding-left: 34px;
   padding-right: 34px;
   padding-top: 39px;
+
   &:last-child {
     padding-bottom: 322px;
   }
 }
 
 .advantages__title {
-  color: #000000;
+  color: $text-black;
   font-weight: 700;
 }
