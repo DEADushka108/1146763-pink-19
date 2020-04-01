@@ -2,20 +2,23 @@
   text-align: center;
   padding-left: 44px;
   padding-right: 39px;
-  &__title {
-    font-size: 24px;
-    font-weight: 300;
-  }
-  &__text {
-    font-weight: 700;
-  }
-  &__phone,
-  &__email,
-  &__adress {
-    display: block;
-    color: #d22856;
-    font-size: 24px;
-    font-weight: 300;
-    margin-bottom: 28px;
-  }
+}
+
+.contacts__title {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.contacts__text {
+  font-weight: 700;
+}
+
+.contacts__phone,
+.contacts__email,
+.contacts__adress {
+  display: block;
+  color: #d22856;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 28px;
 }

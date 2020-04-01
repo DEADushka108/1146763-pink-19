@@ -1,18 +1,6 @@
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Opensans, Arial, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  font-stretch: normal;
-  letter-spacing: normal;
-  color: #283645;
-  background-color: #ffffff;
-}
-
-@import "fonts.scss";
-@import "visually-hidden.scss";
+@import "blocks/body.scss";
+@import "blocks/fonts.scss";
+@import "blocks/visually-hidden.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";

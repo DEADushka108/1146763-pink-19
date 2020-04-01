@@ -6,28 +6,31 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: bottom;
   background-repeat: no-repeat;
-  &__text-promo {
-    padding-top: 46px;
-    font-weight: 300;
-    font-size: 24px;
-    background-color: #ffffff;
-  }
-  &__list {
-    padding: 0;
-    list-style: none;
-    font-size: 18px;
-  }
-  &__item {
-    padding-left: 34px;
-    padding-right: 34px;
-    padding-top: 39px;
-  }
-  &__title {
-    color: #000000;
-    font-weight: 700;
+}
+
+.advantages__text-promo {
+  padding-top: 46px;
+  font-weight: 300;
+  font-size: 24px;
+  background-color: #ffffff;
+}
+
+.advantages__list {
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+}
+
+.advantages__item {
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-top: 39px;
+  &:last-child {
+    padding-bottom: 322px;
   }
 }
 
-.advantages__item:last-child {
-  padding-bottom: 322px;
+.advantages__title {
+  color: #000000;
+  font-weight: 700;
 }

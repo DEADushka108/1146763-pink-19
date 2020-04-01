@@ -4,23 +4,25 @@
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 0 115px;
-  &__text-promo {
-    display: block;
-    margin: 0 auto;
-    width: 221px;
-    text-align: center;
-    color: #ffffff;
-    font-weight: 300;
-    padding-top: 28px;
-    padding-bottom: 347px;
-  }
-  &__text {
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-  }
-  &__store {
-    list-style: none;
-  }
 }
 
+.intro__text-promo {
+  display: block;
+  margin: 0 auto;
+  width: 221px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  padding-top: 28px;
+  padding-bottom: 347px;
+}
+
+.intro__text {
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+}
+
+.intro__store {
+  list-style: none;
+}

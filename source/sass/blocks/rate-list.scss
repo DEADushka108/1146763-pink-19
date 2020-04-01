@@ -1,23 +1,26 @@
 .rate-list {
   background-color: #f2f2f2;
   width: 828px;
-  &__item {
-    width: 276px;
-  }
-  &__name {
-    padding-top: 23px;
-    padding-bottom: 21px;
-    color: #ffffff;
-    background-color: #283645;
-    font-weight: 700;
-    text-align: center;
-  }
-  &__ability {
-    padding-top: 22px;
-    padding-bottom: 23px;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-align: left;
-    background-color: #ffffff;
-  }
+}
+
+.rate-list__item {
+  width: 276px;
+}
+
+.rate-list__name {
+  padding-top: 23px;
+  padding-bottom: 21px;
+  color: #ffffff;
+  background-color: #283645;
+  font-weight: 700;
+  text-align: center;
+}
+
+.rate-list__ability {
+  padding-top: 22px;
+  padding-bottom: 23px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: left;
+  background-color: #ffffff;
 }
