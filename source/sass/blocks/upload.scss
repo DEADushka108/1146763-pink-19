@@ -1,0 +1,13 @@
+.upload {
+  margin: 0 auto;
+  background-color: $bg-grey;
+}
+
+.upload__form {
+  text-align: center;
+}
+
+.upload__item {
+  display: flex;
+  justify-content: space-around;
+}

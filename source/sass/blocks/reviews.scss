@@ -1,0 +1,20 @@
+.reviews {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reviews__list {
+  list-style: none;
+}
+
+.reviews__author-name {
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+}
