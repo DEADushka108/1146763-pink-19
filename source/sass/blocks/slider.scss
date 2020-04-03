@@ -1,0 +1,23 @@
+.slider {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.slider__list {
+  display: flex;
+  list-style: none;
+}
+
+.slide-list .active {
+  display: block;
+}
+
+.slider__item {
+  display: none;
+  width: auto;
+  box-sizing: border-box;
+
+  &--active {
+    display: block;
+  }
+}

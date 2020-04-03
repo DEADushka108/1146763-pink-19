@@ -1,0 +1,27 @@
+.notice {
+  width: 295px;
+  margin: 0 auto;
+  padding-left: 329px;
+  padding-right: 20px;
+}
+
+.notice__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.notice__text {
+  font-size: 14px;
+}
+
+.notice__link {
+  color: $firm-pink;
+  text-decoration: none;
+}
+
+@media (min-width: $desktop-width) {
+  .notice {
+    width: 525px;
+    padding-right: 130px;
+  }
+}

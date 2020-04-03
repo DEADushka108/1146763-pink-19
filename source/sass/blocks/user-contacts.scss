@@ -1,0 +1,9 @@
+.user-contacts {
+  color: $firm-pink;
+}
+
+@media (min-width: $desktop-width) {
+  .user-contacts {
+    width: 936px;
+  }
+}

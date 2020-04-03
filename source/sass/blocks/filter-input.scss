@@ -1,0 +1,17 @@
+.filter-input {
+  background-color: $bg-grey;
+}
+
+.filter-input__option {
+  list-style: none;
+}
+
+.filter-input__title {
+  color: $firm-pink;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-input {
+    background-color: $bg-white;
+  }
+}

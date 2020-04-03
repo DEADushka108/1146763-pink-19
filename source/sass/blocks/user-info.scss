@@ -1,0 +1,10 @@
+.user-info__item {
+  color: $firm-pink;
+}
+
+@media (min-width: $desktop-width) {
+  .user-info {
+    width: 433px;
+    border: none;
+  }
+}

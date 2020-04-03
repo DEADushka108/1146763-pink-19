@@ -88,6 +88,13 @@
               </p>
             </li>
           </ul>
+          <div class="advantages__notice notice">
+            <h3 class="notice__title">Эффект на 24 часа!</h3>
+            <p class="notice__text">
+              Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+              <a class="notice__link">Узнать больше об исследовании</a>
+            </p>
+          </div>
         </div>
       </section><!--End Advantages-->
       <section class="reviews"><!--Reviews-->
@@ -104,7 +111,7 @@
             </blockquote>
           </div>
           <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
+            <blockquote class="reviews__item slider__item slider__item--active">
               <cite class="reviews__author-name">Николай Петров</cite><!--Пока не видно другие отзывы на макетах-->
               <p class="reviews__text">
                 Это приложение перевернуло мой мир и позволило по-новому
@@ -163,26 +170,52 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__contacts contacts">
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__list">
           <b class="contacts__title">Остались вопросы? Свяжитесь с нами!</b>
           <p class="contacts__text">
             Звоните:
             <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </p>
+          <p class="contacts__text">
             Пишите:
             <a class="contacts__email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="contacts__text">
             Приезжайте в гости:
             <span class="contacts__adress">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</span>
           </p>
         </div>
-        <div class="page-footer__map">
+        <div class="contacts__map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716385143!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1582307010902!5m2!1sru!2sru"
             height="100" allowfullscreen=""
             title="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </iframe>
         </div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="">Мы в YouTube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>

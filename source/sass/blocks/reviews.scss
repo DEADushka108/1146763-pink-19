@@ -1,6 +1,8 @@
 .reviews {
   width: 320px;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
 }
 
@@ -17,4 +19,18 @@
 .reviews__text {
   font-size: 14px;
   line-height: 30px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }

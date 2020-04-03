@@ -1,5 +1,6 @@
 .intro {
   width: 320px;
+  min-height: 729px;
   margin: 0 auto;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
@@ -25,4 +26,35 @@
 
 .intro__store {
   list-style: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .intro {
+    width: auto;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: right bottom;
+  }
+
+  .intro__wrapper {
+    width: 300px;
+  }
+
+  .intro__text-promo {
+    font-size: 40px;
+    line-height: normal;
+    padding-bottom: 39px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: right bottom;
+  }
+
+  .intro__text-promo {
+    font-size: 50px;
+    line-height: normal;
+  }
 }

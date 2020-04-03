@@ -1,0 +1,9 @@
+.user-comment {
+  color: $firm-pink;
+}
+
+@media (min-width: $desktop-width) {
+  .user-comment {
+    width: 936px;
+  }
+}
