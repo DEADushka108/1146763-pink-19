@@ -36,10 +36,3 @@
     border: 2px solid $border-grey;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .contest-form {
-    padding-left: 130px;
-    padding-right: 130px;
-  }
-}

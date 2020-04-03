@@ -1,11 +1,54 @@
 .store-list {
   padding: 0;
+  margin-left: 47px;
+  width: 205px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
 }
 
 .store-list__item {
-  width: 50px;
-  height: 50px;
+  position: relative;
+  width: 47px;
+  height: 55px;
+  padding-top: 32px;
+}
+
+.store-list__link::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.store-list__link--appstore::before {
+  width: 47px;
+  height: 55px;
+  background-image: url("../img/logo-apple.svg");
+}
+
+.store-list__link--googlestore::before {
+  width: 43px;
+  height: 47px;
+  background-image: url("../img/logo-android.svg");
+}
+
+.store-list__link--windowsstore::before {
+  width: 44px;
+  height: 41px;
+  background-image: url("../img/logo-microsoft.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .store-list__item {
+    padding-top: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .store-list__item {
+    padding-top: 67px;
+  }
 }

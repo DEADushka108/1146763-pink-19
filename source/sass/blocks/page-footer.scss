@@ -17,15 +17,14 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    width: 660px;
     display: flex;
     justify-content: space-between;
-    width: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding-right: 130px;
-    padding-left: 130px;
+    width: 980px;
   }
 }
