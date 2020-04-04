@@ -32,13 +32,13 @@
     </header><!--End header-->
     <main class="page-main">
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <section class="contest-form">
+      <section class="contest">
         <h2 class="visually-hidden">Анкета участника конкурса</h2>
-        <form action="https://echo.htmlacademy.ru" method="GET">
-          <p class="contest-form__text">Поделитесь своей историей и получите шанс выиграть
+        <form class="contest__form" action="https://echo.htmlacademy.ru" method="GET">
+          <p class="contest__text">Поделитесь своей историей и получите шанс выиграть
             ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
           </p>
-          <fieldset class="contest-form__item user-info">
+          <fieldset class="contest__item user-info">
             <legend class="visually-hidden">Расскажите о себе</legend>
             <p class="user-info__item">
               <label for="user-surname">Фамилия:</label>
@@ -53,7 +53,7 @@
               <input id="user-patronym" type="text" name="patronym" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
-          <fieldset class="contest-form__item filter-input">
+          <fieldset class="contest__item filter-input">
             <legend class="filter-input__title">Ваши безбашенные достижения в путешествии</legend>
               <ul>
                 <li class="filter-input__option">
@@ -82,7 +82,7 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset class="contest-form__item user-contacts">
+          <fieldset class="contest__item user-contacts">
             <legend class="visually-hidden">Расскажите о себе</legend>
             <p class="user-contacts__item">
               <label for="user-phone">Номер телефона</label>
@@ -110,36 +110,46 @@
                 </li>
             </ul>
           </fieldset>
-          <fieldset class="contest-form__item user-comment">
+          <fieldset class="contest__item user-comment">
             <p>
               <label for="comment-field">Опишите свои эмоции</label>
               <textarea name="comment" id="comment-field" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </fieldset>
-          <button class="contest-form__button button" type="submit">Показать</button>
+          <button class="contest__button button" type="submit">Показать</button>
         </form>
       </section>
     </main>
     <footer class="page-footer page-footer--active">
-      <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Мы в YouTube</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="">
+                <span class="visually-hidden">Мы в Твиттере</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="">
+              <span class="visually-hidden">Мы в YouTube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
+        </div>
       </div>
     </footer>
   </body>

@@ -1,14 +1,9 @@
 .gallery {
-  width: 100%;
-  background-color: $bg-white;
-  padding-top: 36px;
-}
-
-.gallery-wrapper {
   width: 320px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  background-color: $bg-white;
+  padding-top: 36px;
+  padding-bottom: 40px;
 }
 
 .gallery__text {
@@ -30,8 +25,13 @@
 
 
 @media (min-width: $tablet-width) {
-  .gallery-wrapper {
+  .gallery {
     width: auto;
+  }
+
+  .gallery__wrapper {
+    width: 660px;
+    margin: 0 auto;
   }
 
   .gallery__text {
@@ -42,6 +42,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .gallery__wrapper {
+    width: 1200px;
+  }
+
   .gallery__text {
     padding-left: 316px;
     padding-right: 316px;

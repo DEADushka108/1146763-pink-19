@@ -1,4 +1,31 @@
 .prices {
+  width: 320px;
   background-color: #f2f2f2;
   text-align: center;
+  overflow: hidden;
+}
+
+.prices__rate {
+  transform: translateX(-230px);
+}
+
+@media (min-width: $tablet-width) {
+  .prices {
+    width: auto;
+  }
+
+  .prices__rate {
+    transform: none;
+  }
+
+  .prices__wrapper {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .prices__wrapper {
+    width: 980px;
+  }
 }

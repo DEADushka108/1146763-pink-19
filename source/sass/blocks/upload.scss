@@ -1,13 +1,33 @@
 .upload {
+  width: 320px;
   margin: 0 auto;
   background-color: $bg-grey;
 }
 
 .upload__form {
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
 }
 
 .upload__item {
   display: flex;
   justify-content: space-around;
+}
+
+@media (min-width: $tablet-width) {
+  .upload {
+    width: auto;
+  }
+
+  .upload__form {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .upload__form {
+    width: 980px;
+  }
 }

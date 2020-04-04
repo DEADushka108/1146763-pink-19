@@ -1,7 +1,4 @@
-.contest-form {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.contest {
   width: 320px;
   margin: 0 auto;
   padding-left: 20px;
@@ -9,30 +6,47 @@
   background-color: $bg-white;
 }
 
-.contest-form__item {
+.contest__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contest__item {
   border: none;
   width: 300px;
 }
 
-.contest-form__text {
+.contest__text {
   text-align: center;
   font-size: 14px;
 }
 
 @media (min-width: $tablet-width) {
-  .contest-form {
+  .contest {
     width: auto;
   }
 
-  .contest-form__text {
+  .contest__form {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .contest__text {
     font-size: 18px;
   }
 
-  .contest-form__item {
+  .contest__item {
     width: 616px;
   }
 
-  .contest-form__item:not(:first-of-type) {
+  .contest__item:not(:first-of-type) {
     border: 2px solid $border-grey;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest__form {
+    width: 980px;
   }
 }
