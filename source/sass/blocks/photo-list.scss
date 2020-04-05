@@ -67,7 +67,7 @@
   }
 
   .photo-list__item:first-child .photo-list__description {
-    width: 940px;
+    width: 620px;
   }
 
   .photo-list__item:not(:first-child) .photo-list__link {
@@ -115,6 +115,10 @@
 
   .photo-list__item:not(:first-child) .photo-list__link {
     height: 400px;
+  }
+
+  .photo-list__item:first-child .photo-list__description {
+    width: 940px;
   }
 
   .photo-list__item {

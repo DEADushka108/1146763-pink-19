@@ -1,3 +1,10 @@
+.copyright {
+  width: 128px;
+  padding-top: 26px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .copyright__link {
   position: relative;
 
@@ -5,11 +12,17 @@
     position: absolute;
     content: "";
     top: 0;
-    left: 0;
+    left: 15px;
     width: 27px;
     height: 34px;
     background-image: url("../img/logo-htmlacademy.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    font-size: 18px;
   }
 }

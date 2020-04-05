@@ -1,9 +1,17 @@
 .social__list {
-  width: 235px;
-  padding-right: 26px;
+  width: 172px;
+  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0;
   list-style: none;
   display: flex;
   justify-content: space-around;
+}
+
+.social__item {
+  padding: 0;
+  margin: 0;
 }
 
 .social__link {
@@ -13,10 +21,9 @@
     position: absolute;
     content: "";
     top: 0;
-    left: 0;
+    left: -26px;
     width: 46px;
     height: 46px;
-    line-height: 46px;
     background-color: #fefefe;
     background-repeat: no-repeat;
     border: 3px solid transparentize($firm-blue, 0.1);
