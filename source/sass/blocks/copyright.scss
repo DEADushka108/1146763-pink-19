@@ -1,5 +1,7 @@
 .copyright {
-  width: 128px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 128px;
   padding-top: 26px;
   font-size: 14px;
   line-height: 18px;
@@ -7,12 +9,14 @@
 
 .copyright__link {
   position: relative;
+  width: 27px;
+  height: 34px;
 
   &::before {
     position: absolute;
     content: "";
     top: 0;
-    left: 15px;
+    left: 0;
     width: 27px;
     height: 34px;
     background-image: url("../img/logo-htmlacademy.svg");
@@ -24,5 +28,9 @@
 @media (min-width: $desktop-width) {
   .copyright {
     font-size: 18px;
+  }
+
+  .copyright__text {
+    padding-right: 15px;
   }
 }

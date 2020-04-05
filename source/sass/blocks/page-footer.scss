@@ -3,7 +3,8 @@
   width: 320px;
   min-height: 127px;
   margin: 0 auto;
-
+  padding-left: 20px;
+  padding-right: 20px;
 
   &--active {
     display: block;
@@ -16,8 +17,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .page-footer__logo {
@@ -35,6 +34,8 @@
     flex-direction: row;
     width: 660px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
