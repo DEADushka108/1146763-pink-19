@@ -8,6 +8,6 @@ function toggleMenu (toggle, menu) {
   });
 }
 
-// btnMenu.classList.toggle("main-nav__toggle--close");
-// menu.classList.toggle("main-nav__list--open");
+btnMenu.classList.toggle("main-nav__toggle--close");
+siteMenu.classList.toggle("main-nav__list--open");
 toggleMenu (btnMenu, siteMenu);
