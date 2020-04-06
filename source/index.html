@@ -12,21 +12,23 @@
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"  alt="Логотип Pink">
         </a>
         <nav class="main-nav"><!--Navigation-->
-          <button class="main-nav__toggle" type="button">Открыть меню</button><!--Hamburger-->
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a class="site-list__link">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a  class="site-list__link" href="photo.html">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                <a  class="site-list__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-              </li>
-            </ul>
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button><!--Hamburger-->
+          <ul class="main-nav__list main-nav__list--open">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a  class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a  class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
         </nav><!--End navigation-->
       </div>
     </header><!--End header-->
@@ -234,5 +236,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
