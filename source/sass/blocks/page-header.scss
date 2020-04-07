@@ -1,11 +1,15 @@
 .page-header {
   position: relative;
+  width: auto;
+  background-color: $firm-blue;
+  z-index: 1;
+}
+
+.page-header__wrapper {
   width: 320px;
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: $firm-blue;
-  z-index: 1;
 }
 
 .page-header__logo {
@@ -20,7 +24,7 @@
   }
 
   .page-header__wrapper {
-    width: 660px;
+    width: 620px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -49,8 +53,6 @@
   .page-header__wrapper {
     width: 980px;
     flex-direction: row;
-    // display: flex;
-    // justify-content: space-between;
   }
 
   .page-header__logo {

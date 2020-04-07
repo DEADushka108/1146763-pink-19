@@ -1,10 +1,15 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  min-width: 128px;
+  width: 128px;
   padding-top: 26px;
   font-size: 14px;
   line-height: 18px;
+  box-sizing: border-box;
+}
+
+.copyright__text {
+  display: block;
 }
 
 .copyright__link {
@@ -12,7 +17,7 @@
   width: 27px;
   height: 34px;
 
-  &::before {
+  &::after {
     position: absolute;
     content: "";
     top: 0;

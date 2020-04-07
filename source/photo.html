@@ -167,18 +167,20 @@
         <h2 class="visually-hidden">Загрузить фотографию</h2>
         <form class="upload__form" action="https://echo.htmlacademy.ru" method="GET">
           <img class="upload__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Загруженное изображение">
-          <div class="upload__item">
-            <label class="upload__icon upload__icon--crop" for="crop">Обрезать</label>
-            <label class="upload__icon upload__icon--fill" for="fill">Заполнить</label>
-            <label class="upload__icon upload__icon--contrast" for="contrast">Контраст</label>
+          <div class="upload__wrapper">  
+            <div class="upload__item">
+              <label class="upload__icon upload__icon--crop upload__icon--active" for="crop">Обрезать</label>
+              <label class="upload__icon upload__icon--fill" for="fill">Заполнить</label>
+              <label class="upload__icon upload__icon--contrast" for="contrast">Контраст</label>
+            </div>
+            <div class="upload__item">
+              <input class="upload__range upload__range--active" type="range" id="crop" name="crop" min="0" max="100">
+              <input class="upload__range" type="range" id="fill" name="fill" min="0" max="100">
+              <input class="upload__range" type="range" id="contrast" name="contrast" min="0" max="100">
+            </div>
+            <button class="upload__button button" type="submit">Запостить</button>
+            <button class="upload__button button" type="button">Отмена</button>
           </div>
-          <div class="upload__item">
-            <input class="upload__range" type="range" id="crop" name="crop" min="0" max="100">
-            <input class="upload__range" type="range" id="fill" name="fill" min="0" max="100">
-            <input class="upload__range" type="range" id="contrast" name="contrast" min="0" max="100">
-          </div>
-          <button class="upload__button button" type="submit">Запостить</button>
-          <button class="upload__button button" type="button">Отмена</button>
         </form>
       </section>
     </main>

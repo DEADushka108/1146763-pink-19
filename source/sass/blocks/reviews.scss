@@ -1,10 +1,15 @@
 .reviews {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  background-color: $bg-white;
+}
+
+.reviews__wrapper {
   width: 320px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  text-align: center;
-  background-color: $bg-white;
 }
 
 .reviews__list {
@@ -29,8 +34,7 @@
   }
 
   .reviews__wrapper {
-    width: 660px;
-    margin: 0 auto;
+    width: 620px;
   }
 }
 

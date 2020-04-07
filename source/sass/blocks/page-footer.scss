@@ -1,11 +1,9 @@
 .page-footer {
   display: none;
-  width: 320px;
-  min-height: 127px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-
+  width: auto;
+  margin: 0;
+  padding: 0;
+  
   &--active {
     display: block;
   }
@@ -17,25 +15,26 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  box-sizing: border-box;
+  width: 320px;
+  min-height: 127px;
+  margin: 0 auto;
 }
 
 .page-footer__logo {
+  display: block;
   width: 147px;
   height: 40px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    width: auto;
     display: block;
   }
 
   .page-footer__wrapper {
     flex-direction: row;
-    width: 660px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 620px;
   }
 }
 

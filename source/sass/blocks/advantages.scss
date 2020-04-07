@@ -1,5 +1,5 @@
 .advantages {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
   padding-bottom: 320px;
   text-align: center;
@@ -7,6 +7,13 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-position: bottom;
   background-repeat: no-repeat;
+}
+
+.advantages__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .advantages__text-promo {
@@ -42,11 +49,11 @@
     width: auto;
     padding-bottom: 0;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-position: left;
+    background-position: left 100px top 50%;
   }
 
   .advantages__wrapper {
-    width: 660px;
+    width: 620px;
     margin: 0 auto;
   }
 
