@@ -8,10 +8,6 @@
   list-style: none;
 }
 
-.slide-list .active {
-  display: block;
-}
-
 .slider__item {
   display: none;
   width: auto;
@@ -19,5 +15,40 @@
 
   &--active {
     display: block;
+  }
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  padding: 0;
+}
+
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  margin: 0 10px;
+  padding: 0;
+  border: none;
+  background-color: $firm-blue;
+  opacity: 0.3;
+  border-radius: 50%;
+
+  &--active {
+    opacity: 1;
+    border: 3px solid $firm-blue;
+    background-color: $bg-white;
+    border-radius: 50%;
+    box-sizing: content-box;
+  }  
+
+  &:hover {
+    opacity: 1;
+  }  
+  
+  &:active {
+    opacity: 0.1;
   }
 }

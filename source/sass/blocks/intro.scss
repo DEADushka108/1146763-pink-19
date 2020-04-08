@@ -1,6 +1,5 @@
 .intro {
   width: auto;
-  margin: 0 auto;
 }
 
 .intro__wrapper {
@@ -10,7 +9,12 @@
   padding-right: 20px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 92px;
+  background-position: 19px 109px;
+  min-height: 603px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
  
 }
 
@@ -20,9 +24,6 @@
   text-align: center;
   color: $text-white;
   font-weight: 300;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 28px;
   padding-bottom: 347px;
 }
 
@@ -31,8 +32,8 @@
   text-align: center;
   font-size: 14px;
   font-weight: 300;
-  width: 229px;
-  padding-top: 28px;
+  width: 250px;
+  // padding-top: 10px;
 }
 
 .intro__store {
@@ -44,8 +45,7 @@
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
-  min-height: 55px;
-  padding: 20px 39px 17px 40px;
+  padding: 17px 39px 14px 40px;
   border-radius: 35px;
   text-align: center;
   color: $text-white;
@@ -54,6 +54,15 @@
   background-color: transparent;
   border: 3px solid $border-white;
   cursor: pointer;
+
+  &:hover {
+    color: $firm-pink;
+    background-color: $bg-white;
+
+  &:active {
+    color: rgba($firm-pink, 0.3);
+  }  
+  }
 }
 
 

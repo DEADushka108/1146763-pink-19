@@ -6,20 +6,24 @@
 .contest__form {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   flex-wrap: wrap;
-  width: 320px;
+  align-items: center;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .contest__item {
-  border: none;
-  width: 300px;
+  text-align: left;
+  border-style: none;
 }
 
 .contest__text {
   text-align: center;
+  padding-left: 22px;
+  padding-right: 22px;
+  width: 281px;
+  height: 75px;
+  overflow: hidden;
   font-size: 14px;
 }
 

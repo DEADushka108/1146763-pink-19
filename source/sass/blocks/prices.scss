@@ -1,19 +1,39 @@
 .prices {
   width: auto;
   background-color: $bg-grey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
   text-align: center;
 }
 
 .prices__wrapper {
   width: 320px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 84px;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .prices__rate {
-  transform: translateX(-230px);
+  transform: translateX(0);
+}
+
+.prices__rate--base {
+  transform: translateX(280px);
+}
+
+.prices__rate--standart {
+  transform: translateX(0);
+}
+
+.prices__rate--unlim {
+  transform: translateX(-280px);
 }
 
 @media (min-width: $tablet-width) {

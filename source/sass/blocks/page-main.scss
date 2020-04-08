@@ -1,5 +1,7 @@
 .page-main {
   position: relative;
+  margin: 0;
+  padding: 0;
   top: -66px;
   width: auto;
   padding-top: 66px;
@@ -10,13 +12,11 @@
 }
 
 .page-main__title {
+  width: 230px;
   padding: 0;
   margin: 0 auto;
-  min-height: 185px;
   padding-top: 35px;
-  padding-left: 76px;
-  padding-right: 76px;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;

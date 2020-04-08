@@ -1,8 +1,6 @@
 .social__list {
   width: 172px;
   padding: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
   margin: 0;
   list-style: none;
   display: flex;
@@ -13,40 +11,44 @@
 .social__item {
   padding: 0;
   margin: 0;
-  width: 46px;
-  height: 46px;
+  box-sizing: border-box;
 }
 
 .social__link {
-  position: relative;
+  display: inline-block;
+  vertical-align: middle;
   width: 46px;
   height: 46px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $bg-white;
+  border: 3px solid rgba($firm-blue, 0.1);
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 40px;
-    height: 40px;
-    background-color: #fefefe;
-    background-repeat: no-repeat;
-    border: 3px solid transparentize($firm-blue, 0.1);
-    border-radius: 50%;
+  &:hover {
+    border: 3px solid $firm-blue;
   }
 
-  &--twitter::before {
+  &:active {
+    opacity: 0.3;
+    border: 3px solid rgba($firm-blue, 0.1);
+  }
+
+  &--twitter {
     background-image: url("../img/icon-twitter.svg");
-    background-position: center;
   }
 
-  &--facebook::before {
+  &--facebook {
     background-image: url("../img/icon-facebook.svg");
-    background-position: center;
+    margin-right: 17px;
+    margin-left: 17px;
   }
 
-  &--youtube::before {
+  &--youtube {
     background-image: url("../img/icon-youtube.svg");
-    background-position: center;
+    background-position: left 14px center;
   }
 }

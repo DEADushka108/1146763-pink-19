@@ -1,6 +1,5 @@
 .store-list {
   padding: 0;
-  margin-left: 47px;
   width: 205px;
   display: flex;
   justify-content: space-between;
@@ -11,7 +10,7 @@
   position: relative;
   width: 47px;
   height: 55px;
-  padding-top: 32px;
+  padding-top: 12px;
 }
 
 .store-list__link::before {
