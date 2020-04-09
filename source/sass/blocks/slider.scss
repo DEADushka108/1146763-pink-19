@@ -52,3 +52,10 @@
     opacity: 0.1;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .slider__item--active {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

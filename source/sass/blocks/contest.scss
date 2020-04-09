@@ -4,6 +4,7 @@
 }
 
 .contest__form {
+  width: auto;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -13,7 +14,6 @@
 }
 
 .contest__item {
-  text-align: left;
   border-style: none;
 }
 
@@ -25,6 +25,38 @@
   height: 75px;
   overflow: hidden;
   font-size: 14px;
+}
+
+.contest__button {
+  width: 280px;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 17px 39px 14px 40px;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-white;
+  font-weight: 700;
+  background-color: $light-green;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+    
+  &:active {
+    color: rgba($text-white, 0.3);
+  }
+}
+
+.contest__modal {
+  display: none;
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {

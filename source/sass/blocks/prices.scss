@@ -37,16 +37,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .prices {
-    width: auto;
-  }
-
-  .prices__rate {
-    transform: none;
-  }
-
   .prices__wrapper {
     width: 620px;
+  }
+
+  .prices .prices__toggles {
+    display: none;
   }
 }
 

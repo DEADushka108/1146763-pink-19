@@ -1,5 +1,41 @@
 .user-comment {
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  line-height: 30px;
   color: $firm-pink;
+}
+
+.user-comment__label {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.user-comment__item {
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 30px;
+  color: $firm-pink;
+}
+
+.user-comment__input {
+  width: 100%;
+  padding: 17px 22px 18px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid $border-grey;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: $firm-blue; 
+  }
+
+  &:focus {
+    border-color: $firm-pink;
+  }
 }
 
 @media (min-width: $desktop-width) {
