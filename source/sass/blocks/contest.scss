@@ -51,7 +51,7 @@
   &:hover {
     background-color: $dark-green;
   }
-    
+
   &:active {
     color: rgba($text-white, 0.3);
   }
@@ -70,13 +70,13 @@
     width: 660px;
     align-items: stretch;
   }
-  
+
   .contest__legend {
     display: inline;
     text-transform: uppercase;
     color: $firm-pink;
     text-align: center;
-}
+  }
 
   .contest__text {
     width: 500px;
