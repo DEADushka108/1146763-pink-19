@@ -33,17 +33,23 @@
 }
 
 .range--crop .range__toggle {
-  left: 100px;
+  left: 75%;
 }
 
 .range--fill .range__toggle {
-  left: 20px;
+  left: 50%;
 }
 
 .range--contrast .range__toggle {
-  left: 10px;
+  left: 25%;
 }
 
 .range__toggle--grey {
   background-color: $bg-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .range {
+    margin: 0;
+  }
 }

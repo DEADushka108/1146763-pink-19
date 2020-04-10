@@ -114,7 +114,9 @@
 
 @media (min-width: $tablet-width) {
   .rate {
-    width: 620px;
+    width: 660px;
+    margin: 0 auto;
+    padding-bottom: 20px;
   }
 
   .rate__feature-name {
@@ -123,8 +125,19 @@
 
   .rate__header {
     min-width: 100px;
-    padding-top: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
+
+  .rate__value {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
   .rate__option {
     width: 25%;
     text-align: center;
@@ -149,10 +162,17 @@
   .rate__feature {
     display: inline;
   }
+
+  .rate__feature-wrapper {
+    justify-content: center;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .prices__wrapper {
+  .rate {
     width: 980px;
+  }
+  .rate__option {
+    width: 234px;
   }
 }

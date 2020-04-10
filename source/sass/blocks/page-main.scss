@@ -5,6 +5,7 @@
   top: -66px;
   width: auto;
   padding-top: 66px;
+  margin-bottom: -66px;
   background-color: $firm-blue;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -33,11 +34,12 @@
   }
 
   .page-main__title {
+    display: block;
+    margin: 0 auto;
+    width: 480px;
     font-size: 50px;
     line-height: normal;
-    padding-left: 95px;
-    padding-right: 95px;
-    min-height: 330px;
+    min-height: 200px;
   }
 }
 

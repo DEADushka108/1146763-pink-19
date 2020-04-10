@@ -29,6 +29,27 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .user-info {
+    width: auto;
+    border: none;
+    order: 1;
+  }
+
+  .user-info__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 40px;
+  }
+
+  .user-info__input {
+    margin-left: 22px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .user-info {
     width: 433px;

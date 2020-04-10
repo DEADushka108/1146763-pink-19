@@ -22,7 +22,7 @@
 }
 
 .user-comment__input {
-  width: 100%;
+  width: auto;
   padding: 17px 22px 18px;
   font-size: 18px;
   line-height: 30px;
@@ -35,6 +35,27 @@
 
   &:focus {
     border-color: $firm-pink;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-comment {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    order: 5;
+  }
+
+  .user-comment__label {
+    display: none;
+  }
+
+  .user-comment__item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 

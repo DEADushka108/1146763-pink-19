@@ -43,10 +43,10 @@
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <section class="contest">
         <h2 class="visually-hidden">Анкета участника конкурса</h2>
+        <p class="contest__text">Поделитесь своей историей и получите шанс выиграть
+          ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        </p>
         <form class="contest__form" action="https://echo.htmlacademy.ru" method="GET">
-          <p class="contest__text">Поделитесь своей историей и получите шанс выиграть
-            ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
-          </p>
           <fieldset class="contest__item user-info">
             <legend class="visually-hidden">Расскажите о себе</legend>
             <p class="user-info__item">
@@ -62,8 +62,8 @@
               <input class="user-info__input" id="user-patronym" type="text" name="patronym" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
-          <fieldset class="contest__item filter-input">
-            <legend class="visually-hidden">Достижения</legend>
+          <fieldset class="contest__item filter-input filter-input--checkbox">
+            <legend class="contest__legend">Ваши безбашенные достижения в путешествии</legend>
             <p class="filter-input__label">
               Ваши безбашенные достижения в путешествии
             </p>
@@ -95,18 +95,20 @@
               </ul>
           </fieldset>
           <fieldset class="contest__item user-contacts">
-            <legend class="visually-hidden">Расскажите о себе</legend>
-            <p class="user-contacts__item">
-              <label for="user-phone">Номер телефона:</label>
-              <input class="user-contacts__input" id="user-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
-            </p>
-            <p class="user-contacts__item">
-              <label for="user-email">Имя:</label>
-              <input class="user-contacts__input" id="user-email" type="email" name="email" placeholder="Введите почту" required>
-            </p>
+            <legend class="contest__legend">Контактная информация</legend>
+            <div class="user-contacts__wrapper">
+              <p class="user-contacts__item user-contacts__item--phone">
+                <label class="user-contacts__label" for="user-phone">Номер телефона:</label>
+                <input class="user-contacts__input" id="user-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
+              </p>
+              <p class="user-contacts__item user-contacts__item--email">
+                <label class="user-contacts__label" for="user-email">Имя:</label>
+                <input class="user-contacts__input" id="user-email" type="email" name="email" placeholder="Введите почту" required>
+              </p>
+            </div>
           </fieldset>
-          <fieldset class="contest__item filter-input">
-            <legend class="visually-hidden">Приложение</legend>
+          <fieldset class="contest__item filter-input filter-input--radio">
+            <legend class="contest__legend">С каким приложением путешествовали?</legend>
               <p class="filter-input__label">
                 С каким приложением путешествовали?
               </p>
@@ -126,6 +128,7 @@
             </ul>
           </fieldset>
           <fieldset class="contest__item user-comment">
+            <legend class="contest__legend">Опишите свои эмоции</legend>
             <p class="user-comment__item">
               <label class="user-comment__label" for="comment-field">Опишите свои эмоции</label>
               <textarea class="user-comment__input" name="comment" id="comment-field" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>

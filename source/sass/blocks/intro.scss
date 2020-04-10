@@ -5,8 +5,6 @@
 .intro__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 19px 109px;
@@ -67,10 +65,10 @@
 
 @media (min-width: $tablet-width) {
   .intro__wrapper {
-    width: 620px;
+    width: 660px;
     min-height: 545px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: -35px 74px;
+    background-position: -15px 74px;
     align-items: flex-start;
   }
 
@@ -105,25 +103,11 @@
 @media (min-width: $desktop-width) {
   .intro__wrapper {
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: 16px 48px;
+    background-position: 46px 97px;
     width: 980px;
   }
 
-  .intro__text-promo {
-    padding-top: 55px;
-    padding-left: 36px;
-    font-size: 50px;
-    line-height: 50px;
-  }
-
-  .intro__button {
-    font-size: 21px;
-    padding: 19px 32px 16px 33px;
-  }
-
   .intro__text {
-    font-size: 18px;
-    width: 300px;
-    padding-top: 60px;
+    margin-bottom: 200px;
   }
 }

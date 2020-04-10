@@ -12,16 +12,17 @@
 
 .gallery__text {
   display: block;
+  width: 245px;
+  margin: 0 auto;
   text-align: center;
   margin-bottom: 56px;
-  padding-left: 38px;
-  padding-right: 38px;
   font-size: 14px;
 }
 
 .gallery__list {
+  width: auto;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   text-align: center;
 }
@@ -33,9 +34,8 @@
   }
 
   .gallery__text {
+    width: 440px;
     font-size: 18px;
-    padding-left: 112px;
-    padding-right: 112px;
   }
 }
 
@@ -45,7 +45,6 @@
   }
 
   .gallery__text {
-    padding-left: 316px;
-    padding-right: 316px;
+    width: 568px;
   }
 }

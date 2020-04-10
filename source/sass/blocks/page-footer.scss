@@ -52,7 +52,15 @@
 
   .page-footer__wrapper {
     flex-direction: row;
-    width: 620px;
+    width: 660px;
+  }
+
+  .page-footer__logo {
+    margin-left: 20px;
+  }
+
+  .page-footer__copyright {
+    margin-right: 20px;
   }
 }
 

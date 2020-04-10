@@ -123,6 +123,40 @@
 
 @media (min-width: $tablet-width) {
   .filter-input {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
     background-color: $bg-white;
+
+    &--checkbox {
+      order: 4;
+    }
+
+    &--radio {
+      order: 2;
+    }
+  }
+
+  .filter-input__label {
+    display: none;
+  }
+
+  .filter-input__option {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-input--checkbox .filter-input__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .filter-input__option {
+    flex-basis: 20%;
+    flex-grow: 1;
   }
 }

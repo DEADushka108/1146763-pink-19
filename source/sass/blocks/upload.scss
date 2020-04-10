@@ -10,8 +10,6 @@
   margin: 0;
   padding: 0;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: center;
 }
 
@@ -137,30 +135,70 @@
   .upload__form {
     display: flex;
     justify-content: space-between;
-    width: 620px;
+    width: 660px;
   }
 
-  .upload__wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-grow: 1;
-  }
-
-  .upload__item {
-    flex-basis: 20%;
-    flex-direction: column;
-  }
-
-  .upload__range {
-    flex-basis: 80%;
+  .upload__range-item {
     display: block;
   }
 
-  .upload__button {
-    margin-top: auto;
-    width: 300px;
-    min-height: 55px;
+  .upload__img {
+    padding-right: 47px;
+  }
+
+  .upload__controls {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .upload__link-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 162px;
+    flex-basis: 20%;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-top: 9px;
+  }
+
+  .upload__link {
+    width: 24px;
+    height: 24px;
+  }  
+
+  .upload__range {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 80%;
+    padding-top: 19px;
+    height: 140px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .upload__buttons {
+    margin-top: 60px;
+  }
+
+  .upload__link--crop {
+    background-image: url("../img/icon-editor-crop-on.svg");
+    background-size: 22px 22px;
+  }
+  
+  .upload__link--fill {
+    background-image: url("../img/icon-editor-fill-on.svg");
+    background-size: 24px 22px;
+  }
+  
+  .upload__link--contrast {
+    background-image: url("../img/icon-editor-contrast-on.svg");
+    background-size: 16px 16px;
   }
 }
 
@@ -169,13 +207,25 @@
     width: 980px;
   }
 
-  .upload__item {
-    flex-basis: 50%;
-    flex-direction: column;
+  .upload__link {
+    width: 48px;
+    height: 48px;
+  }
+
+  .upload__link--crop {
+    background-size: 44px 44px;
+  }
+  
+  .upload__link--fill {
+    background-size: 48px 43px;
+  }
+  
+  .upload__link--contrast {
+    background-size: 32px 32px;
   }
 
   .upload__range {
-    flex-basis: 50%;
-    display: block;
+    margin-top: 12px;
+    height: 120px;
   }
 }

@@ -58,8 +58,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .notice {
-    width: 525px;
-    padding-right: 130px;
+  .notice__wrapper {
+    width: 550px;
   }
 }
+
