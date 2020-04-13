@@ -62,11 +62,12 @@
               <input class="user-info__input" id="user-patronym" type="text" name="patronym" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
+          <div class="contest__wrapper">
           <fieldset class="contest__item filter-input filter-input--checkbox">
-            <legend class="contest__legend">Ваши безбашенные достижения в путешествии</legend>
-            <p class="filter-input__label">
-              Ваши безбашенные достижения в путешествии
-            </p>
+              <legend class="contest__legend">Ваши безбашенные достижения в путешествии</legend>
+              <p class="filter-input__label">
+                Ваши безбашенные достижения в путешествии
+              </p>
               <ul class="filter-input__item">
                 <li class="filter-input__option">
                   <input class="filter-input__checkbox" type="checkbox" id="shark" name="shark" value="shark" checked>
@@ -93,7 +94,8 @@
                   <label class="filter-input__checkbox-label" for="hotel">Разгромил отель</label>
                 </li>
               </ul>
-          </fieldset>
+            </fieldset>
+          </div>
           <fieldset class="contest__item user-contacts">
             <legend class="contest__legend">Контактная информация</legend>
             <div class="user-contacts__wrapper">
@@ -107,26 +109,28 @@
               </p>
             </div>
           </fieldset>
-          <fieldset class="contest__item filter-input filter-input--radio">
-            <legend class="contest__legend">С каким приложением путешествовали?</legend>
-              <p class="filter-input__label">
-                С каким приложением путешествовали?
-              </p>
-              <ul  class="filter-input__item">
-                <li class="filter-input__option">
-                  <input class="filter-input__radio" type="radio" name="app-version" id="ios" value="ios" checked>
-                  <label class="filter-input__radio-label" for="ios">Pink для iOs</label>
-                </li>
-                <li class="filter-input__option">
-                  <input class="filter-input__radio" type="radio" name="app-version" id="android" value="android">
-                  <label class="filter-input__radio-label" for="android">Pink на Android</label>
-                </li>
-                <li class="filter-input__option">
-                  <input class="filter-input__radio" type="radio" name="app-version" id="windowsphone" value="windowsphone">
-                  <label class="filter-input__radio-label" for="windowsphone">Windows Phone</label>
-                </li>
-            </ul>
-          </fieldset>
+          <div class="contest__wrapper">
+            <fieldset class="contest__item filter-input filter-input--radio">
+              <legend class="contest__legend">С каким приложением путешествовали?</legend>
+                <p class="filter-input__label">
+                  С каким приложением путешествовали?
+                </p>
+                <ul  class="filter-input__item">
+                  <li class="filter-input__option">
+                    <input class="filter-input__radio" type="radio" name="app-version" id="ios" value="ios" checked>
+                    <label class="filter-input__radio-label" for="ios">Pink для iOs</label>
+                  </li>
+                  <li class="filter-input__option">
+                    <input class="filter-input__radio" type="radio" name="app-version" id="android" value="android">
+                    <label class="filter-input__radio-label" for="android">Pink на Android</label>
+                  </li>
+                  <li class="filter-input__option">
+                    <input class="filter-input__radio" type="radio" name="app-version" id="windowsphone" value="windowsphone">
+                    <label class="filter-input__radio-label" for="windowsphone">Windows Phone</label>
+                  </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="contest__item user-comment">
             <legend class="contest__legend">Опишите свои эмоции</legend>
             <p class="user-comment__item">
