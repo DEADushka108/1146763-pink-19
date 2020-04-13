@@ -23,7 +23,7 @@
   box-sizing: border-box;
 
   &:hover {
-    border-color: $firm-blue; 
+    border-color: $firm-blue;
   }
 
   &:focus {
@@ -47,8 +47,7 @@
     margin-right: 40px;
     position: relative;
 
-    &--phone::before,
-    &--email::before {
+    &::before {
       position: absolute;
       content: "";
       top: 2px;

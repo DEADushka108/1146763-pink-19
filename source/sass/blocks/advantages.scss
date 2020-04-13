@@ -35,7 +35,6 @@
   padding-top: 15px;
   list-style: none;
   font-size: 18px;
-  
 }
 
 .advantages__item {
@@ -115,7 +114,7 @@
     padding: 0;
     width: 293px;
     text-align: left;
-    
+
     &:last-child {
       padding-bottom: 0;
       background: none;
@@ -128,7 +127,7 @@
     width: auto;
     padding-top: 102px;
     background-color: $bg-white;
-  }  
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -142,7 +141,8 @@
 
   .advantages__text-promo {
     width: 980px;
-    font-size: 40px;
+    font-size: 50px;
+    padding-bottom: 30px;
     line-height: 40px;
 
     &:first-of-type {
@@ -159,11 +159,6 @@
     padding-left: 0;
     padding-top: 0;
     flex-direction: row;
-  }
-
-  .advantages__text-promo {
-    font-size: 50px;
-    padding-bottom: 30px;
   }
 
   .advantages__title {
@@ -208,5 +203,5 @@
 
   .advantages__notice {
     background-color: $bg-grey;
-  }  
+  }
 }
