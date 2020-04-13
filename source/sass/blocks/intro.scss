@@ -1,19 +1,26 @@
 .intro {
+  width: auto;
+}
+
+.intro__wrapper {
   width: 320px;
   margin: 0 auto;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 115px;
+  background-position: 19px 109px;
+  min-height: 603px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 
 .intro__text-promo {
   display: block;
-  margin: 0 auto;
   width: 221px;
   text-align: center;
   color: $text-white;
   font-weight: 300;
-  padding-top: 28px;
   padding-bottom: 347px;
 }
 
@@ -21,8 +28,84 @@
   color: $text-white;
   text-align: center;
   font-size: 14px;
+  font-weight: 300;
+  width: 250px;
 }
 
 .intro__store {
   list-style: none;
+}
+
+.intro__button {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 17px 36px 14px 37px;
+  border-radius: 35px;
+  text-align: center;
+  color: $text-white;
+  font-weight: 700;
+  background-color: transparent;
+  border: 3px solid $border-white;
+  cursor: pointer;
+
+  &:hover {
+    color: $firm-pink;
+    background-color: $bg-white;
+  }
+
+  &:active {
+    color: rgba($firm-pink, 0.3);
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .intro__wrapper {
+    width: 660px;
+    min-height: 545px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: -15px 74px;
+    align-items: flex-start;
+  }
+
+  .intro__text-promo {
+    font-size: 40px;
+    line-height: 40px;
+    padding-left: 58px;
+    padding-top: 40px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .intro__button {
+    margin-top: 30px;
+    padding: 20px 49px 17px 49px;
+    margin-left: 20px;
+  }
+
+  .intro__text {
+    font-size: 18px;
+    width: 300px;
+    margin-left: 20px;
+    margin-bottom: 143px;
+  }
+
+  .intro__store {
+    margin-left: 66px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__wrapper {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 46px 97px;
+    width: 980px;
+  }
+
+  .intro__text {
+    margin-bottom: 200px;
+  }
 }

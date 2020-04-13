@@ -1,13 +1,229 @@
 .upload {
-  margin: 0 auto;
+  width: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: $bg-grey;
 }
 
 .upload__form {
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
   text-align: center;
 }
 
-.upload__item {
+.upload__link-list {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin: 42px 0 40px;
+  padding: 0;
+}
+
+.upload__link {
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-style: none;
+}
+
+.upload__link--crop {
+  background-image: url("../img/icon-editor-crop.svg");
+}
+
+.upload__link--fill {
+  background-image: url("../img/icon-editor-fill.svg");
+}
+
+.upload__link--contrast {
+  background-image: url("../img/icon-editor-contrast.svg");
+}
+
+.upload__link--active.upload__link--crop {
+  background-image: url("../img/icon-editor-crop-on.svg");
+}
+
+.upload__link--active.upload__link--fill {
+  background-image: url("../img/icon-editor-fill-on.svg");
+}
+
+.upload__link--active.upload__link--contrast {
+  background-image: url("../img/icon-editor-contrast-on.svg");
+}
+
+.upload__range {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: rgba($firm-blue, 0.1);
+  }
+}
+
+.upload__range-item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.upload__buttons {
+  margin: 0;
+  padding: 20px 0 0;
+  line-height: 0;
+}
+
+.upload__button {
+  min-width: 280px;
+  box-sizing: border-box;
+  padding: 17px 91px 14px;
+  border-radius: 35px;
+  text-align: center;
+  color: $firm-pink;
+  vertical-align: middle;
+  font-weight: 700;
+  background-color: transparent;
+  border: 3px solid $firm-pink;
+  cursor: pointer;
+}
+
+.upload__button--submit {
+  margin-bottom: 12px;
+
+  &:hover {
+    background-color: $firm-pink;
+    color: $text-white;
+  }
+
+  &:active {
+    color: rgba($text-white, 0.3);
+  }
+}
+
+.upload__button--reset {
+  color: rgba($firm-blue, 0.1);
+  border-color: rgba($firm-blue, 0.1);
+
+  &:hover {
+    color: rgba($firm-blue, 0.3);
+    border-color: rgba($firm-blue, 0.3);
+  }
+
+  &:active {
+    color: rgba($text-white, 0.3);
+    background-color: rgba($firm-blue, 0.3);
+    border-color: transparent;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .upload__form {
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+  }
+
+  .upload__range-item {
+    display: block;
+  }
+
+  .upload__img {
+    padding-right: 47px;
+  }
+
+  .upload__controls {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .upload__link-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 162px;
+    flex-basis: 20%;
+    margin: 0;
+    padding: 0;
+    margin-top: 9px;
+  }
+
+  .upload__link {
+    width: 24px;
+    height: 24px;
+  }
+
+  .upload__range {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 80%;
+    padding-top: 19px;
+    height: 140px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .upload__buttons {
+    margin-top: 60px;
+  }
+
+  .upload__link--crop {
+    background-image: url("../img/icon-editor-crop-on.svg");
+    background-size: 22px 22px;
+  }
+
+  .upload__link--fill {
+    background-image: url("../img/icon-editor-fill-on.svg");
+    background-size: 24px 22px;
+  }
+
+  .upload__link--contrast {
+    background-image: url("../img/icon-editor-contrast-on.svg");
+    background-size: 16px 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .upload__form {
+    width: 980px;
+  }
+
+  .upload__link {
+    width: 48px;
+    height: 48px;
+  }
+
+  .upload__link--crop {
+    background-size: 44px 44px;
+  }
+
+  .upload__link--fill {
+    background-size: 48px 43px;
+  }
+
+  .upload__link--contrast {
+    background-size: 32px 32px;
+  }
+
+  .upload__range {
+    margin-top: 12px;
+    height: 120px;
+  }
 }

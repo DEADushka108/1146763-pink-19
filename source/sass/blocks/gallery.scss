@@ -1,21 +1,50 @@
 .gallery {
+  width: auto;
   background-color: $bg-white;
-  padding-top: 36px;
+}
+
+.gallery__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  padding-top: 20px;
 }
 
 .gallery__text {
   display: block;
+  width: 245px;
+  margin: 0 auto;
   text-align: center;
-  margin-top: 56px;
   margin-bottom: 56px;
-  padding-left: 38px;
-  padding-right: 38px;
   font-size: 14px;
 }
 
 .gallery__list {
+  width: auto;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   text-align: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .gallery__wrapper {
+    width: 660px;
+  }
+
+  .gallery__text {
+    width: 440px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__wrapper {
+    width: 1200px;
+  }
+
+  .gallery__text {
+    width: 568px;
+  }
 }
