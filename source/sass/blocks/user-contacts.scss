@@ -46,23 +46,32 @@
     margin-left: 40px;
     margin-right: 40px;
     position: relative;
+  }
 
-    &::before {
-      position: absolute;
-      content: "";
-      top: 2px;
-      right: 2px;
-      width: 60px;
-      height: 60px;
-      background-color: $bg-grey;
-      background-repeat: no-repeat;
-      background-image: url("../img/icon-phone.svg");
-      background-position: center;
-    }
+  .user-contacts__item--phone::before {
+    position: absolute;
+    content: "";
+    top: 2px;
+    right: 2px;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-grey;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-phone.svg");
+    background-position: center;
+  }
 
-    &--email::before {
-      background-image: url("../img/icon-mail.svg")
-    }
+  .user-contacts__item--email::before {
+    position: absolute;
+    content: "";
+    top: 2px;
+    right: 2px;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-grey;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-mail.svg");
+    background-position: center;
   }
 
   .user-contacts__input {
