@@ -1,10 +1,6 @@
 .prices {
   width: auto;
-  background-color: $bg-grey;
-  background-image: url("../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  text-align: center;
+  background: linear-gradient(-5deg, $bg-grey 90%, $bg-white 10%);
 }
 
 .prices__wrapper {
@@ -15,7 +11,7 @@
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 84px;
+  padding-top: 154px;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -37,6 +33,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .prices {
+    background: linear-gradient(-5deg, $bg-grey 75%, $bg-white 10%);
+  }
+
   .prices__wrapper {
     width: 660px;
   }
@@ -47,6 +47,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .prices {
+    background: linear-gradient(-3deg, $bg-grey 75%, $bg-white 10%);
+  }
+  
+
   .prices__wrapper {
     width: 980px;
   }

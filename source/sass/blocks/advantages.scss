@@ -1,10 +1,7 @@
 .advantages {
   width: auto;
   text-align: center;
-  background-color: $bg-grey;
-  background-image: url("../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  background-position: top 160px center;
+  background: linear-gradient(-5deg, $bg-grey 77%, $bg-white 10%);
 }
 
 .advantages__wrapper {
@@ -72,6 +69,7 @@
   .advantages {
     width: auto;
     padding-bottom: 0;
+    background: linear-gradient(-5deg, $bg-grey 75%, $bg-white 10%);
   }
 
   .advantages__promo {
@@ -132,7 +130,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    background-position: top 190px center;
+    background: linear-gradient(-3deg, $bg-grey 75%, $bg-white 10%);
   }
 
   .advantages__wrapper {

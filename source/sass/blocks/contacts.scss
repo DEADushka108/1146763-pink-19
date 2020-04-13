@@ -2,9 +2,6 @@
   width: auto;
   margin: 0 auto;
   background-color: $bg-white;
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-position: bottom center;
-  background-repeat: no-repeat;
 }
 
 .contacts__wrapper {
@@ -55,7 +52,7 @@
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: 100% 35px;
+    background-size: 100% auto;
   }
 }
 

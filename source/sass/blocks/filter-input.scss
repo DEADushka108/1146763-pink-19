@@ -1,5 +1,6 @@
 .filter-input {
   width: 320px;
+  margin: 0 auto;
   padding-top: 41px;
   padding-bottom: 44px;
   background-color: $bg-grey;
@@ -124,18 +125,12 @@
 @media (min-width: $tablet-width) {
   .filter-input {
     width: auto;
+    flex-grow: 1;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 30px;
     background-color: $bg-white;
-
-    &--checkbox {
-      order: 4;
-    }
-
-    &--radio {
-      order: 2;
-    }
+    border: 2px solid $border-grey;
   }
 
   .filter-input__label {

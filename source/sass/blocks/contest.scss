@@ -17,6 +17,11 @@
   border-style: none;
 }
 
+.contest__wrapper {
+  width: 100%;
+  background-color: $bg-grey;
+}
+
 .contest__legend {
   display: none;
 }
@@ -69,6 +74,21 @@
   .contest__form {
     width: 660px;
     align-items: stretch;
+  }
+
+  .contest__wrapper {
+    width: auto;
+    background-color: $bg-white;
+    display: flex;
+    align-items: stretch;
+
+    &--checkbox {
+      order: 4;
+    }
+
+    &--radio {
+      order: 2;
+    }
   }
 
   .contest__legend {
