@@ -58,6 +58,25 @@
 
 @media (min-width: $desktop-width) {
   .reviews__wrapper {
+    position: relative;
     width: 980px;
+    padding-top: 190px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 79px;
+      left: 50%;
+      width: 79px;
+      height: 64px;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: translateX(-50%);
+    }
+  }
+
+  .reviews .reviews__toggles {
+    display: none;
   }
 }

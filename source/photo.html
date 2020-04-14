@@ -9,14 +9,11 @@
     <header class="page-header page-header--active"><!--Header-->
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
-            <g class="page-header__logo-image">
-              <path fill="#ffffff" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
-              <path fill="#ffffff" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
-              <path fill="#ffffff" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
-              <path fill="#ffffff" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
-            </g>
-          </svg>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="../img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="../img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-img" src="../img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Пинк">
+          </picture>
         </a>
         <nav class="main-nav"><!--Navigation-->
           <button class="main-nav__toggle main-nav__toggle--close" type="button">
@@ -27,7 +24,7 @@
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a  class="main-nav__link">Фотографии</a>
+              <a  class="main-nav__link main-nav__link--active">Фотографии</a>
             </li>
             <li class="main-nav__item">
               <a  class="main-nav__link" href="form.html">Конкурс</a>
@@ -48,161 +45,185 @@
             Взгляните на фотографии, которые выкладывают пользователи!
             Видите, как не хватает ваших?
           </p>
-          <ul class="gallery__list photo-list">
-            <li class="photo-list__item">
-              <figure class="photo-list__figure photo-list__figure--panorama">
-                <a class="photo-list__link" href="#">
-                  <picture class="photo-list__img photo-list__img--panorama">
-                    <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg" sizes="100vw">
-                    <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg" sizes="80vw">
-                    <img src="img/panorama-mobile@1x.jpg" width="100%" alt="Панорама дня">
+          <figure class="gallery__figure gallery__figure--panorama">
+            <a class="gallery__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img class="gallery__img gallery__img--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="100%" alt="Панорама дня">
+              </picture>
+            </a>
+            <figcaption class="gallery__description gallery__description--panorama">
+              <p class="gallery__info-text gallery__info-text--panorama">
+                <span class="gallery__author">Анна</span>
+                <span class="gallery__time">(5 минут назад)</span>
+              </p>
+              <p class="gallery__caption gallery__caption--panorama">  
+                Прыгать или нет? Напишите в комментарии свой совет и смотрите
+                прямую трансляцию в перископе, задавайте свои вопросы!
+              </p>
+              <p class="gallery__rates gallery__rates--panorama">
+                <a class="gallery__like-button">
+                  <span class="visually-hidden">Лайк</span>
+                </a>
+                <span class="gallery__counter">Нравится: 215</span>
+              </p>
+            </figcaption>
+          </figure>
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <a class="gallery__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                    <img class="gallery__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Автомобиль">
                   </picture>
                 </a>
-                <figcaption class="photo-list__description">
-                  <p class="photo-list__text">
-                    <span class="photo-list__author">Анна</span>
-                    <span class="photo-list__time">(5 минут назад)</span>
-                    Прыгать или нет? Напишите в комментарии свой совет и смотрите
-                    прямую трансляцию в перископе, задавайте свои вопросы!
+                <figcaption class="gallery__description">
+                  <p class="gallery__info-text">
+                    <span class="gallery__author">Левон</span>
+                    <span class="gallery__time">(5 часов назад)</span>
                   </p>
-                  <a class="photo-list__like-button">
-                    <span class="visually-hidden">Лайк</span>
-                  </a>
-                  <p class="photo-list__counter">Нравится: 215</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="photo-list__item">
-              <figure class="photo-list__figure">
-                <a class="photo-list__link" href="#">
-                  <picture class="photo-list__img">
-                    <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
-                    <img src="img/photo-car-mobile@1x.jpg" alt="Автомобиль">
-                </picture>
-                </a>
-                <figcaption class="photo-list__description">
-                  <p class="photo-list__text">
-                    <span class="photo-list__author">Левон</span>
-                    <span class="photo-list__time">(5 часов назад)</span>
+                  <p class="gallery__caption">  
                     Вчера он на луну летал, сегодня в руки к нам попал.
                   </p>
-                  <p class="photo-list__rates">
-                  <a class="photo-list__like-button">
-                    <span class="visually-hidden">Лайк</span>
-                  </a>
-                  <span class="photo-list__counter">Нравится: 356</span>
+                  <p class="gallery__rates">
+                    <a class="gallery__like-button">
+                      <span class="visually-hidden">Лайк</span>
+                    </a>
+                    <span class="gallery__counter">Нравится: 356</span>
                   </p>
                 </figcaption>
               </figure>
             </li>
-            <li class="photo-list__item">
-              <figure class="photo-list__figure">
-                <a class="photo-list__link" href="#">
-                  <picture class="photo-list__img">
-                    <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-                    <img src="img/photo-drumset-mobile@1x.jpg" alt="Барабанная установка">
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <a class="gallery__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                    <img  class="gallery__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабанная установка">
                   </picture>
                 </a>
-                <figcaption class="photo-list__description">
-                  <p class="photo-list__text">
-                    <span class="photo-list__author">Антон</span>
-                    <span class="photo-list__time">(12 часов назад)</span>
+                <figcaption class="gallery__description">
+                  <p class="gallery__info-text">
+                    <span class="gallery__author">Антон</span>
+                    <span class="gallery__time">(12 часов назад)</span>
+                  </p>
+                  <p class="gallery__caption">
                     Соседи будут рады!
                   </p>
-                  <a class="photo-list__like-button">
-                    <span class="visually-hidden">Лайк</span>
-                  </a>
-                  <p class="photo-list__counter">Нравится: 666</p>
+                  <p class="gallery__rates">
+                    <a class="gallery__like-button">
+                      <span class="visually-hidden">Лайк</span>
+                    </a>
+                    <span class="gallery__counter">Нравится: 666</span>
+                  </p>
                 </figcaption>
               </figure>
             </li>
-            <li class="photo-list__item">
-              <figure class="photo-list__figure">
-                <a class="photo-list__link" href="#">
-                  <picture class="photo-list__img">
-                    <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
-                    <img src="img/photo-window-mobile@1x.jpg" alt="Окно">
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <a class="gallery__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                    <img class="gallery__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Окно">
                   </picture>
                 </a>
-                <figcaption class="photo-list__description">
-                  <p class="photo-list__text">
-                    <span class="photo-list__author">Борис</span>
-                    <span class="photo-list__time">(20 часов назад)</span>
+                <figcaption class="gallery__description">
+                  <p class="gallery__info-text">
+                    <span class="gallery__author">Борис</span>
+                    <span class="gallery__time">(20 часов назад)</span>
+                  </p>
+                  <p class="gallery__caption">  
                     Здесь могла быть ваша цитата о высоком и вечном.
                   </p>
-                  <a class="photo-list__like-button">
-                    <span class="visually-hidden">Лайк</span>
-                  </a>
-                  <p class="photo-list__counter">Нравится: 215</p>
+                  <p class="gallery__rates">
+                    <a class="gallery__like-button">
+                      <span class="visually-hidden">Лайк</span>
+                    </a>
+                    <span class="gallery__counter">Нравится: 215</span>
+                  </p>
                 </figcaption>
               </figure>
             </li>
-            <li class="photo-list__item">
-              <figure class="photo-list__figure">
-                <a class="photo-list__link" href="#">
-                  <picture class="photo-list__img">
-                    <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
-                    <img src="img/photo-fair-mobile@1x.jpg" alt="Ярмарка">
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <a class="gallery__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                    <img class="gallery__img" src="img/photo-fair-mobile@1x.jpg"  srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Ярмарка">
                   </picture>
                 </a>
-                <figcaption class="photo-list__description">
-                  <p class="photo-list__text">
-                    <span class="photo-list__author">Сергей</span>
-                    <span class="photo-list__time">(25 часов назад)</span>
+                <figcaption class="gallery__description">
+                  <p class="gallery__info-text">
+                    <span class="gallery__author">Сергей</span>
+                    <span class="gallery__time">(25 часов назад)</span>
+                  </p>
+                  <p class="gallery__caption">
                       Самая кубанская в мире!
                   </p>
-                  <a class="photo-list__like-button">
-                    <span class="visually-hidden">Лайк</span>
-                  </a>
-                  <p class="photo-list__counter">Нравится: 4</p>
+                  <p class="gallery__rates">
+                    <a class="gallery__like-button">
+                      <span class="visually-hidden">Лайк</span>
+                    </a>
+                    <span class="gallery__counter">Нравится: 4</span>
+                  </p>
                 </figcaption>
               </figure>
             </li>
-            <li class="photo-list__item">
-              <figure class="photo-list__figure">
-                <a class="photo-list__link" href="#">
-                  <picture class="photo-list__img">
-                    <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
-                    <img src="img/photo-pov-mobile@1x.jpg" alt="Ноги на уступе">
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <a class="gallery__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                    <img class="gallery__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Ноги на уступе">
                   </picture>
                 </a>
-                <figcaption class="photo-list__description">
-                  <p class="photo-list__text">
-                    <span class="photo-list__author">Максим</span>
-                    <span class="photo-list__time">(40 часов назад)</span>
+                <figcaption class="gallery__description">
+                  <p class="gallery__info-text">
+                    <span class="gallery__author">Максим</span>
+                    <span class="gallery__time">(40 часов назад)</span>
+                  </p>
+                  <p class="gallery__caption">
                     Где снег-то?
                   </p>
-                  <a class="photo-list__like-button">
-                    <span class="visually-hidden">Лайк</span>
-                  </a>
-                  <p class="photo-list__counter">Нравится: 150</p>
+                  <p class="gallery__rates">
+                    <a class="gallery__like-button">
+                      <span class="visually-hidden">Лайк</span>
+                    </a>
+                    <span class="gallery__counter">Нравится: 150</span>
+                  </p>
                 </figcaption>
               </figure>
             </li>
-            <li class="photo-list__item">
-              <figure class="photo-list__figure">
-                <a class="photo-list__link" href="#">
-                  <picture class="photo-list__img">
-                    <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
-                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
-                    <img src="img/photo-wing-mobile@1x.jpg" alt="Крыдо самолета">
+            <li class="gallery__item">
+              <figure class="gallery__figure">
+                <a class="gallery__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                    <img  class="gallery__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Крыдо самолета">
                   </picture>
                 </a>
-                <figcaption class="photo-list__description">
-                  <p class="photo-list__text">
-                    <span class="photo-list__author">Надежда</span>
-                    <span class="photo-list__time">(45 часов назад)</span>
+                <figcaption class="gallery__description">
+                  <p class="gallery__info-text">
+                    <span class="gallery__author">Надежда</span>
+                    <span class="gallery__time">(45 часов назад)</span>
+                  </p>
+                  <p class="gallery__caption">
                     Всем GM и взаимные лайки!
                   </p>
-                  <a class="photo-list__like-button">
-                    <span class="visually-hidden">Лайк</span>
-                  </a>
-                  <p class="photo-list__counter">Нравится: 2560</p>
+                  <p class="gallery__rates">
+                    <a class="gallery__like-button">
+                      <span class="visually-hidden">Лайк</span>
+                    </a>
+                    <span class="gallery__counter">Нравится: 2560</span>
+                  </p>
                 </figcaption>
               </figure>
             </li>
@@ -217,9 +238,9 @@
         <h2 class="visually-hidden">Загрузить фотографию</h2>
         <form class="upload__form" action="https://echo.htmlacademy.ru" method="POST">
           <picture class="upload__img">
-            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
-            <img src="img/photo-road-mobile@1x.jpg" alt="дорога">
+            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="дорога">
           </picture>
           <div class="upload__controls">
             <div class="upload__link-list">

@@ -98,6 +98,10 @@
 
   .main-nav__link {
     padding-top: 48px;
-    padding-bottom: 47px;
+    padding-bottom: 7px;
+
+    &--active {
+      border-bottom: 2px solid $border-white;
+    }
   }
 }
