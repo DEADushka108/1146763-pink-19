@@ -244,7 +244,7 @@
 
     &:nth-child(3)::before {
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
-      
+
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-screen-3-desktop@2x.png");
         background-size: 186px auto;
