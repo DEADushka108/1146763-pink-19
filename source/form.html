@@ -48,11 +48,11 @@
             <legend class="visually-hidden">Расскажите о себе</legend>
             <p class="user-info__item">
               <label for="user-surname">Фамилия:</label>
-              <input class="user-info__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию" required>
+              <input class="user-info__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию &#8432;" required>
             </p>
             <p class="user-info__item">
               <label for="user-name">Имя:</label>
-              <input class="user-info__input" id="user-name" type="text" name="name" placeholder="Введите ваше имя" required>
+              <input class="user-info__input" id="user-name" type="text" name="name" placeholder="Введите ваше имя &#8432;" required>
             </p>
             <p class="user-info__item">
               <label for="user-patronym">Отчество:</label>
@@ -97,12 +97,12 @@
             <legend class="contest__legend">Контактная информация</legend>
             <div class="user-contacts__wrapper">
               <p class="user-contacts__item user-contacts__item--phone">
-                <label class="user-contacts__label" for="user-phone">Номер телефона:</label>
+                <label class="user-contacts__label" for="user-phone">Номер телефона</label>
                 <input class="user-contacts__input" id="user-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
               </p>
               <p class="user-contacts__item user-contacts__item--email">
-                <label class="user-contacts__label" for="user-email">Имя:</label>
-                <input class="user-contacts__input" id="user-email" type="email" name="email" placeholder="Введите почту" required>
+                <label class="user-contacts__label" for="user-email">Адрес почты</label>
+                <input class="user-contacts__input" id="user-email" type="email" name="email" placeholder="Введите почту &#8432;" required>
               </p>
             </div>
           </fieldset>
@@ -135,7 +135,12 @@
               <textarea class="user-comment__input" name="comment" id="comment-field" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </fieldset>
-          <button class="contest__button button" type="submit">Отправить форму</button>
+          <div class="contest__fn">
+            <button class="contest__button button" type="submit">Отправить форму</button>
+            <p class="contest__text-fn">
+              <span class="contest__symbol">&#8432;</span>&nbsp; — обязательные<span class="contest__text-hidden"> для заполнения</span> поля
+            </p>
+          </div>
           <div class="contest__modal modal modal--err">
             <p class="modal__title">
               Что-то пошло не так!

@@ -54,6 +54,14 @@
     font-size: 14px;
     line-height: 30px;
   }
+
+  .reviews__author-name {
+    font-size: 20px;
+  }
+  
+  .reviews__text {
+    font-size: 18px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -76,7 +84,20 @@
     }
   }
 
-  .reviews .reviews__toggles {
-    display: none;
+  .reviews__list {
+    width: 685px;
+    margin: 0 auto;
+  }
+
+  .reviews__author-info {
+    font-size: 18px;
+  }
+
+  .reviews__author-name {
+    font-size: 24px;
+  }
+
+  .reviews__item {
+    position: relative;
   }
 }
