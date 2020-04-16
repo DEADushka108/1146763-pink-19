@@ -9,14 +9,11 @@
     <header class="page-header page-header--active"><!--Header-->
       <div class="page-header__wrapper">
         <a class="page-header__logo">
-          <svg  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
-            <g class="page-header__logo-image">
-              <path fill="#ffffff" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
-              <path fill="#ffffff" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
-              <path fill="#ffffff" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
-              <path fill="#ffffff" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
-            </g>
-          </svg>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-img" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Пинк">
+          </picture>
         </a>
         <nav class="main-nav"><!--Navigation-->
           <button class="main-nav__toggle main-nav__toggle--close" type="button">
@@ -24,7 +21,7 @@
           </button><!--Hamburger-->
           <ul class="main-nav__list main-nav__list--open">
             <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
+              <a class="main-nav__link main-nav__link--active">Главная</a>
             </li>
             <li class="main-nav__item">
               <a  class="main-nav__link" href="photo.html">Фотографии</a>
@@ -112,7 +109,7 @@
             <p class="notice__text">
               Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
             </p>
-            <a class="notice__link">Узнать больше об исследовании</a>
+            <a class="notice__link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
       </section>
@@ -126,9 +123,9 @@
                 <span class="reviews__author-info">25 лет, водитель трамвая</span>
               </cite>
               <p class="reviews__text">
-                Это приложение перевернуло мой мир и позволило по-новому
+                &#171;Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился
-                со своей будущей женой в комментариях к выложенной фотографии!
+                со своей будущей женой в комментариях к выложенной фотографии!&#187;
               </p>
             </blockquote>
           </div>
@@ -139,9 +136,9 @@
                 <span class="reviews__author-info">25 лет, водитель погрузчика</span>
               </cite>
               <p class="reviews__text">
-                Это приложение перевернуло мой мир и позволило по-новому
+                &#171;Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился
-                со своей будущей женой в комментариях к выложенной фотографии!
+                со своей будущей женой в комментариях к выложенной фотографии!&#187;
               </p>
             </blockquote>
           </div>
@@ -152,17 +149,17 @@
                 <span class="reviews__author-info">25 лет, водитель маршрутки</span>
               </cite>
               <p class="reviews__text">
-                Это приложение перевернуло мой мир и позволило по-новому
+                &#171;Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился
-                со своей будущей женой в комментариях к выложенной фотографии!
+                со своей будущей женой в комментариях к выложенной фотографии!&#187;
               </p>
             </blockquote>
           </div>
-          <div class="reviews__toggles slider__toggles">
-            <button class="slider__toggle slider__toggle--active" type="button">
+          <div class="reviews__toggles slider__buttons">
+            <button class="slider__toggle slider__toggle--nav--right slider__toggle--active" type="button">
               <span class="visually-hidden">1</span>
             </button>
-            <button class="slider__toggle" type="button">
+            <button class="slider__toggle slider__toggle--nav--left" type="button">
               <span class="visually-hidden">2</span>
             </button>
             <button class="slider__toggle" type="button">
@@ -325,10 +322,10 @@
             </p>
             <p class="contacts__text">
               Приезжайте в гости:
-              <span class="contacts__adress">
+              <a class="contacts__adress" href="https://goo.gl/maps/aQevuiyBgLhBuWMQA">
                 <span class="contacts__city">г. Санкт-Петербург,</span>
                 ул. Большая Конюшенная 19/8
-              </span>
+              </a>
             </p>
           </div>
         </div>
@@ -348,7 +345,7 @@
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="index.html">
             <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
-              <g class="page-footer__logo-image">
+              <g>
                 <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
                 <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
                 <path fill="#283645" d="M102.744,18.532c0-0.676,0.58-1.256,1.256-1.256h0.354c0.58,0,0.935,0.29,1.288,0.74l13.684,17.45V18.468 c0-0.676,0.547-1.256,1.256-1.256c0.676,0,1.225,0.58,1.225,1.256v20.349c0,0.677-0.48,1.19-1.158,1.19h-0.129 c-0.548,0-0.936-0.321-1.318-0.772l-13.976-17.867v17.449c0,0.677-0.547,1.257-1.257,1.257c-0.676,0-1.223-0.58-1.223-1.257V18.532 H102.744z"/>

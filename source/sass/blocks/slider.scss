@@ -1,5 +1,4 @@
 .slider {
-  position: relative;
   box-sizing: border-box;
 }
 
@@ -18,7 +17,7 @@
   }
 }
 
-.slider__toggles {
+.slider__buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,5 +56,59 @@
   .slider__item--active {
     display: flex;
     flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__toggle {
+    display: none;
+  }
+
+  .slider__buttons .slider__toggle--nav--right {
+    display: block;
+    position: absolute;
+    top: 60%;
+    right: 0;
+    border: none;
+    width: 22px;
+    height: 41px;
+    background-color: $bg-white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    opacity: 0.3;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .slider__buttons .slider__toggle--nav--left {
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    border: none;
+    width: 22px;
+    height: 41px;
+    background-color: $bg-white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    opacity: 0.3;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }

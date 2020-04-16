@@ -4,7 +4,7 @@
 }
 
 .contest__form {
-  width: auto;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -70,6 +70,25 @@
   text-align: center;
 }
 
+.contest__fn {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.contest__text-fn {
+  display: block;
+  text-align: center;
+}
+
+.contest__symbol {
+  color: $firm-pink;
+}
+
+.contest__text-hidden {
+  display: none;
+}
+
+
 @media (min-width: $tablet-width) {
   .contest__form {
     width: 660px;
@@ -80,6 +99,7 @@
     width: auto;
     background-color: $bg-white;
     display: flex;
+
     align-items: stretch;
 
     &--checkbox {
@@ -107,9 +127,19 @@
     border: 2px solid $border-grey;
   }
 
+  .contest__fn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    order: 6;
+  }
+
   .contest__button {
     margin-left: 20px;
-    order: 6;
+  }
+
+  .contest__text-fn {
+    margin-right: 20px;
   }
 }
 
@@ -118,5 +148,9 @@
     width: 980px;
     padding-top: 30px;
     flex-direction: row;
+  }
+
+  .contest__text-hidden {
+    display: inline;
   }
 }

@@ -28,10 +28,22 @@
 .contacts__email,
 .contacts__adress {
   display: block;
+  text-decoration: none;
   color: $firm-pink;
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 28px;
+
+  &:hover,
+  &:focus {
+    color: $firm-blue;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba($firm-blue, 0.3);
+    text-decoration: none;
+  }
 }
 
 .contacts__map {
@@ -48,7 +60,7 @@
     left: 0;
     z-index: 2;
     width: 100%;
-    height: 35px;
+    height: 55px;
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-position: top center;
@@ -74,7 +86,6 @@
   padding: 0;
   border: none;
 }
-
 
 @media (min-width: $tablet-width) {
   .contacts {
@@ -111,9 +122,9 @@
     width: auto;
 
     &::before {
-      top: -30px;
+      top: 0;
       height: 126px;
-      background-size: 100% 126px;
+      background-size: 100% auto;
     }
   }
 
@@ -149,5 +160,9 @@
     &:last-of-type {
       order: 2;
     }
+  }
+
+  .contacts__map::before {
+    height: 160px;
   }
 }
