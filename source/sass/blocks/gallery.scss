@@ -93,18 +93,10 @@
   width: 13px;
   height: 12px;
   margin-right: 19px;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 6px;
-    left: 0;
-    width: 13px;
-    height: 12px;
-    background-image: url("../img/icon-heart.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.gallery__heart-icon {
+  fill: $firm-pink;
 }
 
 .gallery__link--panorama::before {

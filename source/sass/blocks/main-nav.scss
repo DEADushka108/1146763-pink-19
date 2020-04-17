@@ -4,25 +4,38 @@
 
 .main-nav__toggle {
   position: absolute;
-  width: 50px;
-  height: 24px;
   top: -40px;
   right: 20px;
+  padding: 0;
   border: none;
   background-color: transparent;
-  background-image: url("../img/icon-menu-burger.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   border-style: none;
+  cursor: pointer;
+}
 
-  &:hover {
-    opacity: 0.5;
+.main-nav__toggle .main-nav__close-icon {
+  display: none;
+}
+
+.main-nav__toggle--close .main-nav__humburger-icon {
+  display: none;
+}
+
+.main-nav__toggle--close .main-nav__close-icon {
+  display: inline-block;
+}
+
+.main-nav__close-icon,
+.main-nav__humburger-icon {
+  fill: $bg-white;
+
+  &:hover,
+  &:focus {
+    fill: $firm-pink;
   }
 
-  &--close {
-    width: 25px;
-    background-image: url("../img/icon-menu-cross.svg");
-    background-position: right;
+  &:active {
+    opacity: 0.5;
   }
 }
 

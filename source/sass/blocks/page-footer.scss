@@ -26,11 +26,14 @@
 }
 
 .page-footer__logo-link {
-  &:hover path {
-    fill: $firm-pink;
+  color: $firm-blue;
+
+  &:hover {
+    color: $firm-pink;
   }
 
   &:active {
+    color: $firm-blue;
     opacity: 0.3;
   }
 }

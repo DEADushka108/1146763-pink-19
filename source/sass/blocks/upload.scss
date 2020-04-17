@@ -20,39 +20,23 @@
   padding: 0;
 }
 
-.upload__link {
+.upload__crop-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.upload__fill-icon {
   width: 48px;
-  height: 48px;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-style: none;
+  height: 43px;
 }
 
-.upload__link--crop {
-  background-image: url("../img/icon-editor-crop.svg");
+.upload__contrast-icon {
+  width: 32px;
+  height: 32px;
 }
 
-.upload__link--fill {
-  background-image: url("../img/icon-editor-fill.svg");
-}
-
-.upload__link--contrast {
-  background-image: url("../img/icon-editor-contrast.svg");
-}
-
-.upload__link--active.upload__link--crop {
-  background-image: url("../img/icon-editor-crop-on.svg");
-}
-
-.upload__link--active.upload__link--fill {
-  background-image: url("../img/icon-editor-fill-on.svg");
-}
-
-.upload__link--active.upload__link--contrast {
-  background-image: url("../img/icon-editor-contrast-on.svg");
+.upload__link--active svg {
+  fill: $firm-pink;
 }
 
 .upload__range {
@@ -163,8 +147,30 @@
   }
 
   .upload__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 24px;
     height: 24px;
+  }
+
+  .upload__crop-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .upload__fill-icon {
+    width: 24px;
+    height: 22px;
+  }
+
+  .upload__contrast-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .upload__link svg {
+    fill: $firm-pink;
   }
 
   .upload__range {
@@ -183,21 +189,6 @@
   .upload__buttons {
     margin-top: 60px;
   }
-
-  .upload__link--crop {
-    background-image: url("../img/icon-editor-crop-on.svg");
-    background-size: 22px 22px;
-  }
-
-  .upload__link--fill {
-    background-image: url("../img/icon-editor-fill-on.svg");
-    background-size: 24px 22px;
-  }
-
-  .upload__link--contrast {
-    background-image: url("../img/icon-editor-contrast-on.svg");
-    background-size: 16px 16px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -210,16 +201,19 @@
     height: 48px;
   }
 
-  .upload__link--crop {
-    background-size: 44px 44px;
+  .upload__crop-icon {
+    width: 44px;
+    height: 44px;
   }
 
-  .upload__link--fill {
-    background-size: 48px 43px;
+  .upload__fill-icon {
+    width: 48px;
+    height: 43px;
   }
 
-  .upload__link--contrast {
-    background-size: 32px 32px;
+  .upload__contrast-icon {
+    width: 32px;
+    height: 32px;
   }
 
   .upload__range {
