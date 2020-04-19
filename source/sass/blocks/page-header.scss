@@ -19,16 +19,17 @@
 
 .page-header__logo {
   display: block;
-  width: 75px;
+  width: 150px;
   height: 22px;
   padding-top: 19px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
+  fill: $text-white;
 }
 
-.page-header__logo-image:hover {
-  fill: $firm-pink;
+.page-header__logo-img {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,13 +37,8 @@
     width: 660px;
   }
 
-  .page-header__logo-img {
-    width: 147px;
-    height: 40px;
-  }
-
   .page-header__logo {
-    width: 147px;
+    width: 146px;
     height: 40px;
     padding-top: 27px;
     padding-bottom: 43px;
@@ -58,5 +54,9 @@
     width: 980px;
     display: flex;
     flex-direction: row;
+  }
+
+  .page-header__logo {
+    width: 147px;
   }
 }
