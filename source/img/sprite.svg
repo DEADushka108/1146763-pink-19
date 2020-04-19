@@ -135,4 +135,8 @@
       </g>
     </g>
   </symbol>
+  <!-- bg-triangle -->
+  <symbol id="triangle-footer" viewBox="0 0 595.28 61.905">
+    <polygon points="297.64,61.905 0,0 595.28,0 "/>
+  </symbol>
 </svg>
