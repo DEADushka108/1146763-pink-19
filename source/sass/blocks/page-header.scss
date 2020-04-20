@@ -42,6 +42,9 @@
   display: none;
 }
 
+.page-header__desktop-blink {
+  fill: $firm-pink;
+}
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
