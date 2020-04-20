@@ -15,17 +15,16 @@
 }
 
 .social__link {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 46px;
   height: 46px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   background-color: $bg-white;
   border: 3px solid rgba($firm-blue, 0.1);
   border-radius: 50%;
-  background-position: center;
   background-repeat: no-repeat;
 
   &:hover {
@@ -37,18 +36,7 @@
     border: 3px solid rgba($firm-blue, 0.1);
   }
 
-  &--twitter {
-    background-image: url("../img/icon-twitter.svg");
-  }
-
-  &--facebook {
-    background-image: url("../img/icon-facebook.svg");
-    margin-right: 17px;
-    margin-left: 17px;
-  }
-
-  &--youtube {
-    background-image: url("../img/icon-youtube.svg");
-    background-position: left 14px center;
+  .social__logo-img {
+    fill: $firm-pink;
   }
 }

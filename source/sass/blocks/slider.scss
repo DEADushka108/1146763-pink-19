@@ -52,6 +52,10 @@
   }
 }
 
+.slider__nav-icon {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .slider__item--active {
     display: flex;
@@ -64,18 +68,20 @@
     display: none;
   }
 
+  .slider__nav-icon {
+    display: inline;
+    fill: $firm-blue;
+  }
+
   .slider__buttons .slider__toggle--nav--right {
     display: block;
     position: absolute;
-    top: 60%;
+    top: 40%;
     right: 0;
     border: none;
     width: 22px;
     height: 41px;
     background-color: $bg-white;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../img/icon-review-arrow-right.svg");
     opacity: 0.3;
 
     &:hover,
@@ -91,15 +97,12 @@
   .slider__buttons .slider__toggle--nav--left {
     display: block;
     position: absolute;
-    top: 60%;
+    top: 40%;
     left: 0;
     border: none;
     width: 22px;
     height: 41px;
     background-color: $bg-white;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../img/icon-review-arrow-left.svg");
     opacity: 0.3;
 
     &:hover,

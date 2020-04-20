@@ -14,6 +14,11 @@
   color: $firm-pink;
 }
 
+.user-contacts__item svg {
+  display: none;
+  fill: $firm-pink;
+}
+
 .user-contacts__input {
   width: 100%;
   padding: 17px 22px 18px;
@@ -48,34 +53,24 @@
     position: relative;
   }
 
-  .user-contacts__item--phone::before {
+  .user-contacts__item svg {
+    display: inline-block;
     position: absolute;
-    content: "";
     top: 2px;
     right: 2px;
-    width: 60px;
-    height: 60px;
     background-color: $bg-grey;
-    background-repeat: no-repeat;
-    background-image: url("../img/icon-phone.svg");
-    background-position: center;
   }
 
-  .user-contacts__item--email::before {
-    position: absolute;
-    content: "";
-    top: 2px;
-    right: 2px;
-    width: 60px;
-    height: 60px;
-    background-color: $bg-grey;
-    background-repeat: no-repeat;
-    background-image: url("../img/icon-mail.svg");
-    background-position: center;
+  .user-contacts__phone-icon {
+    padding: 21px 20px 19px;
+  }
+
+  .user-contacts__email-icon {
+    padding: 24px 21px 22px;
   }
 
   .user-contacts__input {
-    padding: 15px 22px 15px;
+    padding: 15px 63px 15px 22px;
   }
 
   .user-contacts__label {

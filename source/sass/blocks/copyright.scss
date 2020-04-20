@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.copyright__logo-img {
+  fill: $firm-pink;
+}
+
 .copyright__link {
   display: flex;
   justify-content: center;
@@ -10,11 +14,11 @@
   text-decoration: none;
   color: $firm-blue;
 
-  &:hover .copyright__image {
+  &:hover .copyright__logo-img {
     fill: $firm-blue;
   }
 
-  &:active .copyright__image {
+  &:active .copyright__logo-img {
     fill: rgba($firm-blue, 0.3);
   }
 }

@@ -1,11 +1,16 @@
 .notice__wrapper {
   position: relative;
-  width: 295px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 660px;
   margin: 0 auto;
   min-height: 276px;
-  padding-left: 329px;
-  padding-right: 20px;
   text-align: left;
+}
+
+.notice__article {
+  width: 295px;
 }
 
 .notice__title {
@@ -29,21 +34,8 @@
 
 .notice__wrapper::before {
   position: absolute;
-  content: "";
-  top: -43px;
-  left: 0;
-  width: 238px;
-  height: 276px;
-  background-image: url("../img/icon-timer.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 238px 276px;
-}
-
-.notice__wrapper::after {
-  position: absolute;
   content: "24";
-  top: 15px;
+  top: 57px;
   left: 18px;
   width: 172px;
   height: 172px;
@@ -54,10 +46,15 @@
   font-weight: 700;
   border: 15px solid $firm-pink;
   border-radius: 50%;
+  z-index: 1;
 }
 
 @media (min-width: $desktop-width) {
   .notice__wrapper {
+    width: 980px;
+  }
+
+  .notice__article {
     width: 550px;
   }
 }
