@@ -46,6 +46,13 @@
   text-align: center;
 }
 
+.page-footer__logo-img {
+  display: none;
+
+  &--mobile {
+    display: inline-block;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .page-footer {
@@ -69,5 +76,13 @@
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
     width: 980px;
+  }
+
+  .page-footer__logo-img {
+    display: none;
+
+    &--desktop {
+      display: inline-block;
+    }
   }
 }

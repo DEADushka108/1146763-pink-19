@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header--active"><!--Header-->
       <div class="page-header__wrapper">
         <a class="page-header__logo">
@@ -56,10 +59,10 @@
           <button class="main-nav__toggle main-nav__toggle--close" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <svg class="main-nav__humburger-icon" width="50" height="24">
-              <use xlink:href="./img/sprite.svg#humburger"></use>
+              <use xlink:href="#icon-menu-burger"></use>
             </svg>
             <svg class="main-nav__close-icon" width="25" height="25">
-              <use xlink:href="./img/sprite.svg#close-cross"></use>
+              <use xlink:href="#icon-menu-cross"></use>
             </svg>
           </button><!--Hamburger-->
           <ul class="main-nav__list main-nav__list--open">
@@ -93,7 +96,7 @@
               <a class="store-list__link store-list__link--appstore" href="https://www.apple.com/">
                 <span class="visually-hidden">Appstore</span>
                 <svg class="store-list__appstore-icon" width="46" height="57">
-                  <use xlink:href="./img/sprite.svg#appstore"></use>
+                  <use xlink:href="#logo-apple"></use>
                 </svg>
               </a>
             </li>
@@ -101,7 +104,7 @@
               <a class="store-list__link store-list__link--googlestore" href="https://play.google.com/store">
                 <span class="visually-hidden">PlayMarket</span>
                 <svg class="store-list__playmarket-icon" width="42" height="47">
-                  <use xlink:href="./img/sprite.svg#playmarket"></use>
+                  <use xlink:href="#logo-android"></use>
                 </svg>
               </a>
             </li>
@@ -109,7 +112,7 @@
               <a class="store-list__link store-list__link--windowsstore" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
                 <span class="visually-hidden">WindowsPhone</span>
                 <svg class="store-list__playmarket-icon" width="44" height="42">
-                  <use xlink:href="./img/sprite.svg#windowsmarket"></use>
+                  <use xlink:href="#logo-microsoft"></use>
                 </svg>
               </a>
             </li>
@@ -158,7 +161,7 @@
         <div class="advantages__notice notice">
           <div class="notice__wrapper">
             <svg class="notice__timer-icon" width="238" height="276">
-              <use xlink:href="./img/sprite.svg#timer"></use>
+              <use xlink:href="#icon-timer"></use>
             </svg>
             <div class="notice__article">
               <h3 class="notice__title">Эффект на 24 часа!</h3>
@@ -172,7 +175,7 @@
       </section>
       <section class="reviews">
         <svg class="reviews__quotes-icon" width="79" height="64">
-          <use xlink:href="./img/sprite.svg#quotes"></use>
+          <use xlink:href="#icon-quotes"></use>
         </svg>
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
@@ -219,13 +222,13 @@
             <button class="slider__toggle slider__toggle--nav--right slider__toggle--active" type="button">
               <span class="visually-hidden">1</span>
               <svg class="slider__nav-icon" width="22" height="41">
-                <use xlink:href="./img/sprite.svg#right-arrow"></use>
+                <use xlink:href="#icon-review-arrow-right"></use>
               </svg>
             </button>
             <button class="slider__toggle slider__toggle--nav--left" type="button">
               <span class="visually-hidden">2</span>
               <svg class="slider__nav-icon" width="22" height="41">
-                <use xlink:href="./img/sprite.svg#left-arrow"></use>
+                <use xlink:href="#icon-review-arrow-left"></use>
               </svg>
             </button>
             <button class="slider__toggle" type="button">
@@ -264,7 +267,7 @@
                   <span class="rate__feature-name">Розовый фильтр</span>
                   <span class="rate__feature-value rate__feature-value--yes">
                     <svg class="rate__yes-icon" width="31" height="21">
-                      <use xlink:href="./img/sprite.svg#yes-icon"></use>
+                      <use xlink:href="#icon-yes"></use>
                     </svg>
                   </span>
                 </p>
@@ -274,7 +277,7 @@
                   <span class="rate__feature-name">Розовый фильтр</span>
                   <span class="rate__feature-value rate__feature-value--yes">
                     <svg class="rate__yes-icon" width="31" height="21">
-                      <use xlink:href="./img/sprite.svg#yes-icon"></use>
+                      <use xlink:href="#icon-yes"></use>
                     </svg>
                   </span>
                 </p>
@@ -284,7 +287,7 @@
                   <span class="rate__feature-name">Розовый фильтр</span>
                   <span class="rate__feature-value rate__feature-value--yes">
                     <svg class="rate__yes-icon" width="31" height="21">
-                      <use xlink:href="./img/sprite.svg#yes-icon"></use>
+                      <use xlink:href="#icon-yes"></use>
                     </svg>
                   </span>
                 </p>
@@ -299,7 +302,7 @@
                   <span class="rate__feature-name">Смайлики</span>
                   <span class="rate__feature-value rate__feature-value--no">
                     <svg class="rate__no-icon" width="27" height="27">
-                      <use xlink:href="./img/sprite.svg#no-icon"></use>
+                      <use xlink:href="#icon-no"></use>
                     </svg>
                   </span>
                 </p>
@@ -309,7 +312,7 @@
                   <span class="rate__feature-name">Смайлики</span>
                   <span class="rate__feature-value rate__feature-value--yes">
                     <svg class="rate__yes-icon" width="31" height="21">
-                      <use xlink:href="./img/sprite.svg#yes-icon"></use>
+                      <use xlink:href="#icon-yes"></use>
                     </svg>
                   </span>
                 </p>
@@ -319,7 +322,7 @@
                   <span class="rate__feature-name">Смайлики</span>
                   <span class="rate__feature-value rate__feature-value--yes">
                     <svg class="rate__yes-icon" width="31" height="21">
-                      <use xlink:href="./img/sprite.svg#yes-icon"></use>
+                      <use xlink:href="#icon-yes"></use>
                     </svg>
                   </span>
                 </p>
@@ -334,7 +337,7 @@
                   <span class="rate__feature-name">Комментарии</span>
                   <span class="rate__feature-value rate__feature-value--no">
                     <svg class="rate__no-icon" width="27" height="27">
-                      <use xlink:href="./img/sprite.svg#no-icon"></use>
+                      <use xlink:href="#icon-no"></use>
                     </svg>
                 </span>
                 </p>
@@ -344,7 +347,7 @@
                   <span class="rate__feature-name">Комментарии</span>
                   <span class="rate__feature-value rate__feature-value--no">
                     <svg class="rate__no-icon" width="27" height="27">
-                      <use xlink:href="./img/sprite.svg#no-icon"></use>
+                      <use xlink:href="#icon-no"></use>
                     </svg>
                   </span>
                 </p>
@@ -354,7 +357,7 @@
                   <span class="rate__feature-name">Комментарии</span>
                   <span class="rate__feature-value rate__feature-value--yes">
                     <svg class="rate__yes-icon" width="31" height="21">
-                      <use xlink:href="./img/sprite.svg#yes-icon"></use>
+                      <use xlink:href="#icon-yes"></use>
                     </svg>
                   </span>
                 </p>
@@ -397,7 +400,7 @@
         </div>
         <div class="contacts__map">
           <svg class="contacts__bg">
-            <use xlink:href="./img/sprite.svg#triangle-footer"></use>
+            <use xlink:href="#bg-triangle-white-footer"></use>
           </svg>
           <iframe
             class="contacts__map-iframe"
@@ -412,8 +415,11 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="index.html">
-            <svg class="page-footer__logo-img" width="146" height="40">
-              <use xlink:href="./img/sprite.svg#logo-footer"></use>
+            <svg class="page-footer__logo-img page-footer__logo-img--mobile" width="146" height="40">
+              <use xlink:href="#logo-pink-blue-mobile"></use>
+            </svg>
+            <svg class="page-footer__logo-img page-footer__logo-img--desktop" width="146" height="40">
+              <use xlink:href="#logo-pink-blue-desktop"></use>
             </svg>
           </a>
         </div>
@@ -423,7 +429,7 @@
               <a class="social__link social__link--twitter" href="#">
                 <span class="visually-hidden">Мы в Твиттере</span>
                 <svg class="social__logo-img" width="18" height="15">
-                  <use xlink:href="./img/sprite.svg#twitter"></use>
+                  <use xlink:href="#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -431,7 +437,7 @@
               <a class="social__link social__link--facebook" href="#">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
                 <svg class="social__logo-img" width="8" height="19">
-                  <use xlink:href="./img/sprite.svg#facebook"></use>
+                  <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
@@ -439,7 +445,7 @@
               <a class="social__link social__link--youtube" href="#">
               <span class="visually-hidden">Мы в YouTube</span>
               <svg class="social__logo-img" width="14" height="15">
-                <use xlink:href="./img/sprite.svg#youtube"></use>
+                <use xlink:href="#icon-youtube"></use>
               </svg>
               </a>
             </li>
@@ -449,7 +455,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">Разработано</span>
             <svg class="copyright__logo-img" width="27" height="34">
-              <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+              <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
