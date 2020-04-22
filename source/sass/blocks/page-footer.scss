@@ -26,14 +26,14 @@
 }
 
 .page-footer__logo-link {
-  color: $firm-blue;
+  fill: $firm-blue;
 
   &:hover {
-    color: $firm-pink;
+    fill: $firm-pink;
   }
 
   &:active {
-    color: $firm-blue;
+    fill: $firm-blue;
     opacity: 0.3;
   }
 }
@@ -51,6 +51,7 @@
 
   &--mobile {
     display: inline-block;
+    vertical-align: middle;
   }
 }
 
@@ -83,6 +84,7 @@
 
     &--desktop {
       display: inline-block;
+      vertical-align: middle;
     }
   }
 }
