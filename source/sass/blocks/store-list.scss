@@ -1,19 +1,33 @@
 .store-list {
   padding: 0;
-  width: 205px;
+  width: 207px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   list-style: none;
 }
 
 .store-list__item {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
   width: 47px;
   height: 57px;
-  padding-top: 12px;
+  padding-top: 18px;
+}
+
+.store-list__link {
+  &--appstore {
+    margin-bottom: 4px;
+  }
+
+  &--googlestore {
+    margin-top: 2px;
+    margin-right: 1px;
+  }
+  &--windowsstore {
+    margin-top: 5px;
+  }
 }
 
 @media (min-width: $tablet-width) {

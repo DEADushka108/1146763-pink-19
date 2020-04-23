@@ -5,15 +5,14 @@
   top: -66px;
   width: auto;
   padding-top: 66px;
-  margin-bottom: -66px;
   background-color: $firm-blue;
   background-image: url("../img/bg/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: 320px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg/bg-back-mobile@2x.jpg");
-    background-size: 320px auto;
   }
 }
 

@@ -18,17 +18,18 @@
 }
 
 .slider__buttons {
+  width: 75px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin: 40px 0;
+  margin: 18px auto;
   padding: 0;
 }
 
 .slider__toggle {
   width: 6px;
   height: 6px;
-  margin: 0 10px;
+  margin-right: 4px;
   padding: 0;
   border: none;
   background-color: $firm-blue;

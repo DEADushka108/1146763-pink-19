@@ -7,8 +7,7 @@
   margin: 0 auto;
   background-image: url("../img/bg/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 19px 109px;
-  min-height: 603px;
+  background-position: 0 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,16 +21,20 @@
 
 .intro__text-promo {
   display: block;
-  width: 221px;
+  width: 245px;
+  font-size: 24px;
+  line-height: 30px;
   text-align: center;
   color: $text-white;
   font-weight: 300;
-  padding-bottom: 347px;
+  padding-bottom: 316px;
 }
 
 .intro__text {
   color: $text-white;
   text-align: center;
+  margin: 0;
+  padding-bottom: 29px;
   font-size: 14px;
   font-weight: 300;
   width: 250px;
@@ -46,7 +49,7 @@
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
-  padding: 17px 36px 14px 37px;
+  padding: 11px 36px 14px 37px;
   border-radius: 35px;
   text-align: center;
   color: $text-white;
