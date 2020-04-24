@@ -59,11 +59,21 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     display: block;
+    min-height: auto;
   }
 
   .page-footer__wrapper {
     flex-direction: row;
+    align-items: flex-start;
     width: 660px;
+    padding-top: 36px;
+    padding-bottom: 35px;
+  }
+
+  .page-footer__social {
+    margin: 0;
+    margin-right: 18px;
+    margin-top: 2px;
   }
 
   .page-footer__logo {

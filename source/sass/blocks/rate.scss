@@ -63,18 +63,18 @@
     z-index: 2;
   }
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -2px;
-      width: 73px;
-      height: 73px;
-      background-image: url("../img/bg/bg-hit.svg");
-      background-repeat: no-repeat;
-      z-index: 1;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 73px;
+    height: 73px;
+    background-image: url("../img/bg/bg-hit.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
   }
+}
 
 .rate__option {
   background-color: $bg-white;
@@ -139,7 +139,7 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-  
+
   .rate__header--hit {
     &::before {
       top: 12px;

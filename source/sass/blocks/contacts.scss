@@ -94,7 +94,8 @@
   }
 
   .contacts__wrapper {
-    width: auto;
+    width: 640px;
+    padding-bottom: 0;
   }
 
   .contacts__title {
@@ -102,7 +103,9 @@
     width: 370px;
     margin: 0 auto;
     font-size: 40px;
-    line-height: normal;
+    padding-top: 46px;
+    padding-bottom: 26px;
+    line-height: 48px;
   }
 
   .contacts__list {
@@ -112,7 +115,14 @@
   }
 
   .contacts__text {
-    width: 237px;
+    flex-basis: 50%;
+    margin-bottom: 3px;
+  }
+
+  .contacts__phone,
+  .contacts__email,
+  .contacts__adress {
+    padding-top: 5px;
   }
 
   .contacts__city {
@@ -121,11 +131,15 @@
 
   .contacts__map {
     width: auto;
-    height: 409px;
+    margin-top: 0;
+  }
+
+  .contacts__map-iframe {
+    height: 371px;
   }
 
   .contacts__bg {
-    top: -35px;
+    top: -36px;
   }
 }
 
