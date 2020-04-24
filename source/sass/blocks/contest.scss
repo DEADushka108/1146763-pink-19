@@ -11,6 +11,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
+  padding-bottom: 4px;
 }
 
 .contest__item {
@@ -30,12 +31,15 @@
   display: block;
   margin: 0 auto;
   text-align: center;
+  padding-top: 44px;
   padding-left: 22px;
   padding-right: 22px;
+  margin-bottom: 37px;
   width: 281px;
-  height: 75px;
+  height: 80px;
   overflow: hidden;
   font-size: 14px;
+  line-height: 30px;
 }
 
 .contest__button {
@@ -43,8 +47,9 @@
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
-  padding: 17px 39px 14px 40px;
+  padding: 21px 40px 22px 40px;
   border-radius: 3px;
+  font-size: 18px;
   text-align: center;
   text-transform: uppercase;
   color: $text-white;
@@ -77,6 +82,7 @@
 
 .contest__text-fn {
   display: block;
+  padding-top: 24px;
   text-align: center;
 }
 

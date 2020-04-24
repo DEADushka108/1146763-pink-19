@@ -16,23 +16,31 @@
 .contacts__title {
   padding: 0;
   margin: 0;
+  padding-top: 42px;
+  padding-bottom: 17px;
   font-size: 24px;
+  line-height: 29px;
   font-weight: 300;
 }
 
 .contacts__text {
+  text-align: center;
   font-weight: 700;
+  line-height: 22px;
 }
 
 .contacts__phone,
 .contacts__email,
 .contacts__adress {
   display: block;
+  width: 280px;
+  margin: 0 auto;
   text-decoration: none;
   color: $firm-pink;
   font-size: 24px;
+  line-height: 32px;
   font-weight: 300;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 
   &:hover,
   &:focus {
@@ -46,17 +54,21 @@
   }
 }
 
+.contacts__city {
+  display: none;
+}
+
 .contacts__map {
   position: relative;
-  height: 220px;
   margin: 0;
   padding: 0;
+  margin-top: 36px;
   line-height: 0;
 }
 
 .contacts__bg {
   position: absolute;
-  top: -42px;
+  top: -52px;
   left: 50%;
   width: 100%;
   height: auto;
@@ -70,7 +82,7 @@
   z-index: 1;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 199px;
   margin: 0;
   padding: 0;
   border: none;

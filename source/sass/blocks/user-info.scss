@@ -2,9 +2,11 @@
   width: 320px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 27px;
 }
 
 .user-info__item {
+  margin: 0;
   margin-left: 20px;
   margin-right: 20px;
   text-transform: uppercase;
@@ -12,9 +14,16 @@
   color: $firm-pink;
 }
 
+.user-info__label {
+  padding-left: 22px;
+  font-size: 14px;
+}
+
 .user-info__input {
   width: 100%;
-  padding: 17px 22px 18px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 14px 20px 15px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid $border-grey;

@@ -93,15 +93,15 @@
           <fieldset class="contest__item user-info">
             <legend class="visually-hidden">Расскажите о себе</legend>
             <p class="user-info__item">
-              <label for="user-surname">Фамилия:</label>
+              <label class="user-info__label" for="user-surname">Фамилия:</label>
               <input class="user-info__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию &#8432;" required>
             </p>
             <p class="user-info__item">
-              <label for="user-name">Имя:</label>
+              <label class="user-info__label" for="user-name">Имя:</label>
               <input class="user-info__input" id="user-name" type="text" name="name" placeholder="Введите ваше имя &#8432;" required>
             </p>
             <p class="user-info__item">
-              <label for="user-patronym">Отчество:</label>
+              <label class="user-info__label" for="user-patronym">Отчество:</label>
               <input class="user-info__input" id="user-patronym" type="text" name="patronym" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
@@ -112,7 +112,7 @@
                 Ваши безбашенные достижения в путешествии
               </p>
               <ul class="filter-input__item">
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--checkbox">
                   <label class="filter-input__checkbox-label" for="shark">
                     <input class="visually-hidden filter-input__checkbox" type="checkbox" id="shark" name="shark" value="shark" checked>
                     <svg class="filter-input__yes-icon" width="22" height="16">
@@ -121,7 +121,7 @@
                     Сделал селфи с акулой
                   </label>
                 </li>
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--checkbox">
                   <label class="filter-input__checkbox-label" for="burnt">
                     <input class="visually-hidden filter-input__checkbox" type="checkbox" id="burnt" name="burnt" value="burnt" checked>
                     <svg class="filter-input__yes-icon" width="22" height="16">
@@ -130,7 +130,7 @@
                     Обгорел на пляже
                   </label>
                 </li>
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--checkbox">
                   <label class="filter-input__checkbox-label" for="chuck">
                     <input class="visually-hidden filter-input__checkbox" type="checkbox" id="chuck" name="chuck" value="chuck">
                     <svg class="filter-input__yes-icon" width="22" height="16">
@@ -139,7 +139,7 @@
                     Видел Чака Норриса
                   </label>
                 </li>
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--checkbox">
                   <label class="filter-input__checkbox-label" for="gift">
                     <input class="visually-hidden filter-input__checkbox" type="checkbox" id="gift" name="gift" value="gift">
                     <svg class="filter-input__yes-icon" width="22" height="16">
@@ -148,7 +148,7 @@
                     Накупил сувениров
                   </label>
                 </li>
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--checkbox">
                   <label class="filter-input__checkbox-label" for="tower">
                     <input class="visually-hidden filter-input__checkbox" type="checkbox" id="tower" name="tower" value="tower">
                     <svg class="filter-input__yes-icon" width="22" height="16">
@@ -157,7 +157,7 @@
                     Удержал башню
                   </label>
                 </li>
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--checkbox">
                   <label class="filter-input__checkbox-label" for="hotel">
                     <input class="visually-hidden filter-input__checkbox" type="checkbox" id="hotel" name="hotel" value="hotel">
                     <svg class="filter-input__yes-icon" width="22" height="16">
@@ -195,15 +195,15 @@
                 С каким приложением путешествовали?
               </p>
               <ul  class="filter-input__item">
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--radio">
                   <input class="visually-hidden filter-input__radio" type="radio" name="app-version" id="ios" value="ios" checked>
                   <label class="filter-input__radio-label" for="ios">Pink для iOs</label>
                 </li>
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--radio">
                   <input class="visually-hidden filter-input__radio" type="radio" name="app-version" id="android" value="android">
                   <label class="filter-input__radio-label" for="android">Pink на Android</label>
                 </li>
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--radio">
                   <input class="visually-hidden filter-input__radio" type="radio" name="app-version" id="windowsphone" value="windowsphone">
                   <label class="filter-input__radio-label" for="windowsphone">Windows Phone</label>
                 </li>

@@ -10,7 +10,9 @@
 .user-comment__label {
   display: block;
   margin: 0 auto;
-  padding-bottom: 15px;
+  font-size: 14px;
+  padding-top: 7px;
+  padding-bottom: 11px;
   text-align: center;
 }
 
@@ -23,9 +25,11 @@
 
 .user-comment__input {
   width: 100%;
-  padding: 17px 22px 18px;
+  height: 200px;
+  padding: 14px 18px 18px;
   font-size: 18px;
   line-height: 30px;
+  margin-bottom: 11px;
   border: 2px solid $border-grey;
   box-sizing: border-box;
 

@@ -5,6 +5,7 @@
   top: -66px;
   width: auto;
   padding-top: 66px;
+  margin-bottom: -66px;
   background-color: $firm-blue;
   background-image: url("../img/bg/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -20,8 +21,9 @@
   width: 230px;
   padding: 0;
   margin: 0 auto;
-  padding-top: 35px;
-  padding-bottom: 80px;
+  padding-top: 30px;
+  line-height: 30px;
+  padding-bottom: 51px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;

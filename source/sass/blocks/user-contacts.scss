@@ -7,11 +7,22 @@
   color: $firm-pink;
 }
 
+.user-contacts__wrapper {
+  padding-top: 23px;
+  padding-bottom: 14px;
+}
+
 .user-contacts__item {
+  margin: 0;
   margin-left: 20px;
   margin-right: 20px;
   line-height: 30px;
   color: $firm-pink;
+}
+
+.user-contacts__label {
+  font-size: 14px;
+  padding-left: 22px;
 }
 
 .user-contacts__item svg {
@@ -21,7 +32,9 @@
 
 .user-contacts__input {
   width: 100%;
-  padding: 17px 22px 18px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  padding: 14px 20px 15px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid $border-grey;

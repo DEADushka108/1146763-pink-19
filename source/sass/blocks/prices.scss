@@ -17,19 +17,24 @@
 }
 
 .prices__rate {
-  transform: translateX(0);
+  transform: translateX(2px);
 }
 
 .prices__rate--base {
-  transform: translateX(280px);
+  transform: translateX(282px);
 }
 
 .prices__rate--standart {
-  transform: translateX(0);
+  transform: translateX(2px);
 }
 
 .prices__rate--unlim {
-  transform: translateX(-280px);
+  transform: translateX(-282px);
+}
+
+.prices .prices__toggles {
+  padding-top: 21px;
+  padding-bottom: 29px;
 }
 
 @media (min-width: $tablet-width) {

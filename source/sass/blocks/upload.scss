@@ -1,7 +1,7 @@
 .upload {
   width: auto;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 42px;
   background-color: $bg-grey;
 }
 
@@ -14,43 +14,53 @@
 
 .upload__link-list {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 42px 0 40px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 212px;
+  margin: 35px auto 30px;
   padding: 0;
 }
 
 .upload__crop-icon {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
+  margin-right: 32px;
 }
 
 .upload__fill-icon {
   width: 48px;
-  height: 43px;
+  height: 48px;
+  margin-top: 2px;
+  margin-right: 40px;
 }
 
 .upload__contrast-icon {
-  width: 32px;
-  height: 32px;
+  width: 33px;
+  height: 33px;
+  margin-top: 8px;
+}
+
+.upload__link svg {
+  opacity: 0.3;
 }
 
 .upload__link--active svg {
   fill: $firm-pink;
+  opacity: 1;
 }
 
 .upload__range {
   position: relative;
   margin: 0;
   padding: 0;
-  padding-bottom: 24px;
+  padding-bottom: 43px;
 
   &::after {
     content: "";
     position: absolute;
-    top: 34px;
-    left: -20px;
-    width: calc(100% + 40px);
+    top: 36px;
+    left: 0;
+    width: 100%;
     height: 1px;
     background-color: rgba($firm-blue, 0.1);
   }
@@ -73,7 +83,7 @@
 .upload__button {
   min-width: 280px;
   box-sizing: border-box;
-  padding: 17px 91px 14px;
+  padding: 13px 89px 15px 88px;
   border-radius: 35px;
   text-align: center;
   color: $firm-pink;

@@ -1,22 +1,29 @@
 .gallery {
   width: auto;
   background-color: $bg-white;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  margin-top: 30px;
 }
 
 .gallery__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding-bottom: 40px;
-  padding-top: 20px;
 }
 
 .gallery__text {
   display: block;
-  width: 245px;
+  width: 260px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 56px;
+  margin-top: 24px;
+  line-height: 30px;
+  margin-bottom: 50px;
   font-size: 14px;
+
+  &:last-of-type {
+    margin-bottom: 1px;
+  }
 }
 
 .gallery__list {
@@ -25,19 +32,40 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0;
   margin: 0 auto;
   list-style: none;
   text-align: center;
 }
 
+.gallery__item {
+  margin-bottom: 20px;
+}
+
 .gallery__figure {
   position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-content: stretch;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
-  min-height: 322px;
+  height: auto;
+
+  &--panorama {
+    margin-bottom: 20px;
+  }
+}
+
+.gallery__img--panorama {
+  width: 100%;
+}
+
+.gallery__link {
+  line-height: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .gallery__description {
@@ -48,7 +76,6 @@
   width: 250px;
   padding-left: 17px;
   padding-right: 13px;
-  min-height: 143px;
   font-size: 14px;
   text-align: left;
   font-weight: 300;
@@ -63,11 +90,11 @@
 }
 
 .gallery__info-text {
-  margin-top: 19px;
+  margin-top: 17px;
 }
 
 .gallery__caption {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .gallery__author {
@@ -77,15 +104,20 @@
 .gallery__time {
   font-size: 12px;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .gallery__rates {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   margin-top: auto;
   color: $firm-pink;
   text-transform: uppercase;
+  
+  &--panorama {
+    margin-bottom: 20px;
+  }
 }
 
 .gallery__like-button {
@@ -104,7 +136,7 @@
   content: "панорама дня";
   top: 0;
   right: 20px;
-  padding: 7px 21px 5px 20px;
+  padding: 5px 20px 7px 19px;
   font-size: 12px;
   font-weight: 700;
   color: $text-white;

@@ -6,8 +6,9 @@
 }
 
 .range__bar {
-  width: 100%;
+  width: 240px;
   height: 2px;
+  margin: 0 auto;
   background-color: $firm-blue;
 }
 
@@ -33,7 +34,7 @@
 }
 
 .range--crop .range__toggle {
-  left: 75%;
+  left: 72%;
 }
 
 .range--fill .range__toggle {
