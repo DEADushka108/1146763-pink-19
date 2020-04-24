@@ -39,11 +39,13 @@
 
 @media (min-width: $tablet-width) {
   .prices {
+    padding-bottom: 46px;
     background: linear-gradient(-5deg, $bg-grey 75%, $bg-white 10%);
   }
 
   .prices__wrapper {
     width: 660px;
+    padding-top: 86px;
   }
 
   .prices .prices__toggles {

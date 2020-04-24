@@ -77,11 +77,11 @@
   .advantages {
     width: auto;
     padding-bottom: 0;
-    background: linear-gradient(-5deg, $bg-grey 77%, $bg-white 10%);
+    background: linear-gradient(-4deg, $bg-grey 856px, $bg-white 50px);
   }
 
   .advantages__promo {
-    padding-top: 20px;
+    padding-top: 47px;
     padding-bottom: 20px;
     background-color: $bg-white;
   }
@@ -89,7 +89,7 @@
   .advantages__text-promo {
     width: 590px;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 49px;
 
     &:first-of-type {
       padding-bottom: 0;
@@ -111,29 +111,31 @@
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-end;
-    padding-top: 50px;
+    padding-top: 28px;
     padding-bottom: 4px;
   }
 
   .advantages__item {
+    margin-right: 22px;
     padding: 0;
-    padding-bottom: 35px;
-    width: 293px;
+    padding-bottom: 20px;
+    width: 308px;
     text-align: left;
 
     &:last-child {
-      padding-bottom: 35px;
+      padding-bottom: 24px;
       background: none;
     }
 
     &::before {
       position: absolute;
       content: "";
-      top: 28px;
+      top: -43px;
       left: 20px;
       width: 268px;
-      height: 448px;
+      height: 490px;
       background-repeat: no-repeat;
+      background-size: 268px auto;
     }
 
     &:nth-child(1)::before {
@@ -141,7 +143,6 @@
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/bg/iphone-screen-1-tablet@2x.png");
-        background-size: 268px auto;
       }
     }
 
@@ -150,7 +151,6 @@
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/bg/iphone-screen-2-tablet@2x.png");
-        background-size: 268px auto;
       }
     }
 
@@ -159,7 +159,6 @@
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/bg/iphone-screen-3-tablet@2x.png");
-        background-size: 268px auto;
       }
     }
   }
@@ -168,8 +167,8 @@
     display: block;
     margin: 0 auto;
     width: auto;
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding-top: 56px;
+    padding-bottom: 43px;
     background-color: $bg-white;
   }
 }
