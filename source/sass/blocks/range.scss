@@ -53,4 +53,29 @@
   .range {
     margin: 0;
   }
+
+  .range__bar {
+    width: 200px;
+    margin-right: 25px;
+    margin-bottom: 33px;
+    margin-top: 37px;
+    transform: translateX(-2px);
+  }
+
+  .range__toggle {
+    bottom: 50%;
+    transform: translateY(9px);
+  }
+
+  .range--crop .range__toggle {
+    left: 75%;
+  }
+
+  .range--fill .range__toggle {
+    left: 12%;
+  }
+
+  .range--contrast .range__toggle {
+    left: 49%;
+  }
 }

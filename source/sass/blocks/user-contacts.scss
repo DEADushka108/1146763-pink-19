@@ -52,25 +52,31 @@
 @media (min-width: $tablet-width) {
   .user-contacts {
     width: auto;
-    margin-left: 20px;
+    margin-top: 21px;
+    margin-left: 19px;
     margin-right: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 53px;
     order: 3;
   }
 
   .user-contacts__item {
     display: flex;
     flex-direction: column-reverse;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 28px;
     position: relative;
+
+    &:last-of-type {
+      margin-bottom: 2px;
+    }
   }
 
   .user-contacts__item svg {
     display: inline-block;
     vertical-align: middle;
     position: absolute;
-    top: 2px;
+    top: 3px;
     right: 2px;
     background-color: $bg-grey;
   }
@@ -84,12 +90,13 @@
   }
 
   .user-contacts__input {
-    padding: 15px 63px 15px 22px;
+    padding: 15px 63px 15px 19px;
+    margin-top: 1px;
+    margin-bottom: 9px;
   }
 
   .user-contacts__label {
-    margin-top: 10px;
-    margin-left: 20px;
+    padding-left: 20px;
   }
 }
 

@@ -40,6 +40,10 @@
 
 @media (min-width: $tablet-width) {
   .user-info {
+    margin-top: 26px;
+    padding-left: 17px;
+    padding-right: 19px;
+    padding-bottom: 8px;
     width: auto;
     border: none;
     order: 1;
@@ -51,11 +55,16 @@
     align-items: center;
     margin-left: 0;
     margin-right: 0;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
+  }
+
+  .user-info__label {
+    padding-left: 0;
+    margin-bottom: 8px;
   }
 
   .user-info__input {
-    margin-left: 22px;
+    margin-left: 18px;
   }
 }
 
