@@ -47,6 +47,11 @@
     background-image: url("../img/bg/iphone-screen-mobile@1x.png");
     background-position: bottom -42px center;
     background-repeat: no-repeat;
+    background-size: 157px 320px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg/iphone-screen-mobile@2x.png");
+    }
   }
 }
 
