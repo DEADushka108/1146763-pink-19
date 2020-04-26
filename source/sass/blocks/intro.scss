@@ -115,15 +115,30 @@
   .intro__wrapper {
     width: 980px;
     background-image: url("../img//bg/iphone-hand-desktop@1x.png");
-    background-position: 46px 97px;
+    background-position: 37px 97px;
+    background-size: 1050px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg/iphone-hand-tablet@2x.png");
-      background-size: 1400px auto;
+      background-image: url("../img/bg/iphone-hand-desktop@2x.png");
     }
   }
 
+  .intro__text-promo {
+    font-size: 50px;
+    line-height: 60px;
+    padding-top: 58px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .intro__button {
+    margin-top: 52px;
+    letter-spacing: 2px;
+    padding: 11px 26px 14px 30px;
+  }
+
   .intro__text {
-    margin-bottom: 200px;
+    margin-top: 33px;
+    margin-bottom: 93px;
   }
 }

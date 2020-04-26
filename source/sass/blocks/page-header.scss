@@ -74,9 +74,13 @@
   }
 
   .page-header__wrapper {
-    width: 980px;
+    width: 940px;
     display: flex;
     flex-direction: row;
+  }
+
+  .page-header__logo {
+    padding-left: 0;
   }
 
   .page-header__tablet {
