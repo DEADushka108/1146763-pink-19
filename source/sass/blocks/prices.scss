@@ -40,7 +40,7 @@
 @media (min-width: $tablet-width) {
   .prices {
     padding-bottom: 46px;
-    background: linear-gradient(-4deg, $bg-grey 376px, $bg-white 100px);
+    background: linear-gradient(-4deg, $bg-grey 89%, $bg-white 11%);
   }
 
   .prices__wrapper {
@@ -51,14 +51,21 @@
   .prices .prices__toggles {
     display: none;
   }
+
+  .prices__rate {
+    transform: translateX(none);
+  }
 }
 
 @media (min-width: $desktop-width) {
   .prices {
-    background: linear-gradient(-3deg, $bg-grey 75%, $bg-white 10%);
+    padding-top: 17px;
+    padding-bottom: 74px;
+    background: linear-gradient(-4deg, $bg-grey 85%, $bg-white 15%);
   }
 
   .prices__wrapper {
     width: 980px;
+    padding-top: 131px;
   }
 }

@@ -52,30 +52,48 @@
 @media (min-width: $tablet-width) {
   .range {
     margin: 0;
+    margin-top: 3px;
   }
 
   .range__bar {
-    width: 200px;
+    width: 202px;
     margin-right: 25px;
-    margin-bottom: 33px;
-    margin-top: 37px;
-    transform: translateX(-2px);
+    margin-bottom: 34px;
+    margin-top: 34px;
   }
 
-  .range__toggle {
-    bottom: 50%;
-    transform: translateY(9px);
+  .range--contrast .range__bar {
+    margin-top: 31px;
+    margin-bottom: 31px;
   }
 
   .range--crop .range__toggle {
-    left: 75%;
+    left: 77%;
   }
 
   .range--fill .range__toggle {
-    left: 12%;
+    left: 13%;
   }
 
   .range--contrast .range__toggle {
-    left: 49%;
+    left: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range__bar {
+    width: 288px;
+  }
+
+  .range--crop .range__toggle {
+    left: 26%;
+  }
+
+  .range--fill .range__toggle {
+    left: 91%;
+  }
+
+  .range--contrast .range__toggle {
+    left: 59%;
   }
 }

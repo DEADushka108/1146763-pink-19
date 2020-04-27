@@ -12,7 +12,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 331px;
+  width: 305px;
+  padding-right: 26px;
   margin-top: 12px;
 }
 
@@ -80,6 +81,7 @@
 
   .notice__article {
     width: 594px;
+    padding-right: 0;
     padding-top: 81px;
   }
 

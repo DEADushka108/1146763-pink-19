@@ -67,7 +67,7 @@
     margin-bottom: 28px;
     position: relative;
 
-    &:last-of-type {
+    &--email {
       margin-bottom: 2px;
     }
   }
@@ -103,14 +103,33 @@
 @media (min-width: $desktop-width) {
   .user-contacts {
     width: 936px;
+    margin-top: 0;
+    margin-bottom: 53px;
   }
 
   .user-contacts__wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 19px;
+    padding-bottom: 0;
   }
 
   .user-contacts__item {
-    flex-grow: 1;
+    width: 374px;
+    margin: 0;
+    margin-top: 2px;
+
+    &--phone {
+      margin-left: 20px;
+      margin-right: 25px;
+    }
+
+    &--email {
+      margin-bottom: 0;
+      margin-right: 20px;
+      margin-left: 25px;
+    }
+
+    
   }
 }

@@ -1,7 +1,7 @@
 .advantages {
   width: auto;
   text-align: center;
-  background: linear-gradient(-5deg, $bg-grey 785px, $bg-white 100px);
+  background: linear-gradient(-6deg, $bg-grey 75%, $bg-white 24%);
 }
 
 .advantages__wrapper {
@@ -74,16 +74,11 @@
   display: none;
 }
 
-// .advantages__description {
-
-//   line-height: 18px;
-// }
-
 @media (min-width: $tablet-width) {
   .advantages {
     width: auto;
     padding-bottom: 0;
-    background: linear-gradient(-4deg, $bg-grey 862px, $bg-white 50px);
+    background: linear-gradient(-4deg, $bg-grey 75%, $bg-white 25%);
   }
 
   .advantages__promo {
@@ -182,7 +177,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    background: linear-gradient(-3deg, $bg-grey 75%, $bg-white 10%);
+    background: linear-gradient(-4deg, $bg-grey 71%, $bg-white 10%);
   }
 
   .advantages__wrapper {

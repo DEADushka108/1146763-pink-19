@@ -70,7 +70,21 @@
 
 @media (min-width: $desktop-width) {
   .user-info {
-    width: 433px;
+    margin-top: 10px;
+    padding-bottom: 8px;
+    width: 436px;
     border: none;
+  }
+
+  .user-info__item {
+    padding-bottom: 33px;
+
+    &:last-child {
+      padding-bottom: 0px;
+    }
+  }
+
+  .user-info__input {
+    margin-left: 20px;
   }
 }
