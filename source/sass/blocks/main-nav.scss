@@ -123,6 +123,10 @@
     box-shadow: none;
     font-weight: 400;
     text-transform: none;
+
+    &:first-of-type {
+      box-shadow: none;
+    }
   }
 
   .main-nav__link {

@@ -169,6 +169,10 @@
     flex-direction: row;
   }
 
+  .contest__wrapper--radio {
+    width: 50%;
+  }
+
   .contest__text {
     width: 760px;
     margin-top: 80px;
@@ -178,5 +182,9 @@
 
   .contest__text-hidden {
     display: inline;
+  }
+
+  .contest__fn {
+    margin-bottom: 15px;
   }
 }

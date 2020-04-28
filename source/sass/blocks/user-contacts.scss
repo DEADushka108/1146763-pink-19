@@ -104,14 +104,14 @@
   .user-contacts {
     width: 936px;
     margin-top: 0;
-    margin-bottom: 53px;
+    margin-bottom: 54px;
   }
 
   .user-contacts__wrapper {
     display: flex;
     justify-content: space-between;
     padding: 19px;
-    padding-bottom: 0;
+    padding-bottom: 1px;
   }
 
   .user-contacts__item {
@@ -129,7 +129,5 @@
       margin-right: 20px;
       margin-left: 25px;
     }
-
-    
   }
 }
