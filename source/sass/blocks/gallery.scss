@@ -59,7 +59,6 @@
   align-content: stretch;
   margin: 0;
   padding: 0;
-  // min-height: auto;
 
   &--panorama {
     margin-bottom: 20px;
@@ -245,7 +244,7 @@
     margin-left: 10px;
     margin-right: 4px;
     justify-content: space-between;
-  
+
     &--panorama {
       order: 2;
       width: 135px;
