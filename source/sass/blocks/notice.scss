@@ -39,6 +39,15 @@
   margin: 0;
   font-size: 14px;
   color: $firm-pink;
+
+  &:hover,
+  &:focus {
+    color: $firm-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .notice__wrapper::before {

@@ -36,7 +36,7 @@
   padding-right: 22px;
   margin-bottom: 33px;
   width: 281px;
-  height: 84px;
+  min-height: 84px;
   overflow: hidden;
   font-size: 14px;
   line-height: 30px;
@@ -84,6 +84,10 @@
 
 .contest__text-hidden {
   display: none;
+
+  &:first-of-type {
+    display: inline;
+  }
 }
 
 

@@ -73,8 +73,11 @@
 
 .upload__range-item {
   display: none;
+ 
 
   &--active {
+    margin: 0 auto;
+    width: 230px;
     display: block;
   }
 }
@@ -102,7 +105,8 @@
 .upload__button--submit {
   margin-bottom: 12px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $firm-pink;
     color: $text-white;
   }
@@ -116,7 +120,8 @@
   color: rgba($firm-blue, 0.1);
   border-color: rgba($firm-blue, 0.1);
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba($firm-blue, 0.3);
     border-color: rgba($firm-blue, 0.3);
   }

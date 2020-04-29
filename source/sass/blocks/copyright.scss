@@ -14,7 +14,8 @@
   text-decoration: none;
   color: $firm-blue;
 
-  &:hover .copyright__logo-img {
+  &:hover .copyright__logo-img,
+  &:focus .copyright__logo-img {
     fill: $firm-blue;
   }
 

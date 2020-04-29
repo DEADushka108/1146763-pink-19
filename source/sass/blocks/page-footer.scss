@@ -29,7 +29,8 @@
 .page-footer__logo-link {
   fill: $firm-blue;
 
-  &:hover {
+  &:hover,
+  &:focus {
     fill: $firm-pink;
   }
 

@@ -86,8 +86,10 @@
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <section class="contest">
         <h2 class="visually-hidden">Анкета участника конкурса</h2>
-        <p class="contest__text">Поделитесь своей историей и получите шанс выиграть
-          ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        <p class="contest__text">
+          Поделитесь своей историей и получите шанс выиграть
+          ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="contest__text-hidden">Пожалуйста, заполните форму ниже:</span>
         </p>
         <form class="contest__form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="contest__item user-info">
@@ -218,7 +220,7 @@
             </p>
           </fieldset>
           <div class="contest__fn">
-            <button class="contest__button button" type="submit">Отправить форму</button>
+            <button class="contest__button contest__button--submit" type="submit">Отправить форму</button>
             <p class="contest__text-fn">
               <span class="contest__symbol">&#8432;</span> — обязательные<span class="contest__text-hidden"> для заполнения</span> поля
             </p>
@@ -230,17 +232,19 @@
             <p class="modal__text">
               Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
             </p>
-            <button class="contest__button button modal__button modal__button--err" type="submit">Ок</button>
+            <div class="modal__bg-err">
+              <button class="contest__button button modal__button modal__button--err" type="submit">Ок</button>
+            </div>
           </div>
           <div class="contest__modal modal modal--ok">
             <p class="modal__title">
               Ваша заявка отправлена
             </p>
             <p class="modal__text">
-              Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим&nbsp;вас.
+              Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
             </p>
-            <div class="modal__bg">
-              <button class="contest__button button modal__button" type="submit">Закрыть окно</button>
+            <div class="modal__bg-ok">
+              <button class="contest__button button modal__button modal__button--ok" type="submit">Закрыть окно</button>
             </div>
           </div>
         </form>
@@ -296,6 +300,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>

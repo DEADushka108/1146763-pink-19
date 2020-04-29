@@ -1,8 +1,9 @@
 .store-list {
   padding: 0;
-  width: 207px;
+  width: 244px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
 }

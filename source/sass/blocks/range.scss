@@ -1,6 +1,5 @@
 .range {
   position: relative;
-  margin: 10px 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -34,7 +33,7 @@
 }
 
 .range--crop .range__toggle {
-  left: 72%;
+  left: 100%;
 }
 
 .range--fill .range__toggle {

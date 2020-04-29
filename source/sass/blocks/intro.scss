@@ -45,6 +45,7 @@
 }
 
 .intro__button {
+  width: 281px;
   text-decoration: none;
   display: inline-block;
   vertical-align: middle;
@@ -58,7 +59,8 @@
   border: 3px solid $border-white;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $firm-pink;
     background-color: $bg-white;
   }
@@ -92,6 +94,7 @@
   }
 
   .intro__button {
+    width: 300px;
     margin-top: 32px;
     padding: 12px 45px 13px 46px;
     margin-left: 20px;
@@ -106,7 +109,7 @@
   }
 
   .intro__store {
-    margin-left: 66px;
+    margin-left: 48px;
     margin-top: 50px;
   }
 }
@@ -134,7 +137,7 @@
   .intro__button {
     margin-top: 52px;
     letter-spacing: 2px;
-    padding: 11px 26px 14px 30px;
+    padding: 11px 11px 14px 11px;
   }
 
   .intro__text {

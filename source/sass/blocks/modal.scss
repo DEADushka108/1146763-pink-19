@@ -1,14 +1,12 @@
 .modal {
-  // position: fixed;
-  // top: 50%;
-  // left: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   width: 320px;
   min-height: 289px;
-  // padding-left: 20px;
-  // padding-right: 20px;
   text-align: center;
   background-color: #ffffff;
-  // transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 2;
 }
 
@@ -18,7 +16,7 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  margin-top: 22px;
+  padding-top: 34px;
 }
 
 .modal__text {
@@ -28,11 +26,11 @@
   line-height: 24px;
   padding-right: 20px;
   padding-left: 20px;
-  padding-top: 8px;
-  padding-bottom: 17px;
+  padding-top: 25px;
+  padding-bottom: 32px;
 }
 
-.modal__bg {
+.modal__bg-ok {
   width: auto;
   padding-right: 22px;
   padding-left: 22px;
@@ -42,15 +40,19 @@
 }
 
 .modal--err {
-  display: block;
+  display: none;
 }
 
 .modal--ok {
-  display: block;
+  display: none;
 }
 
 .modal__button--err {
   margin-top: 6px;
+}
+
+.modal--show {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -70,10 +72,13 @@
   
   .modal__text {
     margin: 0 auto;
-    width: 305px;
+    width: 310px;
     font-size: 18px;
     line-height: 24px;
     padding-top: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
   }
 
   .modal__button {
@@ -84,7 +89,7 @@
     margin-top: 20px;
   }
 
-  .modal__bg {
+  .modal__bg-ok {
     margin: 0;
     padding: 0;
     margin-top: 13px;
@@ -92,4 +97,39 @@
     padding-bottom: 53px;
     background-color: $bg-grey;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    width: 780px;
+    min-height: 377px;
+  }
+
+  .modal__title {
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 460px;
+  }
+  
+  .modal__text {
+    margin: 0 auto;
+    width: 410px;
+    padding-top: 23px;
+    padding-bottom: 25px;
+  }
+
+  .modal__bg-err {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 34px;
+    padding-top: 30px;
+    padding-bottom: 53px;
+    background-color: $bg-grey;
+  }
+
+  .modal__button--ok {
+    min-width: 456px;
+  }
+
 }
