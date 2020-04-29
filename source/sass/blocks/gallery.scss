@@ -1,22 +1,37 @@
 .gallery {
   width: auto;
   background-color: $bg-white;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  margin-top: 30px;
 }
 
 .gallery__wrapper {
   width: 320px;
   margin: 0 auto;
-  padding-bottom: 40px;
-  padding-top: 20px;
 }
 
 .gallery__text {
   display: block;
-  width: 245px;
+  width: 260px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 56px;
+  line-height: 30px;
   font-size: 14px;
+
+  &--top {
+    margin-top: 24px;
+    margin-bottom: 50px;
+  }
+
+  &--bottom {
+    margin-top: 23px;
+  }
+
+  &--bottom:last-of-type {
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
 }
 
 .gallery__list {
@@ -25,19 +40,45 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0;
   margin: 0 auto;
   list-style: none;
   text-align: center;
 }
 
+.gallery__item {
+  margin-bottom: 20px;
+}
+
 .gallery__figure {
   position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-content: stretch;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
-  min-height: 322px;
+
+  &--panorama {
+    margin-bottom: 20px;
+  }
+}
+
+.gallery__img {
+  width: 280px;
+  height: 180px;
+
+  &--panorama {
+    width: 100%;
+    height: 137px;
+  }
+}
+
+.gallery__link {
+  line-height: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .gallery__description {
@@ -48,7 +89,6 @@
   width: 250px;
   padding-left: 17px;
   padding-right: 13px;
-  min-height: 143px;
   font-size: 14px;
   text-align: left;
   font-weight: 300;
@@ -63,11 +103,11 @@
 }
 
 .gallery__info-text {
-  margin-top: 19px;
+  margin-top: 17px;
 }
 
 .gallery__caption {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .gallery__author {
@@ -77,15 +117,20 @@
 .gallery__time {
   font-size: 12px;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .gallery__rates {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   margin-top: auto;
   color: $firm-pink;
   text-transform: uppercase;
+
+  &--panorama {
+    margin-bottom: 20px;
+  }
 }
 
 .gallery__like-button {
@@ -104,7 +149,7 @@
   content: "панорама дня";
   top: 0;
   right: 20px;
-  padding: 7px 21px 5px 20px;
+  padding: 5px 20px 7px 19px;
   font-size: 12px;
   font-weight: 700;
   color: $text-white;
@@ -115,6 +160,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .gallery {
+    margin-top: 80px;
+  }
+
   .gallery__wrapper {
     width: 660px;
   }
@@ -122,10 +171,32 @@
   .gallery__text {
     width: 440px;
     font-size: 18px;
+    margin-top: 72px;
+    margin-bottom: 76px;
+
+    &--bottom {
+      margin-bottom: 0;
+      margin-top: 45px;
+    }
+
+    &--bottom:last-of-type {
+      margin-top: 0;
+      margin-bottom: 29px;
+    }
+  }
+
+  .gallery__img {
+    width: 300px;
+    height: 300px;
+
+    &--panorama {
+      width: 100%;
+      height: 509px;
+    }
   }
 
   .gallery__list {
-    width: 620px;
+    width: 640px;
     flex-direction: row;
     align-items: stretch;
     flex-shrink: 1;
@@ -133,44 +204,61 @@
 
   .gallery__description {
     width: 270px;
-    min-height: 144px;
+    padding-top: 8px;
+    min-height: 147px;
 
     &--panorama {
       width: 590px;
-      min-height: 121px;
+      min-height: auto;
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap;
+      margin-bottom: 29px;
     }
+  }
+
+  .gallery__author {
+    padding-left: 11px;
   }
 
   .gallery__info-text--panorama {
     order: 1;
   }
 
-  .gallery__caption--panorama {
-    order: 3;
-    margin-bottom: 25px;
-    width: 519px;
-  }
-
-  .gallery__rates--panorama {
-    order: 2;
-    width: 140px;
-    margin-top: 19px;
-    margin-bottom: 0;
-  }
-
   .gallery__caption {
+    padding-left: 11px;
+    padding-right: 15px;
     padding-bottom: 0;
+
+    &--panorama {
+      order: 3;
+      padding-left: 11px;
+      letter-spacing: 0.2px;
+      margin-bottom: 24px;
+      width: 519px;
+    }
   }
 
   .gallery__rates {
+    font-size: 11px;
+    margin-left: 10px;
+    margin-right: 4px;
     justify-content: space-between;
+
+    &--panorama {
+      order: 2;
+      width: 135px;
+      letter-spacing: 0.4px;
+      margin-top: 17px;
+      font-size: 11px;
+      margin-bottom: 0;
+    }
   }
 
   .gallery__like-button {
     order: 2;
+    margin-right: 15px;
+    margin-top: 1px;
   }
 
   .gallery__link--panorama::before {
@@ -184,20 +272,45 @@
   }
 
   .gallery__text {
-    width: 568px;
+    width: 600px;
+    margin-bottom: 88px;
+
+    &--bottom {
+      margin-bottom: 0;
+      margin-top: 6px;
+    }
+
+    &--bottom:last-of-type {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
   }
 
   .gallery__list {
-    width: 940px;
+    width: 960px;
+  }
+
+  .gallery__item {
+    margin-bottom: 53px;
+  }
+
+  .gallery__img {
+    width: 300px;
+    height: 400px;
+
+    &--panorama {
+      width: 100%;
+      height: 506px;
+    }
   }
 
   .gallery__description {
     width: 270px;
-    min-height: 155px;
+    min-height: 148px;
 
     &--panorama {
       width: 910px;
-      min-height: 96px;
+      min-height: 88px;
     }
   }
 
@@ -208,5 +321,21 @@
   .gallery__link--panorama::before {
     top: 54px;
     right: 130px;
+    letter-spacing: -1px;
+    padding: 5px 18px 7px 16px;
+  }
+
+  .gallery__rates {
+    font-size: 6px;
+    letter-spacing: -0.9px;
+    margin-bottom: 22px;
+
+    &--panorama {
+      margin-bottom: 0;
+    }
+  }
+
+  .gallery__time {
+    letter-spacing: -1px;
   }
 }

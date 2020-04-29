@@ -1,13 +1,13 @@
 .range {
   position: relative;
-  margin: 10px 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 .range__bar {
-  width: 100%;
+  width: 240px;
   height: 2px;
+  margin: 0 auto;
   background-color: $firm-blue;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .range--crop .range__toggle {
-  left: 75%;
+  left: 100%;
 }
 
 .range--fill .range__toggle {
@@ -51,5 +51,48 @@
 @media (min-width: $tablet-width) {
   .range {
     margin: 0;
+    margin-top: 3px;
+  }
+
+  .range__bar {
+    width: 202px;
+    margin-right: 25px;
+    margin-bottom: 34px;
+    margin-top: 34px;
+  }
+
+  .range--contrast .range__bar {
+    margin-top: 31px;
+    margin-bottom: 31px;
+  }
+
+  .range--crop .range__toggle {
+    left: 77%;
+  }
+
+  .range--fill .range__toggle {
+    left: 13%;
+  }
+
+  .range--contrast .range__toggle {
+    left: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range__bar {
+    width: 288px;
+  }
+
+  .range--crop .range__toggle {
+    left: 26%;
+  }
+
+  .range--fill .range__toggle {
+    left: 91%;
+  }
+
+  .range--contrast .range__toggle {
+    left: 59%;
   }
 }

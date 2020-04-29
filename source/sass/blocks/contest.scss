@@ -11,6 +11,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
+  padding-bottom: 4px;
 }
 
 .contest__item {
@@ -30,12 +31,15 @@
   display: block;
   margin: 0 auto;
   text-align: center;
+  padding-top: 44px;
   padding-left: 22px;
   padding-right: 22px;
+  margin-bottom: 33px;
   width: 281px;
-  height: 75px;
+  min-height: 84px;
   overflow: hidden;
   font-size: 14px;
+  line-height: 30px;
 }
 
 .contest__button {
@@ -43,8 +47,9 @@
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
-  padding: 17px 39px 14px 40px;
+  padding: 21px 40px 22px 40px;
   border-radius: 3px;
+  font-size: 18px;
   text-align: center;
   text-transform: uppercase;
   color: $text-white;
@@ -62,14 +67,6 @@
   }
 }
 
-.contest__modal {
-  display: none;
-  width: 320px;
-  padding: 0 20px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .contest__fn {
   font-size: 14px;
   text-transform: uppercase;
@@ -77,6 +74,7 @@
 
 .contest__text-fn {
   display: block;
+  padding-top: 24px;
   text-align: center;
 }
 
@@ -86,6 +84,10 @@
 
 .contest__text-hidden {
   display: none;
+
+  &:first-of-type {
+    display: inline;
+  }
 }
 
 
@@ -113,14 +115,20 @@
 
   .contest__legend {
     display: inline;
+    padding-left: 25px;
+    padding-right: 25px;
     text-transform: uppercase;
     color: $firm-pink;
     text-align: center;
+    font-size: 14px;
   }
 
   .contest__text {
     width: 500px;
     font-size: 18px;
+    margin-top: 20px;
+    padding-top: 92px;
+    height: auto;
   }
 
   .contest__item:not(:first-of-type) {
@@ -129,17 +137,24 @@
 
   .contest__fn {
     width: 100%;
+    padding-top: 10px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     order: 6;
   }
 
   .contest__button {
-    margin-left: 20px;
+    width: 300px;
+    margin-left: 19px;
+    padding: 21px 50px;
   }
 
   .contest__text-fn {
-    margin-right: 20px;
+    margin-right: 19px;
+    padding-top: 23px;
+    padding-bottom: 20px;
   }
 }
 
@@ -150,7 +165,22 @@
     flex-direction: row;
   }
 
+  .contest__wrapper--radio {
+    width: 50%;
+  }
+
+  .contest__text {
+    width: 760px;
+    margin-top: 80px;
+    padding-top: 92px;
+    height: auto;
+  }
+
   .contest__text-hidden {
     display: inline;
+  }
+
+  .contest__fn {
+    margin-bottom: 15px;
   }
 }

@@ -7,11 +7,22 @@
   color: $firm-pink;
 }
 
+.user-contacts__wrapper {
+  padding-top: 23px;
+  padding-bottom: 14px;
+}
+
 .user-contacts__item {
+  margin: 0;
   margin-left: 20px;
   margin-right: 20px;
   line-height: 30px;
   color: $firm-pink;
+}
+
+.user-contacts__label {
+  font-size: 14px;
+  padding-left: 22px;
 }
 
 .user-contacts__item svg {
@@ -21,7 +32,9 @@
 
 .user-contacts__input {
   width: 100%;
-  padding: 17px 22px 18px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  padding: 14px 20px 15px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid $border-grey;
@@ -39,24 +52,31 @@
 @media (min-width: $tablet-width) {
   .user-contacts {
     width: auto;
-    margin-left: 20px;
+    margin-top: 21px;
+    margin-left: 19px;
     margin-right: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 53px;
     order: 3;
   }
 
   .user-contacts__item {
     display: flex;
     flex-direction: column-reverse;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-bottom: 28px;
     position: relative;
+
+    &--email {
+      margin-bottom: 2px;
+    }
   }
 
   .user-contacts__item svg {
     display: inline-block;
+    vertical-align: middle;
     position: absolute;
-    top: 2px;
+    top: 3px;
     right: 2px;
     background-color: $bg-grey;
   }
@@ -70,26 +90,44 @@
   }
 
   .user-contacts__input {
-    padding: 15px 63px 15px 22px;
+    padding: 15px 63px 15px 19px;
+    margin-top: 1px;
+    margin-bottom: 9px;
   }
 
   .user-contacts__label {
-    margin-top: 10px;
-    margin-left: 20px;
+    padding-left: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .user-contacts {
     width: 936px;
+    margin-top: 0;
+    margin-bottom: 54px;
   }
 
   .user-contacts__wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 19px;
+    padding-bottom: 1px;
   }
 
   .user-contacts__item {
-    flex-grow: 1;
+    width: 374px;
+    margin: 0;
+    margin-top: 2px;
+
+    &--phone {
+      margin-left: 20px;
+      margin-right: 25px;
+    }
+
+    &--email {
+      margin-bottom: 0;
+      margin-right: 20px;
+      margin-left: 25px;
+    }
   }
 }

@@ -14,7 +14,8 @@
   text-decoration: none;
   color: $firm-blue;
 
-  &:hover .copyright__logo-img {
+  &:hover .copyright__logo-img,
+  &:focus .copyright__logo-img {
     fill: $firm-blue;
   }
 
@@ -26,15 +27,16 @@
 .copyright__text {
   margin: 0;
   padding: 0;
-  margin-top: 5px;
   margin-right: 14px;
-  font-size: 18px;
+  margin-top: 5px;
+  font-size: 14px;
   line-height: 18px;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     margin-right: 20px;
+    margin-top: 15px;
   }
 }
 
@@ -45,5 +47,8 @@
 
   .copyright__text {
     padding-right: 15px;
+    font-size: 18px;
+    margin-right: 0;
+    margin-top: 4px;
   }
 }

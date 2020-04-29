@@ -11,8 +11,7 @@
 .rate__header {
   box-sizing: border-box;
   min-width: 278px;
-  padding-top: 16px;
-  padding-bottom: 20px;
+  padding-bottom: 33px;
   color: $text-white;
   background-color: $firm-blue;
   border-left: 2px solid $border-grey;
@@ -20,7 +19,7 @@
 
 .rate__title {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 24px;
   text-transform: uppercase;
 }
 
@@ -28,7 +27,7 @@
   margin-top: 2px;
   margin-bottom: 0;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 4px;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -45,16 +44,14 @@
 
 .rate__header--hit {
   position: relative;
-  background-image: url("../img/bg-hit.svg");
-  background-repeat: no-repeat;
 
   &::before {
     position: absolute;
     content: "хит";
     height: 10px;
     width: 28px;
-    top: 20px;
-    left: 9px;
+    top: 21px;
+    left: 6px;
     font-size: 14px;
     line-height: 14px;
     text-align: center;
@@ -63,6 +60,18 @@
     color: $text-white;
     background-color: $firm-pink;
     transform: rotate(-45deg);
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 73px;
+    height: 73px;
+    background-image: url("../img/bg/bg-hit.svg");
+    background-repeat: no-repeat;
     z-index: 1;
   }
 }
@@ -70,12 +79,13 @@
 .rate__option {
   background-color: $bg-white;
   box-sizing: border-box;
-  padding-top: 16px;
-  padding-right: 20px;
-  padding-bottom: 13px;
-  padding-left: 22px;
+  height: 60px;
+  padding-top: 18px;
+  padding-right: 16px;
+  padding-bottom: 10px;
+  padding-left: 21px;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 20px;
   text-transform: uppercase;
   border: 2px solid $border-grey;
   border-top: none;
@@ -124,38 +134,59 @@
   }
 
   .rate__header {
-    min-width: 100px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    box-sizing: border-box;
+    min-width: 25%;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
-  .rate__value {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 300;
+  .rate__header--hit {
+    &::before {
+      top: 12px;
+      left: 5px;
+    }
+
+    &::after {
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/bg/bg-hit-tablet.svg");
+    }
+  }
+
+  .rate__title {
+    margin: 0;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 18px;
     text-transform: uppercase;
   }
 
+  .rate__value {
+    margin-bottom: 11px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   .rate__option {
-    width: 25%;
+    width: 155px;
+    height: auto;
     text-align: center;
-    padding-top: 8px;
-    padding-bottom: 7px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     border: 2px solid $border-grey;
     border-top: none;
 
     &--feature {
-      width: 153px;
-      margin: 0;
-      padding: 0;
-      padding-left: 15px;
+      width: 152px;
+      padding-left: 13px;
+      padding-top: 9px;
+      padding-bottom: 10px;
       font-size: 14px;
-      line-height: 30px;
+      line-height: 24px;
       text-transform: none;
       text-align: left;
       background-color: $bg-white;
+      border-top: 2px solid $border-grey;
     }
   }
 
@@ -173,7 +204,64 @@
     width: 980px;
   }
 
+  .rate__header {
+    box-sizing: border-box;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .rate__header--hit {
+    &::before {
+      top: 21px;
+      left: 9px;
+    }
+
+    &::after {
+      width: 73px;
+      height: 73px;
+      background-image: url("../img/bg/bg-hit.svg");
+    }
+  }
+
+  .rate__title {
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .rate__value {
+    margin-top: 5px;
+    margin-bottom: 21px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
   .rate__option {
-    width: 234px;
+    width: 236px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border: 2px solid $border-grey;
+    border-top: none;
+
+    &--feature {
+      width: 231px;
+      padding-left: 20px;
+      padding-top: 16px;
+      padding-bottom: 19px;
+      font-size: 18px;
+      line-height: 24px;
+      text-transform: none;
+      text-align: left;
+      background-color: $bg-white;
+      border-top: 2px solid $border-grey;
+    }
+  }
+
+  .rate__feature {
+    display: inline;
+  }
+
+  .rate__feature-wrapper {
+    justify-content: center;
   }
 }

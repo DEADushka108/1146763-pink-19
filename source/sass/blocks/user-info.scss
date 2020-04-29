@@ -2,9 +2,11 @@
   width: 320px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 27px;
 }
 
 .user-info__item {
+  margin: 0;
   margin-left: 20px;
   margin-right: 20px;
   text-transform: uppercase;
@@ -12,9 +14,16 @@
   color: $firm-pink;
 }
 
+.user-info__label {
+  padding-left: 22px;
+  font-size: 14px;
+}
+
 .user-info__input {
   width: 100%;
-  padding: 17px 22px 18px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 14px 20px 15px;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid $border-grey;
@@ -31,6 +40,10 @@
 
 @media (min-width: $tablet-width) {
   .user-info {
+    margin-top: 26px;
+    padding-left: 17px;
+    padding-right: 19px;
+    padding-bottom: 8px;
     width: auto;
     border: none;
     order: 1;
@@ -42,17 +55,36 @@
     align-items: center;
     margin-left: 0;
     margin-right: 0;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
+  }
+
+  .user-info__label {
+    padding-left: 0;
+    margin-bottom: 8px;
   }
 
   .user-info__input {
-    margin-left: 22px;
+    margin-left: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .user-info {
-    width: 433px;
+    margin-top: 10px;
+    padding-bottom: 8px;
+    width: 436px;
     border: none;
+  }
+
+  .user-info__item {
+    padding-bottom: 33px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .user-info__input {
+    margin-left: 20px;
   }
 }

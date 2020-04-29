@@ -1,7 +1,7 @@
 .upload {
   width: auto;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 42px;
   background-color: $bg-grey;
 }
 
@@ -12,45 +12,60 @@
   text-align: center;
 }
 
+.upload__img {
+  width: 280px;
+  height: 180px;
+}
+
 .upload__link-list {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 42px 0 40px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 212px;
+  margin: 35px auto 30px;
   padding: 0;
 }
 
 .upload__crop-icon {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
+  margin-right: 32px;
 }
 
 .upload__fill-icon {
   width: 48px;
-  height: 43px;
+  height: 48px;
+  margin-top: 2px;
+  margin-right: 40px;
 }
 
 .upload__contrast-icon {
-  width: 32px;
-  height: 32px;
+  width: 33px;
+  height: 33px;
+  margin-top: 8px;
+}
+
+.upload__link svg {
+  opacity: 0.3;
 }
 
 .upload__link--active svg {
   fill: $firm-pink;
+  opacity: 1;
 }
 
 .upload__range {
   position: relative;
   margin: 0;
   padding: 0;
-  padding-bottom: 24px;
+  padding-bottom: 43px;
 
   &::after {
     content: "";
     position: absolute;
-    top: 34px;
-    left: -20px;
-    width: calc(100% + 40px);
+    top: 36px;
+    left: 0;
+    width: 100%;
     height: 1px;
     background-color: rgba($firm-blue, 0.1);
   }
@@ -60,6 +75,8 @@
   display: none;
 
   &--active {
+    margin: 0 auto;
+    width: 230px;
     display: block;
   }
 }
@@ -73,7 +90,7 @@
 .upload__button {
   min-width: 280px;
   box-sizing: border-box;
-  padding: 17px 91px 14px;
+  padding: 13px 89px 15px 88px;
   border-radius: 35px;
   text-align: center;
   color: $firm-pink;
@@ -87,7 +104,8 @@
 .upload__button--submit {
   margin-bottom: 12px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $firm-pink;
     color: $text-white;
   }
@@ -101,7 +119,8 @@
   color: rgba($firm-blue, 0.1);
   border-color: rgba($firm-blue, 0.1);
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba($firm-blue, 0.3);
     border-color: rgba($firm-blue, 0.3);
   }
@@ -113,20 +132,37 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
+  .upload {
+    padding-bottom: 53px;
+  }
+
   .upload__form {
     display: flex;
     justify-content: space-between;
-    width: 660px;
+    width: 620px;
   }
 
   .upload__range-item {
     display: block;
+    width: 190px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -1px;
+      left: -54px;
+      width: 274px;
+      height: 1px;
+      background-color: rgba($firm-blue, 0.1);
+    }
   }
 
   .upload__img {
-    padding-right: 47px;
+    width: 300px;
+    height: 300px;
+    margin-top: 37px;
+    margin-right: 46px;
   }
 
   .upload__controls {
@@ -139,38 +175,44 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 162px;
-    flex-basis: 20%;
+    flex-basis: 5%;
     margin: 0;
     padding: 0;
-    margin-top: 9px;
+    margin-top: 44px;
   }
 
   .upload__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
   }
 
   .upload__crop-icon {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
   }
 
   .upload__fill-icon {
     width: 24px;
-    height: 22px;
+    height: 24px;
+    margin-bottom: 6px;
+    margin-right: 0;
+    margin-left: 2px;
   }
 
   .upload__contrast-icon {
     width: 16px;
     height: 16px;
+    margin-bottom: 30px;
+    margin-left: 3px;
   }
 
   .upload__link svg {
     fill: $firm-pink;
+    opacity: 1;
   }
 
   .upload__range {
@@ -179,7 +221,8 @@
     justify-content: space-between;
     flex-basis: 80%;
     padding-top: 19px;
-    height: 140px;
+    height: 162px;
+    width: 200px;
 
     &::after {
       display: none;
@@ -187,41 +230,106 @@
   }
 
   .upload__buttons {
-    margin-top: 60px;
+    margin-top: 59px;
+    margin-right: 11px;
+  }
+
+  .upload__button {
+    min-width: 261px;
+    padding: 13px 82px 16px 74px;
+  }
+
+  .upload__button--submit {
+    margin-bottom: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .upload {
+    padding-bottom: 62px;
+    background-color: $bg-white;
+  }
+
   .upload__form {
-    width: 980px;
+    width: 940px;
+    padding-bottom: 57px;
+    background-color: $bg-grey;
+  }
+
+  .upload__img {
+    width: 300px;
+    height: 400px;
+    margin-left: 80px;
+    margin-top: 57px;
+  }
+
+  .upload__link-list {
+    flex-basis: 2%;
+    margin-top: 52px;
+    margin-left: 40px;
   }
 
   .upload__link {
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
   }
 
   .upload__crop-icon {
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
+    margin-right: 0;
+    margin-left: 2px;
   }
 
   .upload__fill-icon {
     width: 48px;
-    height: 43px;
+    height: 48px;
+    margin-top: 8px;
+    margin-bottom: 0;
   }
 
   .upload__contrast-icon {
     width: 32px;
     height: 32px;
+    margin-bottom: 8px;
+    margin-left: 3px;
   }
 
   .upload__range {
-    margin-top: 12px;
-    height: 120px;
+    margin-top: 20px;
+    margin-right: 90px;
+    width: 288px;
+    flex-basis: auto;
+  }
+
+  .upload__range-item {
+    width: 270px;
+
+    &::after {
+      bottom: -2px;
+      left: -92px;
+      width: 410px;
+    }
+  }
+
+  .upload__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    margin-top: 142px;
+    margin-right: 0;
+    margin-left: 44px;
+  }
+
+  .upload__button {
+    margin-top: 16px;
+    min-width: 183px;
+    padding: 13px 37px 16px 42px;
   }
 
   .upload__button--submit {
     margin-bottom: 0;
+    margin-right: 44px;
   }
 }

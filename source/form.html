@@ -3,9 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк-конкурс</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/icons/sprite.svg"></include>
+    </div>
     <header class="page-header page-header--active"><!--Header-->
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
@@ -56,10 +59,10 @@
           <button class="main-nav__toggle main-nav__toggle--close" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <svg class="main-nav__humburger-icon" width="50" height="24">
-              <use xlink:href="./img/sprite.svg#humburger"></use>
+              <use xlink:href="#icon-menu-burger"></use>
             </svg>
             <svg class="main-nav__close-icon" width="25" height="25">
-              <use xlink:href="./img/sprite.svg#close-cross"></use>
+              <use xlink:href="#icon-menu-cross"></use>
             </svg>
           </button><!--Hamburger-->
           <ul class="main-nav__list main-nav__list--open">
@@ -83,22 +86,24 @@
       <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <section class="contest">
         <h2 class="visually-hidden">Анкета участника конкурса</h2>
-        <p class="contest__text">Поделитесь своей историей и получите шанс выиграть
-          ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        <p class="contest__text">
+          Поделитесь своей историей и получите шанс выиграть
+          ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="contest__text-hidden">Пожалуйста, заполните форму ниже:</span>
         </p>
         <form class="contest__form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="contest__item user-info">
             <legend class="visually-hidden">Расскажите о себе</legend>
             <p class="user-info__item">
-              <label for="user-surname">Фамилия:</label>
+              <label class="user-info__label" for="user-surname">Фамилия:</label>
               <input class="user-info__input" id="user-surname" type="text" name="surname" placeholder="Укажите фамилию &#8432;" required>
             </p>
             <p class="user-info__item">
-              <label for="user-name">Имя:</label>
+              <label class="user-info__label" for="user-name">Имя:</label>
               <input class="user-info__input" id="user-name" type="text" name="name" placeholder="Введите ваше имя &#8432;" required>
             </p>
             <p class="user-info__item">
-              <label for="user-patronym">Отчество:</label>
+              <label class="user-info__label" for="user-patronym">Отчество:</label>
               <input class="user-info__input" id="user-patronym" type="text" name="patronym" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
@@ -109,56 +114,56 @@
                 Ваши безбашенные достижения в путешествии
               </p>
               <ul class="filter-input__item">
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--checkbox">
                   <label class="filter-input__checkbox-label" for="shark">
                     <input class="visually-hidden filter-input__checkbox" type="checkbox" id="shark" name="shark" value="shark" checked>
                     <svg class="filter-input__yes-icon" width="22" height="16">
-                      <use xlink:href="./img/sprite.svg#yes-icon"></use>
+                      <use xlink:href="#icon-yes"></use>
                     </svg>
                     Сделал селфи с акулой
                   </label>
                 </li>
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--checkbox">
                   <label class="filter-input__checkbox-label" for="burnt">
                     <input class="visually-hidden filter-input__checkbox" type="checkbox" id="burnt" name="burnt" value="burnt" checked>
                     <svg class="filter-input__yes-icon" width="22" height="16">
-                      <use xlink:href="./img/sprite.svg#yes-icon"></use>
+                      <use xlink:href="#icon-yes"></use>
                     </svg>
                     Обгорел на пляже
                   </label>
                 </li>
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--checkbox">
                   <label class="filter-input__checkbox-label" for="chuck">
                     <input class="visually-hidden filter-input__checkbox" type="checkbox" id="chuck" name="chuck" value="chuck">
                     <svg class="filter-input__yes-icon" width="22" height="16">
-                      <use xlink:href="./img/sprite.svg#yes-icon"></use>
+                      <use xlink:href="#icon-yes"></use>
                     </svg>
                     Видел Чака Норриса
                   </label>
                 </li>
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--checkbox">
                   <label class="filter-input__checkbox-label" for="gift">
                     <input class="visually-hidden filter-input__checkbox" type="checkbox" id="gift" name="gift" value="gift">
                     <svg class="filter-input__yes-icon" width="22" height="16">
-                      <use xlink:href="./img/sprite.svg#yes-icon"></use>
+                      <use xlink:href="#icon-yes"></use>
                     </svg>
                     Накупил сувениров
                   </label>
                 </li>
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--checkbox">
                   <label class="filter-input__checkbox-label" for="tower">
-                    <input class="visually-hidden filter-input__checkbox" type="checkbox" id="tower" name="tower" value="tower">
+                    <input class="visually-hidden filter-input__checkbox" type="checkbox" id="tower" name="tower" value="tower" checked>
                     <svg class="filter-input__yes-icon" width="22" height="16">
-                      <use xlink:href="./img/sprite.svg#yes-icon"></use>
+                      <use xlink:href="#icon-yes"></use>
                     </svg>
                     Удержал башню
                   </label>
                 </li>
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--checkbox">
                   <label class="filter-input__checkbox-label" for="hotel">
                     <input class="visually-hidden filter-input__checkbox" type="checkbox" id="hotel" name="hotel" value="hotel">
                     <svg class="filter-input__yes-icon" width="22" height="16">
-                      <use xlink:href="./img/sprite.svg#yes-icon"></use>
+                      <use xlink:href="#icon-yes"></use>
                     </svg>
                     Разгромил отель
                   </label>
@@ -171,14 +176,14 @@
             <div class="user-contacts__wrapper">
               <p class="user-contacts__item user-contacts__item--phone">
                 <svg class="user-contacts__phone-icon" width="20" height="20">
-                  <use xlink:href="./img/sprite.svg#phone-icon"></use>
+                  <use xlink:href="#icon-phone"></use>
                 </svg>
                 <label class="user-contacts__label" for="user-phone">Номер телефона</label>
                 <input class="user-contacts__input" id="user-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
               </p>
               <p class="user-contacts__item user-contacts__item--email">
                 <svg class="user-contacts__email-icon" width="18" height="14">
-                  <use xlink:href="./img/sprite.svg#mail-icon"></use>
+                  <use xlink:href="#icon-mail"></use>
                 </svg>
                 <label class="user-contacts__label" for="user-email">Адрес почты</label>
                 <input class="user-contacts__input" id="user-email" type="email" name="email" placeholder="Введите почту &#8432;" required>
@@ -191,16 +196,16 @@
               <p class="filter-input__label">
                 С каким приложением путешествовали?
               </p>
-              <ul  class="filter-input__item">
-                <li class="filter-input__option">
+              <ul class="filter-input__item">
+                <li class="filter-input__option filter-input__option--radio">
                   <input class="visually-hidden filter-input__radio" type="radio" name="app-version" id="ios" value="ios" checked>
-                  <label class="filter-input__radio-label" for="ios">Pink для iOs</label>
+                  <label class="filter-input__radio-label" for="ios">Pink для iOS</label>
                 </li>
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--radio">
                   <input class="visually-hidden filter-input__radio" type="radio" name="app-version" id="android" value="android">
                   <label class="filter-input__radio-label" for="android">Pink на Android</label>
                 </li>
-                <li class="filter-input__option">
+                <li class="filter-input__option filter-input__option--radio">
                   <input class="visually-hidden filter-input__radio" type="radio" name="app-version" id="windowsphone" value="windowsphone">
                   <label class="filter-input__radio-label" for="windowsphone">Windows Phone</label>
                 </li>
@@ -211,13 +216,13 @@
             <legend class="contest__legend">Опишите свои эмоции</legend>
             <p class="user-comment__item">
               <label class="user-comment__label" for="comment-field">Опишите свои эмоции</label>
-              <textarea class="user-comment__input" name="comment" id="comment-field" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="user-comment__input" name="comment" id="comment-field" rows="2" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </fieldset>
           <div class="contest__fn">
-            <button class="contest__button button" type="submit">Отправить форму</button>
+            <button class="contest__button contest__button--submit" type="submit">Отправить форму</button>
             <p class="contest__text-fn">
-              <span class="contest__symbol">&#8432;</span>&nbsp; — обязательные<span class="contest__text-hidden"> для заполнения</span> поля
+              <span class="contest__symbol">&#8432;</span> — обязательные<span class="contest__text-hidden"> для заполнения</span> поля
             </p>
           </div>
           <div class="contest__modal modal modal--err">
@@ -227,16 +232,20 @@
             <p class="modal__text">
               Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
             </p>
-            <button class="contest__button button" type="submit">Ок</button>
+            <div class="modal__bg-err">
+              <button class="contest__button button modal__button modal__button--err" type="submit">Ок</button>
+            </div>
           </div>
-          <div class="contest__modal modal">
+          <div class="contest__modal modal modal--ok">
             <p class="modal__title">
               Ваша заявка отправлена
             </p>
             <p class="modal__text">
               Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
             </p>
-            <button class="contest__button button" type="submit">Закрыть окно</button>
+            <div class="modal__bg-ok">
+              <button class="contest__button button modal__button modal__button--ok" type="submit">Закрыть окно</button>
+            </div>
           </div>
         </form>
       </section>
@@ -245,8 +254,11 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="index.html">
-            <svg class="page-footer__logo-img" width="146" height="40">
-              <use xlink:href="./img/sprite.svg#logo-footer"></use>
+            <svg class="page-footer__logo-img page-footer__logo-img--mobile" width="146" height="40">
+              <use xlink:href="#logo-pink-blue-mobile"></use>
+            </svg>
+            <svg class="page-footer__logo-img page-footer__logo-img--desktop" width="146" height="40">
+              <use xlink:href="#logo-pink-blue-desktop"></use>
             </svg>
           </a>
         </div>
@@ -256,7 +268,7 @@
               <a class="social__link social__link--twitter" href="#">
                 <span class="visually-hidden">Мы в Твиттере</span>
                 <svg class="social__logo-img" width="18" height="15">
-                  <use xlink:href="./img/sprite.svg#twitter"></use>
+                  <use xlink:href="#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -264,7 +276,7 @@
               <a class="social__link social__link--facebook" href="#">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
                 <svg class="social__logo-img" width="8" height="19">
-                  <use xlink:href="./img/sprite.svg#facebook"></use>
+                  <use xlink:href="#icon-facebook"></use>
                 </svg>
               </a>
             </li>
@@ -272,7 +284,7 @@
               <a class="social__link social__link--youtube" href="#">
               <span class="visually-hidden">Мы в YouTube</span>
               <svg class="social__logo-img" width="14" height="15">
-                <use xlink:href="./img/sprite.svg#youtube"></use>
+                <use xlink:href="#icon-youtube"></use>
               </svg>
               </a>
             </li>
@@ -282,12 +294,12 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">Разработано</span>
             <svg class="copyright__logo-img" width="27" height="34">
-              <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+              <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

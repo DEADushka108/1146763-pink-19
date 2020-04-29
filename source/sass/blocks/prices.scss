@@ -11,47 +11,61 @@
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 154px;
+  padding-top: 111px;
   overflow: hidden;
   box-sizing: border-box;
 }
 
 .prices__rate {
-  transform: translateX(0);
+  transform: translateX(2px);
 }
 
 .prices__rate--base {
-  transform: translateX(280px);
+  transform: translateX(282px);
 }
 
 .prices__rate--standart {
-  transform: translateX(0);
+  transform: translateX(2px);
 }
 
 .prices__rate--unlim {
-  transform: translateX(-280px);
+  transform: translateX(-282px);
+}
+
+.prices .prices__toggles {
+  padding-top: 21px;
+  padding-bottom: 29px;
 }
 
 @media (min-width: $tablet-width) {
   .prices {
-    background: linear-gradient(-5deg, $bg-grey 75%, $bg-white 10%);
+    padding-bottom: 46px;
+    background: linear-gradient(-4deg, $bg-grey 89%, $bg-white 11%);
   }
 
   .prices__wrapper {
     width: 660px;
+    padding-top: 86px;
   }
 
   .prices .prices__toggles {
     display: none;
   }
+
+  .prices__rate {
+    transform: translateX(none);
+  }
 }
 
 @media (min-width: $desktop-width) {
   .prices {
-    background: linear-gradient(-3deg, $bg-grey 75%, $bg-white 10%);
+    padding-top: 17px;
+    padding-bottom: 74px;
+    background: linear-gradient(-4deg, $bg-grey 85%, $bg-white 15%);
   }
 
   .prices__wrapper {
     width: 980px;
+    padding-top: 131px;
   }
 }

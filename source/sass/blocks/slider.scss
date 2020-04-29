@@ -18,17 +18,18 @@
 }
 
 .slider__buttons {
+  width: 75px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin: 40px 0;
+  margin: 18px auto;
   padding: 0;
 }
 
 .slider__toggle {
   width: 6px;
   height: 6px;
-  margin: 0 10px;
+  margin-right: 4px;
   padding: 0;
   border: none;
   background-color: $firm-blue;
@@ -73,11 +74,11 @@
     fill: $firm-blue;
   }
 
-  .slider__buttons .slider__toggle--nav--right {
+  .slider__buttons .slider__toggle--right {
     display: block;
     position: absolute;
-    top: 40%;
-    right: 0;
+    top: 30%;
+    right: 16px;
     border: none;
     width: 22px;
     height: 41px;
@@ -94,11 +95,11 @@
     }
   }
 
-  .slider__buttons .slider__toggle--nav--left {
+  .slider__buttons .slider__toggle--left {
     display: block;
     position: absolute;
-    top: 40%;
-    left: 0;
+    top: 30%;
+    left: 20px;
     border: none;
     width: 22px;
     height: 41px;

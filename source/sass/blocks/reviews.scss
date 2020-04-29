@@ -11,7 +11,7 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 34px;
+  padding-top: 42px;
 }
 
 .reviews__item {
@@ -34,6 +34,7 @@
 }
 
 .reviews__text {
+  margin-top: 13px;
   font-size: 14px;
   line-height: 30px;
 }
@@ -50,6 +51,11 @@
 
   .reviews__wrapper {
     width: 660px;
+  }
+
+  .reviews__author {
+    padding-top: 18px;
+    padding-bottom: 17px;
   }
 
   .reviews__author-info {
@@ -72,21 +78,28 @@
   .reviews__wrapper {
     position: relative;
     width: 980px;
-    padding-top: 30px;
+    padding-top: 35px;
   }
 
   .reviews__quotes-icon {
     display: inline-block;
-    padding-top: 30px;
+    vertical-align: middle;
+    padding-top: 73px;
+    margin-left: 5px;
   }
 
   .reviews__list {
-    width: 685px;
+    width: 690px;
     margin: 0 auto;
+  }
+
+  .reviews__author {
+    padding-bottom: 0;
   }
 
   .reviews__author-info {
     font-size: 18px;
+    padding-top: 2px;
   }
 
   .reviews__author-name {
