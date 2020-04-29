@@ -55,4 +55,3 @@ btnMenu.classList.toggle("main-nav__toggle--close");
 siteMenu.classList.toggle("main-nav__list--open");
 pageHeader.classList.toggle("page-header--active");
 toggleMenu (btnMenu, siteMenu, pageHeader);
-
