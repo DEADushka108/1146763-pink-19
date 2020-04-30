@@ -25,6 +25,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -74,7 +75,7 @@ gulp.task("script", function() {
       },
         ignoreFiles: ["*.min.js"]
     }))
-    .pipe(gulp.dest('build/js'));
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("copy", function () {
