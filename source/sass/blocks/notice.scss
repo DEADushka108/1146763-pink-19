@@ -50,7 +50,11 @@
   }
 }
 
-.notice__wrapper::before {
+.notice__img {
+  position: relative;
+}
+
+.notice__img::before {
   position: absolute;
   content: "24";
   top: 58px;
@@ -106,7 +110,7 @@
     color: $firm-pink;
   }
 
-  .notice__wrapper::before {
+  .notice__img::before {
     top: 71px;
     left: 43px;
     width: 220px;
