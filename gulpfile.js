@@ -15,7 +15,6 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
-var concat = require("gulp-concat");
 var minify = require("gulp-minify");
 
 gulp.task("css", function () {
