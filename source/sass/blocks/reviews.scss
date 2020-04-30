@@ -14,9 +14,10 @@
   padding-top: 42px;
 }
 
-.reviews__item {
+.reviews__list .reviews__item {
+  width: 320px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .reviews__list {
@@ -34,6 +35,7 @@
 }
 
 .reviews__text {
+  width: auto;
   margin-top: 13px;
   font-size: 14px;
   line-height: 30px;
@@ -45,11 +47,11 @@
 
 
 @media (min-width: $tablet-width) {
-  .reviews {
-    width: auto;
+  .reviews__wrapper {
+    width: 660px;
   }
 
-  .reviews__wrapper {
+  .reviews__list .reviews__item {
     width: 660px;
   }
 
@@ -79,6 +81,10 @@
     position: relative;
     width: 980px;
     padding-top: 35px;
+  }
+
+  .reviews__list .reviews__item {
+    width: 980px;
   }
 
   .reviews__quotes-icon {

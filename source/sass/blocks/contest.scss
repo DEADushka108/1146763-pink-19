@@ -84,10 +84,6 @@
 
 .contest__text-hidden {
   display: none;
-
-  &:first-of-type {
-    display: inline;
-  }
 }
 
 
@@ -101,7 +97,6 @@
     width: auto;
     background-color: $bg-white;
     display: flex;
-
     align-items: stretch;
 
     &--checkbox {
@@ -129,6 +124,10 @@
     margin-top: 20px;
     padding-top: 92px;
     height: auto;
+  }
+
+  .contest__text-hidden:first-of-type {
+      display: inline;
   }
 
   .contest__item:not(:first-of-type) {
@@ -161,12 +160,17 @@
 @media (min-width: $desktop-width) {
   .contest__form {
     width: 980px;
-    padding-top: 30px;
+    padding-top: 5px;
     flex-direction: row;
   }
 
   .contest__wrapper--radio {
     width: 50%;
+  }
+
+  .contest__wrapper--checkbox {
+    min-height: 228px;
+    width: 980px;
   }
 
   .contest__text {
