@@ -179,20 +179,24 @@
           <fieldset class="contest__item user-contacts">
             <legend class="contest__legend">Контактная информация</legend>
             <div class="user-contacts__wrapper">
-              <p class="user-contacts__item user-contacts__item--phone">
-                <svg class="user-contacts__phone-icon" width="20" height="20">
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
+              <div class="user-contacts__item user-contacts__item--phone">
+                <div class="user-contacts__icon">
+                  <svg class="user-contacts__phone-icon" width="20" height="20">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
+                </div>
                 <label class="user-contacts__label" for="user-phone">Номер телефона</label>
                 <input class="user-contacts__input" id="user-phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
-              </p>
-              <p class="user-contacts__item user-contacts__item--email">
-                <svg class="user-contacts__email-icon" width="18" height="14">
-                  <use xlink:href="#icon-mail"></use>
-                </svg>
+              </div>
+              <div class="user-contacts__item user-contacts__item--email">
+                <div class="user-contacts__icon">
+                  <svg class="user-contacts__email-icon" width="18" height="14">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
+                </div>
                 <label class="user-contacts__label" for="user-email">Адрес почты</label>
                 <input class="user-contacts__input" id="user-email" type="email" name="email" placeholder="Введите почту &#8432;" required>
-              </p>
+              </div>
             </div>
           </fieldset>
           <div class="contest__wrapper contest__wrapper--radio">
@@ -306,6 +310,8 @@
         </div>
       </div>
     </footer>
+    <script src="./js/svg4everybody.min.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
     <script src="./js/script.min.js"></script>
   </body>
 </html>

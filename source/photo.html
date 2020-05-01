@@ -337,14 +337,16 @@
       <section class="upload">
         <h2 class="visually-hidden">Загрузить фотографию</h2>
         <form class="upload__form" action="https://echo.htmlacademy.ru" method="POST">
-          <picture class="upload__img">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/content/photo-road-desktop@1x.webp 1x, ./img/content/photo-road-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)" srcset="./img/content/photo-road-tablet@1x.webp 1x, ./img/content/photo-road-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/content/photo-road-mobile@1x.webp 1x, ./img/content/photo-road-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="./img/content/photo-road-desktop@1x.jpg 1x, ./img/content/photo-road-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="./img/content/photo-road-tablet@1x.jpg 1x, ./img/content/photo-road-tablet@2x.jpg 2x">
-            <img src="./img/content/photo-road-mobile@1x.jpg" srcset="./img/content/photo-road-mobile@2x.jpg 2x" alt="дорога">
-          </picture>
+          <div class="upload__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="./img/content/photo-road-desktop@1x.webp 1x, ./img/content/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="./img/content/photo-road-tablet@1x.webp 1x, ./img/content/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/content/photo-road-mobile@1x.webp 1x, ./img/content/photo-road-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="./img/content/photo-road-desktop@1x.jpg 1x, ./img/content/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="./img/content/photo-road-tablet@1x.jpg 1x, ./img/content/photo-road-tablet@2x.jpg 2x">
+              <img src="./img/content/photo-road-mobile@1x.jpg" srcset="./img/content/photo-road-mobile@2x.jpg 2x" alt="дорога">
+            </picture>
+          </div>
           <div class="upload__controls">
             <div class="upload__link-list">
               <a class="upload__link upload__link--crop upload__link--active">
@@ -436,7 +438,8 @@
         </div>
       </div>
     </footer>
-    <script src="./js/picturefill.min.js"></script>
+    <script src="./js/svg4everybody.min.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
     <script src="./js/script.min.js"></script>
   </body>
 </html>

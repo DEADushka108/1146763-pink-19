@@ -109,7 +109,8 @@
   }
 
   .contest__legend {
-    display: inline;
+    display: block;
+    margin: 0 auto;
     padding-left: 25px;
     padding-right: 25px;
     text-transform: uppercase;

@@ -255,17 +255,22 @@
     background-color: $bg-grey;
   }
 
+  .upload__controls {
+    width: 51%;
+  }
+
   .upload__img {
     width: 300px;
     height: 400px;
     margin-left: 80px;
+    margin-right: 86px;
     margin-top: 57px;
   }
 
   .upload__link-list {
     width: 2%;
     margin-top: 52px;
-    margin-left: 40px;
+    // margin-left: 40px;
   }
 
   .upload__link {
@@ -315,9 +320,9 @@
     justify-content: center;
     align-items: flex-start;
     padding: 0;
-    margin-top: 142px;
+    margin-top: 141px;
     margin-right: 0;
-    margin-left: 44px;
+    margin-left: 4px;
   }
 
   .upload__button {

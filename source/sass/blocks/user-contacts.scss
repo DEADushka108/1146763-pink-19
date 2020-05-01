@@ -72,21 +72,29 @@
     }
   }
 
-  .user-contacts__item svg {
+  .user-contacts__icon svg {
+    display: inline;
+    text-align: center;
+    background-color: $bg-grey;
+    fill: $firm-pink;
+  }
+
+  .user-contacts__icon {
     display: inline-block;
-    vertical-align: middle;
     position: absolute;
-    top: 3px;
+    top: 4px;
     right: 2px;
+    width: 60px;
+    height: 59px;
     background-color: $bg-grey;
   }
 
   .user-contacts__phone-icon {
-    padding: 21px 20px 19px;
+    padding: 20px 20px 10px;
   }
 
   .user-contacts__email-icon {
-    padding: 24px 21px 22px;
+    padding: 23px 21px 10px;
   }
 
   .user-contacts__input {
