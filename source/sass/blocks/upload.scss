@@ -15,6 +15,7 @@
 .upload__img {
   width: 280px;
   height: 180px;
+  margin: 0 auto;
 }
 
 .upload__link-list {
@@ -22,7 +23,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 212px;
-  margin: 35px auto 30px;
+  margin: 234px auto 30px;
   padding: 0;
 }
 
@@ -76,14 +77,14 @@
 
   &--active {
     margin: 0 auto;
-    width: 230px;
+    width: 240px;
     display: block;
   }
 }
 
 .upload__buttons {
   margin: 0;
-  padding: 20px 0 0;
+  padding: 30px 0 0;
   line-height: 0;
 }
 
@@ -221,7 +222,7 @@
     justify-content: space-between;
     padding-top: 19px;
     height: 162px;
-    width: 200px;
+    width: 220px;
 
     &::after {
       display: none;
@@ -229,7 +230,7 @@
   }
 
   .upload__buttons {
-    margin-top: 59px;
+    margin-top: 49px;
     margin-right: 11px;
   }
 
@@ -270,7 +271,6 @@
   .upload__link-list {
     width: 2%;
     margin-top: 52px;
-    // margin-left: 40px;
   }
 
   .upload__link {
