@@ -32,6 +32,7 @@
   padding: 0;
 
   &--checkbox {
+    position: relative;
     margin-bottom: 52px;
     margin-top: 24px;
   }
@@ -54,8 +55,13 @@
   background-color: $bg-grey;
 }
 
+.filter-input__text {
+  width: 250px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .filter-input__checkbox-label {
-  position: relative;
   padding-left: 70px;
 
   &::before {
@@ -88,6 +94,9 @@
 .filter-input__radio-label {
   position: relative;
   padding-left: 69px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
 
   &::before {
     content: "";
@@ -107,12 +116,13 @@
 .filter-input__radio:checked + .filter-input__radio-label::after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 50%;
   left: 12px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: $firm-pink;
+  transform: translateY(-50%);
 }
 
 .filter-input__radio + .filter-input__radio-label:hover::before,
@@ -147,6 +157,11 @@
 
   .filter-input__radio-label {
     padding-left: 59px;
+    width: auto;
+  }
+
+  .filter-input__text {
+    width: 470px;
   }
 
   .filter-input__checkbox-label {
@@ -177,22 +192,20 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contest__wrapper--checkbox {
-    min-height: 228px;
-  }
-
   .filter-input--checkbox {
-    padding-bottom: 5px;
-    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-top: 0;
     padding-left: 25px;
     padding-right: 0;
   }
 
   .filter-input--checkbox .filter-input__item {
+    width: 910px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
+    flex-wrap: wrap;
+    min-height: 175px;
     padding: 0;
     margin: 0;
     margin-top: 28px;
@@ -203,15 +216,14 @@
 
     &--checkbox {
       width: 255px;
-      min-height: 76px;
       margin: 0;
-      margin-top: 7px;
+      margin-top: 18px;
       margin-left: 20px;
     }
 
     &--radio {
       margin-top: 9px;
-      margin-bottom: 45px;
+      margin-bottom: 42px;
     }
 
     &--radio:last-child {
@@ -220,12 +232,10 @@
 
     &--checkbox:nth-child(2n) {
       order: 2;
-      // margin-bottom: 17px;
     }
 
     &--checkbox:nth-child(2n+1) {
       order: 1;
-      // margin-bottom: 44px;
     }
   }
 
@@ -235,5 +245,9 @@
     padding-left: 49px;
     padding-bottom: 59px;
     margin-bottom: 51px;
+  }
+
+  .filter-input__text {
+    width: 200px;
   }
 }

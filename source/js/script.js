@@ -50,7 +50,7 @@ function toggleMenu (toggle, menu, bg) {
     bg.classList.toggle("page-header--active");
   });
 }
-
+btnMenu.classList.remove("main-nav__toggle--nojs");
 btnMenu.classList.toggle("main-nav__toggle--close");
 siteMenu.classList.toggle("main-nav__list--open");
 pageHeader.classList.toggle("page-header--active");

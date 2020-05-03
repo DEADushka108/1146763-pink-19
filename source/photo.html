@@ -2,7 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Мобильный редактор изображений">
+    <meta name="description" content="Фотогалерея мобильного приложения Pink">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="./js/picturefill.min.js" async></script>
     <title>HTML Academy: Пинк-фотографии</title>
+    <link rel="preload" href="./fonts/opensans.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -12,6 +21,7 @@
     <header class="page-header page-header--active"><!--Header-->
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
+          <span class="visually-hidden">На главную</span>
           <svg viewBox="0 0 146.3 40.375">
             <g class="page-header__mobile">
               <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
@@ -56,7 +66,7 @@
           </svg>
         </a>
         <nav class="main-nav"><!--Navigation-->
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+          <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--nojs" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <svg class="main-nav__humburger-icon" width="50" height="24">
               <use xlink:href="#icon-menu-burger"></use>
@@ -327,14 +337,16 @@
       <section class="upload">
         <h2 class="visually-hidden">Загрузить фотографию</h2>
         <form class="upload__form" action="https://echo.htmlacademy.ru" method="POST">
-          <picture class="upload__img">
-            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/content/photo-road-desktop@1x.webp 1x, ./img/content/photo-road-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)" srcset="./img/content/photo-road-tablet@1x.webp 1x, ./img/content/photo-road-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/content/photo-road-mobile@1x.webp 1x, ./img/content/photo-road-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="./img/content/photo-road-desktop@1x.jpg 1x, ./img/content/photo-road-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="./img/content/photo-road-tablet@1x.jpg 1x, ./img/content/photo-road-tablet@2x.jpg 2x">
-            <img src="./img/content/photo-road-mobile@1x.jpg" srcset="./img/content/photo-road-mobile@2x.jpg 2x" alt="дорога">
-          </picture>
+          <div class="upload__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="./img/content/photo-road-desktop@1x.webp 1x, ./img/content/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="./img/content/photo-road-tablet@1x.webp 1x, ./img/content/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/content/photo-road-mobile@1x.webp 1x, ./img/content/photo-road-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="./img/content/photo-road-desktop@1x.jpg 1x, ./img/content/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="./img/content/photo-road-tablet@1x.jpg 1x, ./img/content/photo-road-tablet@2x.jpg 2x">
+              <img src="./img/content/photo-road-mobile@1x.jpg" srcset="./img/content/photo-road-mobile@2x.jpg 2x" alt="дорога">
+            </picture>
+          </div>
           <div class="upload__controls">
             <div class="upload__link-list">
               <a class="upload__link upload__link--crop upload__link--active">
@@ -379,6 +391,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a class="page-footer__logo-link" href="index.html">
+            <span class="visually-hidden">На главную</span>
             <svg class="page-footer__logo-img page-footer__logo-img--mobile" width="146" height="40">
               <use xlink:href="#logo-pink-blue-mobile"></use>
             </svg>
@@ -425,6 +438,8 @@
         </div>
       </div>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./js/svg4everybody.min.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>

@@ -2,7 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Мобильное приложение для редактирования приложений">
+    <meta name="description" content="Официальный сайт мобильного приложения Pink">
     <title>HTML Academy: Пинк</title>
+    <link rel="preload" href="./fonts/opensans.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -56,7 +60,7 @@
           </svg>
         </a>
         <nav class="main-nav"><!--Navigation-->
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+          <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--nojs" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <svg class="main-nav__humburger-icon" width="50" height="24">
               <use xlink:href="#icon-menu-burger"></use>
@@ -160,9 +164,11 @@
         </div>
         <div class="advantages__notice notice">
           <div class="notice__wrapper">
-            <svg class="notice__timer-icon" width="238" height="276">
-              <use xlink:href="#icon-timer"></use>
-            </svg>
+            <div class="notice__img">
+              <svg class="notice__timer-icon" width="238" height="276">
+                <use xlink:href="#icon-timer"></use>
+              </svg>
+            </div>
             <div class="notice__article">
               <h3 class="notice__title">Эффект на&nbsp;24 часа!</h3>
               <p class="notice__text">
@@ -414,7 +420,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <a class="page-footer__logo-link" href="index.html">
+          <a class="page-footer__logo-link">
             <svg class="page-footer__logo-img page-footer__logo-img--mobile" width="147" height="40">
               <use xlink:href="#logo-pink-blue-mobile"></use>
             </svg>
@@ -461,6 +467,8 @@
         </div>
       </div>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./js/svg4everybody.min.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>
