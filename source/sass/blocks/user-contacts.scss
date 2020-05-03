@@ -59,6 +59,10 @@
     order: 3;
   }
 
+  .user-contacts__wrapper {
+    padding-bottom: 13px;
+  }
+
   .user-contacts__item {
     display: flex;
     flex-direction: column-reverse;
@@ -98,8 +102,9 @@
   }
 
   .user-contacts__input {
-    padding: 15px 63px 15px 19px;
-    margin-top: 1px;
+    padding: 18px 63px 17px 19px;
+    line-height: 18px;
+    margin-top: 2px;
     margin-bottom: 9px;
   }
 

@@ -252,7 +252,7 @@
       transform: translateX(-50%);
     }
 
-    &:nth-child(1)::before {
+    &:nth-child(3n+1)::before {
       background-image: url("../img/bg/iphone-screen-1-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -260,7 +260,7 @@
       }
     }
 
-    &:nth-child(2)::before {
+    &:nth-child(3n+2)::before {
       background-image: url("../img/bg/iphone-screen-2-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -268,7 +268,7 @@
       }
     }
 
-    &:nth-child(3)::before {
+    &:nth-child(3n+3)::before {
       background-image: url("../img/bg/iphone-screen-3-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
