@@ -88,7 +88,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    width: 980px;
+    width: 940px;
     padding-bottom: 72px;
   }
 
@@ -96,6 +96,10 @@
     margin-right: 0;
     margin-left: 7px;
     margin-top: 3px;
+  }
+
+  .page-footer__logo {
+    margin-left: 0;
   }
 
   .page-footer__logo-img {

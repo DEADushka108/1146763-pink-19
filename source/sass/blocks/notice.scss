@@ -78,13 +78,14 @@
 
 @media (min-width: $desktop-width) {
   .notice__wrapper {
-    width: 980px;
+    width: 940px;
     align-items: flex-start;
   }
 
   .notice__timer-icon {
     width: 298px;
     height: 345px;
+    margin-left: 0;
   }
 
   .notice__title {
@@ -93,7 +94,7 @@
   }
 
   .notice__article {
-    width: 594px;
+    width: 573px;
     padding-right: 0;
     padding-top: 81px;
   }
@@ -112,7 +113,7 @@
 
   .notice__img::before {
     top: 71px;
-    left: 43px;
+    left: 23px;
     width: 220px;
     height: 220px;
     line-height: 206px;

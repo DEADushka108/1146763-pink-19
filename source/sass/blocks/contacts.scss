@@ -141,6 +141,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     flex-grow: 1;
+    margin: 0 auto;
   }
 
   .contacts__text {
@@ -194,7 +195,8 @@
 
 @media (min-width: $desktop-width) {
   .contacts__wrapper {
-    width: 960px;
+    width: 950px;
+    overflow-x: hidden;
   }
 
   .contacts__title {
@@ -205,14 +207,21 @@
     padding-bottom: 38px;
   }
 
+  .contacts__list {
+    width: auto;
+  }
+
   .contacts__phone,
   .contacts__email,
   .contacts__adress {
+    width: 220px;
     padding-top: 26px;
     margin-bottom: 19px;
   }
 
   .contacts__text {
+    width: 220px;
+
     &:first-of-type {
       order: 1;
     }
@@ -234,6 +243,7 @@
     background-image: url("../img/bg/bg-map-desktop@1x.jpg");
     background-size: 1200px auto;
     background-position: bottom -200px center;
+    overflow-x: hidden;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg/bg-map-desktop@2x.jpg");

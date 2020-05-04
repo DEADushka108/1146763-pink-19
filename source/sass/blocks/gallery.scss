@@ -267,7 +267,8 @@
 
 @media (min-width: $desktop-width) {
   .gallery__wrapper {
-    width: 1200px;
+    width: auto;
+    margin: 0 auto;
   }
 
   .gallery__text {
@@ -286,11 +287,26 @@
   }
 
   .gallery__list {
-    width: 960px;
+    width: 940px;
+    justify-content: flex-start;
   }
 
   .gallery__item {
     margin-bottom: 53px;
+    margin-right: 20px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+
+  .gallery__figure--panorama {
+    margin: 0 auto;
+  }
+
+  .gallery__link--panorama {
+    position: relative;
+    margin: 0 auto;
   }
 
   .gallery__img {
@@ -299,6 +315,7 @@
 
     &--panorama {
       width: 100%;
+      max-width: 1200px;
       height: 506px;
     }
   }
@@ -310,30 +327,28 @@
     &--panorama {
       width: 910px;
       min-height: 88px;
+      margin-bottom: 50px;
     }
   }
 
   .gallery__caption--panorama {
     width: 873px;
+    margin-bottom: 22px;
   }
 
   .gallery__link--panorama::before {
     top: 54px;
     right: 130px;
-    letter-spacing: -1px;
-    padding: 5px 18px 7px 16px;
+    padding: 5px 20px 7px 19px;
   }
 
   .gallery__rates {
-    font-size: 9px;
+    font-size: 12px;
     margin-bottom: 22px;
 
     &--panorama {
+      font-size: 13px;
       margin-bottom: 0;
     }
-  }
-
-  .gallery__time {
-    letter-spacing: -1px;
   }
 }

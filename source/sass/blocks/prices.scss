@@ -61,11 +61,13 @@
   .prices {
     padding-top: 17px;
     padding-bottom: 74px;
-    background: linear-gradient(-3deg, $bg-grey 84%, $bg-white 16%);
+    background: linear-gradient(-4deg, $bg-grey 88%, $bg-white 12%);
   }
 
   .prices__wrapper {
-    width: 980px;
+    width: 940px;
+    padding-left: 0;
+    padding-right: 0;
     padding-top: 131px;
   }
 }

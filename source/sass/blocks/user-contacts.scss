@@ -116,7 +116,7 @@
 @media (min-width: $desktop-width) {
   .user-contacts {
     width: 936px;
-    margin-top: 0;
+    margin: 0;
     margin-bottom: 54px;
   }
 
@@ -124,7 +124,19 @@
     display: flex;
     justify-content: space-between;
     padding: 19px;
-    padding-bottom: 1px;
+    padding-bottom: 3px;
+  }
+
+  .user-contacts__input {
+    margin-top: 0;
+  }
+
+  .user-contacts__icon {
+    top: 2px;
+  }
+
+  .user-contacts__label {
+    padding-left: 18px;
   }
 
   .user-contacts__item {

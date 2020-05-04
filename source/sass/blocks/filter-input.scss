@@ -33,13 +33,13 @@
 
   &--checkbox {
     position: relative;
-    margin-bottom: 52px;
-    margin-top: 24px;
+    margin-bottom: 49px;
+    margin-top: 25px;
   }
 
   &--radio {
     margin-top: 20px;
-    margin-bottom: 45px;
+    margin-bottom: 42px;
   }
 
   &:last-child {
@@ -193,19 +193,21 @@
 
 @media (min-width: $desktop-width) {
   .filter-input--checkbox {
-    padding-bottom: 15px;
+    padding-bottom: 18px;
     padding-top: 0;
     padding-left: 25px;
     padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .filter-input--checkbox .filter-input__item {
     width: 910px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: baseline;
     flex-wrap: wrap;
-    min-height: 175px;
+    min-height: 170px;
     padding: 0;
     margin: 0;
     margin-top: 28px;
@@ -215,10 +217,11 @@
     margin-left: 5px;
 
     &--checkbox {
-      width: 255px;
+      width: 223px;
       margin: 0;
-      margin-top: 18px;
-      margin-left: 20px;
+      margin-top: 15px;
+      margin-left: 34px;
+      margin-right: 46px;
     }
 
     &--radio {
@@ -240,11 +243,12 @@
   }
 
   .filter-input--radio {
-    margin-top: 4px;
-    margin-left: 35px;
+    margin-top: 5px;
+    margin-left: 34px;
+    margin-right: 1px;
     padding-left: 49px;
     padding-bottom: 59px;
-    margin-bottom: 51px;
+    margin-bottom: 52px;
   }
 
   .filter-input__text {

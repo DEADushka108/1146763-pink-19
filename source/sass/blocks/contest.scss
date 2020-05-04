@@ -34,7 +34,7 @@
   padding-top: 44px;
   padding-left: 22px;
   padding-right: 22px;
-  margin-bottom: 33px;
+  margin-bottom: 27px;
   width: 281px;
   min-height: 84px;
   overflow: hidden;
@@ -123,6 +123,7 @@
     width: 500px;
     font-size: 18px;
     margin-top: 20px;
+    margin-bottom: 34px;
     padding-top: 92px;
     height: auto;
   }
@@ -160,7 +161,7 @@
 
 @media (min-width: $desktop-width) {
   .contest__form {
-    width: 980px;
+    width: 940px;
     padding-top: 5px;
     flex-direction: row;
   }
@@ -171,7 +172,13 @@
 
   .contest__wrapper--checkbox {
     min-height: 228px;
-    width: 980px;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .contest__legend {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .contest__text {
@@ -183,6 +190,14 @@
 
   .contest__text-hidden {
     display: inline;
+  }
+
+  .contest__button {
+    margin-left: 0;
+  }
+
+  .contest__text-fn {
+    margin-right: 0;
   }
 
   .contest__fn {

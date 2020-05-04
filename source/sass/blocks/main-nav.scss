@@ -109,12 +109,12 @@
 @media (min-width: $desktop-width) {
   .main-nav .main-nav__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    min-width: 700px;
-    margin-top: 20px;
+    min-width: 620px;
+    margin-top: 23px;
   }
 
   .main-nav__toggle {
@@ -123,7 +123,7 @@
 
   .main-nav__item {
     width: auto;
-    margin-right: 40px;
+    margin-right: 80px;
     padding-top: 16px;
     padding-bottom: 15px;
     box-shadow: none;
@@ -132,6 +132,10 @@
 
     &:first-of-type {
       box-shadow: none;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
     }
   }
 
