@@ -14,8 +14,13 @@
 
 .upload__img {
   width: 280px;
-  height: 180px;
+  height: 374px;
   margin: 0 auto;
+}
+
+.upload__image {
+  width: 280px;
+  height: 374px;
 }
 
 .upload__link-list {
@@ -23,7 +28,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 212px;
-  margin: 234px auto 30px;
+  margin: 40px auto 30px;
   padding: 0;
 }
 
@@ -161,9 +166,14 @@
 
   .upload__img {
     width: 300px;
-    height: 300px;
+    height: 400px;
     margin-top: 37px;
     margin-right: 46px;
+  }
+
+  .upload__image {
+    width: 300px;
+    height: 400px;
   }
 
   .upload__controls {
@@ -266,6 +276,11 @@
     margin-left: 80px;
     margin-right: 86px;
     margin-top: 57px;
+  }
+
+  .upload__image {
+    width: 300px;
+    height: 400px;
   }
 
   .upload__link-list {
